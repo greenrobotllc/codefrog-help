@@ -12,8 +12,7 @@ layout: help
 2. Create your first project:
    - **Local Folder** (macOS): Use files on your Mac.
    - **SSH Connection**: Work on a remote server via SSH.
-3. Open the **AI** tab and ensure your AI CLI is installed. For Auggie, see [installation guide](https://docs.augmentcode.com/cli/setup-auggie/install-auggie-cli).
-4. Start coding. Use the File Browser, AI Terminal, and Git tools.
+3. Start coding. Use the File Browser, Terminal, and Git tools.
 
 ## Recommended Setup
 

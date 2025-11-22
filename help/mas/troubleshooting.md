@@ -30,14 +30,13 @@ layout: help
 - Restart CodeFrog after enabling Remote Login
 - Check if SSH is listening: run `sudo lsof -i :22` in Terminal
 
-### AI Terminal Not Starting
+### Terminal Not Starting
 
-**Problem:** The AI terminal shows an error or doesn't start.
+**Problem:** The terminal shows an error or doesn't start.
 
 **Solutions:**
-- Make sure you have an AI CLI tool installed (see [Auggie installation instructions](https://docs.augmentcode.com/cli/setup-auggie/install-auggie-cli))
-- Check App Settings → AI Tools to see if the tool is detected
-- Ensure Remote Login is enabled
+- Ensure Remote Login is enabled (for local projects)
+- Check App Settings to verify terminal configuration
 - Try restarting the project
 - Check the terminal output for specific error messages
 
