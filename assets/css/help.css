@@ -30,44 +30,50 @@ body {
 .help-header {
   background: linear-gradient(135deg, #007AFF, #5856D6);
   color: white;
-  padding: 2rem;
-  text-align: center;
+  padding: 0.75rem 1.5rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
-.help-header .back-link {
-  display: inline-block;
-  margin-top: 1rem;
-  color: white;
-  text-decoration: underline;
-  font-size: 0.9rem;
-}
-
-.help-header .back-link:hover {
-  opacity: 0.8;
-}
-
-.app-icon {
-  width: 64px;
-  height: 64px;
-  margin-bottom: 1rem;
-  border-radius: 12px;
+.help-header .app-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  margin: 0;
 }
 
 .help-header h1 {
-  font-size: 2.5rem;
-  font-weight: 300;
-  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  flex: 1;
+  min-width: 200px;
+}
+
+.help-header .back-link {
+  color: white;
+  text-decoration: underline;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  opacity: 0.9;
+}
+
+.help-header .back-link:hover {
+  opacity: 1;
 }
 
 .search-container {
-  margin-top: 1rem;
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
+  position: relative;
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
 }
 
 #search-input {
@@ -103,7 +109,9 @@ body {
   z-index: 100;
   list-style: none;
   padding: 0.5rem 0;
-  min-width: 500px;
+  width: 100%;
+  left: 0;
+  right: 0;
 }
 
 #results-container li {
@@ -127,30 +135,31 @@ body {
 
 .container {
   display: flex;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   background: white;
-  min-height: calc(100vh - 200px);
+  min-height: calc(100vh - 60px);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar {
-  width: 280px;
+  width: 260px;
   background: var(--help-sidebar);
   border-right: 1px solid #e5e5e7;
-  padding: 2rem 1.5rem;
+  padding: 1rem 1rem;
   position: sticky;
-  top: 0;
-  height: fit-content;
-  max-height: 100vh;
+  top: 60px; /* Account for compact header */
+  height: calc(100vh - 60px);
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .help-nav h3 {
   color: #1d1d1f;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
   font-weight: 600;
+  padding: 0.25rem 0;
 }
 
 .help-nav ul {
@@ -158,16 +167,18 @@ body {
 }
 
 .help-nav li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 .help-nav a {
   color: var(--help-link);
-  text-decoration: underline;
-  padding: 0.5rem 0.75rem;
-  border-radius: 6px;
+  text-decoration: none;
+  padding: 0.4rem 0.5rem;
+  border-radius: 4px;
   display: block;
   transition: all 0.2s ease;
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
 
 .help-nav a:hover {
@@ -190,7 +201,7 @@ body {
 
 .content {
   flex: 1;
-  padding: 2rem 3rem;
+  padding: 1.5rem 2rem;
   overflow-y: auto;
 }
 
@@ -345,8 +356,25 @@ a:hover {
     padding: 1.5rem;
   }
   
+  .help-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+  
   .help-header h1 {
-    font-size: 2rem;
+    font-size: 1.1rem;
+  }
+  
+  .search-container {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .sidebar {
+    top: 0;
+    height: auto;
+    max-height: 300px;
   }
   
   .shortcuts-table {
