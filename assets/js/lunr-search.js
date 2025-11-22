@@ -35,11 +35,20 @@
     return fetch(searchJsonUrl)
       .then(function(response) {
         if (!response.ok) {
-          throw new Error('Failed to load search data');
+          throw new Error('Failed to load search data: ' + response.status);
         }
-        return response.json();
+        return response.text();
       })
-      .then(function(data) {
+      .then(function(text) {
+        // Try to parse JSON, with better error reporting
+        let data;
+        try {
+          data = JSON.parse(text);
+        } catch (e) {
+          console.error('Invalid JSON in search.json:', e);
+          console.error('JSON content:', text.substring(0, 500));
+          throw new Error('Invalid JSON in search.json: ' + e.message);
+        }
         searchData = data;
 
         // Build Lunr index

@@ -1,16 +1,16 @@
 ---
 layout: null
 ---
+{% assign help_pages = site.pages | where_exp: "p", "p.url contains '/help/'" | where_exp: "p", "p.url != '/search.json'" | where_exp: "p", "p.url != '/search-index.json'" | where_exp: "p", "p.url != '/404.html'" | where_exp: "p", "p.url != '/404/'" %}
 [
-{% assign index = 0 %}
-{% for p in site.pages %}{% if p.url contains '/help/' and p.url != '/search.json' and p.url != '/search-index.json' %}
-{% assign index = index | plus: 1 %}
+{% for p in help_pages %}
+  {% assign content_clean = p.content | strip_html | normalize_whitespace | truncate: 500 %}
+  {% if content_clean == blank %}{% assign content_clean = p.title | default: 'Untitled' %}{% endif %}
 {
-  "id": "{{ index }}",
-  "title": "{{ p.title | default: 'Untitled' | escape }}",
-  "url": "{{ p.url | relative_url }}",
-  "content": "{{ p.content | strip_html | normalize_whitespace | truncate: 500 | escape }}"
+  "id": "{{ forloop.index }}",
+  "title": {{ p.title | default: 'Untitled' | jsonify }},
+  "url": {{ p.url | relative_url | jsonify }},
+  "content": {{ content_clean | jsonify }}
 }{% unless forloop.last %},{% endunless %}
-{% endif %}{% endfor %}
+{% endfor %}
 ]
-
