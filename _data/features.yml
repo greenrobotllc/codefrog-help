@@ -57,7 +57,6 @@ categories:
   - name: AI Integration
     description: "AI-assisted coding and code review"
     items:
-      - "AI terminal commands"
       - "CodeRabbit PR comment import"
       - "Augment Code task integration"
       - "Cursor/other AI agent workflows"
