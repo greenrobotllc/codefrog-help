@@ -23,7 +23,6 @@ layout: help
 
 ## Next Steps
 
-- Use [AI Tools](/help/mas/ai-tools) for code help and security scans.
 - Try [Remote Development](/help/mas/workflows#remote-workflow) for server-based projects.
 - See [Troubleshooting](/help/mas/troubleshooting) if you hit issues.
 

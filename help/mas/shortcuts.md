@@ -26,7 +26,6 @@ layout: help
 |----------|--------|
 | `⌘1` | Go to Workspace Tab |
 | `⌘2` | Go to Terminal Tab |
-| `⌘3` | Go to AI Tab |
 | `⌘4` | Go to Changes Tab |
 | `⌘[` | Go Back |
 | `⌘]` | Go Forward |
