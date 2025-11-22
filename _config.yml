@@ -1,0 +1,35 @@
+title: CodeFrog Help
+url: https://help.codefrog.app
+baseurl: ""
+
+# GitHub Pages plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+# Defaults
+defaults:
+  - scope:
+      path: "help"
+    values:
+      layout: help
+
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - .gitignore
+  - README.md
+  - scripts
+  - GITHUB_PAGES_*.md
+  - LINODE_DNS_SETUP.md
+  - LOCAL_TESTING.md
+  - NAMECHEAP_ALTERNATIVE.md
+  - PRIVATE_REPO_OPTIONS.md
+  - QUICK_START.md
+  - REPO_SETUP_OPTIONS.md
+

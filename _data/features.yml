@@ -1,0 +1,73 @@
+categories:
+  - name: Accessibility
+    description: "WCAG AA compliant accessibility testing and validation"
+    items:
+      - "Contrast checks for text and UI elements"
+      - "Keyboard navigation audit"
+      - "ARIA validations"
+      - "Focus management checks"
+      - "Screen reader compatibility"
+      - "Color blindness testing"
+  
+  - name: Security
+    description: "Comprehensive security scanning and vulnerability detection"
+    items:
+      - "HTTPS-first with HTTP retry fallback"
+      - "Security vulnerability scanning"
+      - "Gitleaks integration for secrets detection"
+      - "Exclude Pods/3rd-party by default"
+      - "Severity-based reporting (including zero-count)"
+      - "Bulk scan first N unscanned files"
+  
+  - name: Supply Chain / OSV
+    description: "Open Source Vulnerability database integration"
+    items:
+      - "OSV database integration"
+      - "Supported ecosystems (npm, PyPI, Maven, etc.)"
+      - "Advisory reading and remediation"
+      - "Automated vulnerability detection"
+      - "Dependency scanning"
+  
+  - name: Code Analysis
+    description: "Static code analysis and validation tools"
+    items:
+      - "HTML validation"
+      - "Code quality checks"
+      - "Static analysis integration"
+      - "Linting support"
+  
+  - name: Git Integration
+    description: "Git and GitHub workflow tools"
+    items:
+      - "Visual diff viewer"
+      - "GitHub PR comments import"
+      - "Change management"
+      - "Commit, push, pull operations"
+      - "Branch management"
+  
+  - name: Development Workflows
+    description: "Local and remote development support"
+    items:
+      - "Local folder development"
+      - "SSH remote server connections"
+      - "File browser with dual-pane view"
+      - "Code editor with syntax highlighting"
+      - "Terminal integration"
+  
+  - name: AI Integration
+    description: "AI-assisted coding and code review"
+    items:
+      - "AI terminal commands"
+      - "CodeRabbit PR comment import"
+      - "Augment Code task integration"
+      - "Cursor/other AI agent workflows"
+      - "Automated code review"
+  
+  - name: Testing & Validation
+    description: "Testing and quality assurance tools"
+    items:
+      - "Web testing (HTML files)"
+      - "Bulk domain security testing via DNS API"
+      - "Automated test execution"
+      - "Result export and reporting"
+

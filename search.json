@@ -1,0 +1,16 @@
+---
+layout: null
+---
+[
+{% assign index = 0 %}
+{% for p in site.pages %}{% if p.url contains '/help/' and p.url != '/search.json' and p.url != '/search-index.json' %}
+{% assign index = index | plus: 1 %}
+{
+  "id": "{{ index }}",
+  "title": "{{ p.title | default: 'Untitled' | escape }}",
+  "url": "{{ p.url | relative_url }}",
+  "content": "{{ p.content | strip_html | normalize_whitespace | truncate: 500 | escape }}"
+}{% unless forloop.last %},{% endunless %}
+{% endif %}{% endfor %}
+]
+

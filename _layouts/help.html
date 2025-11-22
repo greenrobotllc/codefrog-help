@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} - {% endif %}CodeFrog Help</title>
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/css/help.css' | relative_url }}">
+</head>
+<body>
+  <header class="help-header">
+    <img src="{{ '/assets/images/app-icon.png' | relative_url }}" alt="CodeFrog" class="app-icon">
+    <h1>{{ page.title | default: 'CodeFrog Help' }}</h1>
+    {% if page.show_version %}
+    <p class="version">Version 1.0.0</p>
+    {% endif %}
+    <a href="https://codefrog.greenrobot.com" class="back-link">← Back to CodeFrog</a>
+    
+    <div class="search-container">
+      <input type="search" id="search-input" placeholder="Search help..." aria-label="Search help documentation">
+      <ul id="results-container" style="display: none;"></ul>
+    </div>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <nav class="help-nav">
+        <h3>Contents</h3>
+        <ul>
+          <li><a href="{{ '/help/' | relative_url }}" {% if page.url == '/help/' %}class="active"{% endif %}>Complete Feature List</a></li>
+          <li><a href="{{ '/help/mas/' | relative_url }}" {% if page.url contains '/help/mas/' and page.url != '/help/mas/' %}class="active"{% endif %}>Mac App Store Help</a></li>
+          <li><a href="{{ '/help/mas/getting-started' | relative_url }}" {% if page.url == '/help/mas/getting-started/' %}class="active"{% endif %}>Getting Started</a></li>
+          <li><a href="{{ '/help/mas/shortcuts' | relative_url }}" {% if page.url == '/help/mas/shortcuts/' %}class="active"{% endif %}>Keyboard Shortcuts</a></li>
+          <li><a href="{{ '/help/mas/workflows' | relative_url }}" {% if page.url == '/help/mas/workflows/' %}class="active"{% endif %}>Project Workflows</a></li>
+          <li><a href="{{ '/help/mas/accessibility' | relative_url }}" {% if page.url == '/help/mas/accessibility/' %}class="active"{% endif %}>Accessibility</a></li>
+          <li><a href="{{ '/help/mas/security' | relative_url }}" {% if page.url == '/help/mas/security/' %}class="active"{% endif %}>Security</a></li>
+          <li><a href="{{ '/help/mas/osv' | relative_url }}" {% if page.url == '/help/mas/osv/' %}class="active"{% endif %}>OSV / Supply Chain</a></li>
+          <li><a href="{{ '/help/mas/secrets' | relative_url }}" {% if page.url == '/help/mas/secrets/' %}class="active"{% endif %}>Secrets / Gitleaks</a></li>
+          <li><a href="{{ '/help/mas/launch-checklist' | relative_url }}" {% if page.url == '/help/mas/launch-checklist/' %}class="active"{% endif %}>Launch Checklist</a></li>
+          <li><a href="{{ '/help/mas/ai-coder-coderabbit-augment' | relative_url }}" {% if page.url == '/help/mas/ai-coder-coderabbit-augment/' %}class="active"{% endif %}>AI: CodeRabbit + Augment</a></li>
+          <li><a href="{{ '/help/mas/ai-coder-cursor' | relative_url }}" {% if page.url == '/help/mas/ai-coder-cursor/' %}class="active"{% endif %}>AI: Cursor / Other Agents</a></li>
+          <li><a href="{{ '/help/mas/troubleshooting' | relative_url }}" {% if page.url == '/help/mas/troubleshooting/' %}class="active"{% endif %}>Troubleshooting</a></li>
+          <li><a href="{{ '/help/mas/privacy' | relative_url }}" {% if page.url == '/help/mas/privacy/' %}class="active"{% endif %}>Privacy & Connections</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="content">
+      {{ content }}
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 CodeFrog. All rights reserved.</p>
+  </footer>
+
+  <meta name="search-json-url" content="{{ '/search.json' | relative_url }}">
+  <script src="https://unpkg.com/lunr@2.3.9/lunr.min.js"></script>
+  <script src="{{ '/assets/js/lunr-search.js' | relative_url }}"></script>
+</body>
+</html>
+
