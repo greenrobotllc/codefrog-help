@@ -72,7 +72,6 @@ CodeFrog is designed with privacy in mind. This page explains what external serv
 - **SSH Keys:** Encrypted private keys (Flutter Secure Storage)
 - **API Keys:** Encrypted API tokens (Flutter Secure Storage)
 - **Security-Scoped Bookmarks:** Encrypted folder access permissions (macOS only)
-- **AI Terminal History:** Command history for AI sessions (SQLite database)
 - **Task Manager Data:** Your tasks and GitHub PR comments (SQLite database)
 - **App Preferences:** Theme, settings, and user preferences (SQLite database)
 
