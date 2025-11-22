@@ -51,16 +51,16 @@
         }
         searchData = data;
 
-        // Build Lunr index
+        // Build Lunr index - documents must be added inside the builder function
         searchIndex = lunr(function() {
           this.ref('id');
           this.field('title', { boost: 10 });
           this.field('content', { boost: 1 });
-        });
-
-        // Add documents to index
-        searchData.forEach(function(doc) {
-          searchIndex.add(doc);
+          
+          // Add documents to index inside the builder
+          searchData.forEach(function(doc) {
+            this.add(doc);
+          }, this);
         });
 
         searchInitialized = true;

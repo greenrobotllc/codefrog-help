@@ -24,7 +24,6 @@ exclude:
   - .git
   - .gitignore
   - README.md
-  - scripts
   - GITHUB_PAGES_*.md
   - LINODE_DNS_SETUP.md
   - LOCAL_TESTING.md
