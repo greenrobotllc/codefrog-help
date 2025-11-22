@@ -7,28 +7,75 @@ layout: help
 
 This workflow helps you use Cursor or other AI coding agents to fix code review issues efficiently by providing structured prompts and managing the fix process.
 
+## ⚠️ Critical: Manual Review First
+
+**Before using any bulk copy/paste or automation, you MUST:**
+
+1. **Review all issues by hand** - Don't skip this step!
+2. **Identify major/complex problems** - These include:
+   - Security vulnerabilities
+   - Architectural changes
+   - Complex logic bugs
+   - Performance issues
+   - Breaking changes
+3. **Address major/complex problems one at a time** - Fix these individually with careful review
+4. **Identify straightforward, low-risk issues** - These include:
+   - Simple null checks
+   - Style fixes
+   - Minor refactoring
+   - Simple validation
+5. **Only bulk copy/paste straightforward, low-risk issues** - Never bulk process complex problems
+
+**Why this matters:** Bulk processing complex issues can lead to incorrect fixes, introduce bugs, or miss important context. Always triage manually first.
+
 ## Workflow Steps
 
-### 1. Prepare Issue List
+### 1. Manual Review and Triage
 
-Collect all code review issues:
+**CRITICAL STEP - Do not skip:**
+
+1. **Review all code review issues:**
+   - Read through every issue carefully
+   - Understand the context and severity
+   - Note which issues are related
+
+2. **Categorize issues:**
+   - **Major/Complex:** Handle individually (see above)
+   - **Straightforward/Low-risk:** Can be bulk processed (see above)
+
+3. **Create separate lists:**
+   - List A: Major/complex problems (handle individually)
+   - List B: Straightforward, low-risk issues (can bulk process)
+
+4. **Handle major problems first:**
+   - Fix each major/complex problem individually
+   - Test thoroughly
+   - Commit separately with clear messages
+
+### 2. Prepare Issue List (Straightforward Issues Only)
+
+**⚠️ Only prepare straightforward, low-risk issues for bulk processing. Major/complex problems should already be handled individually.**
+
+Collect only the straightforward, low-risk issues from your List B:
 
 1. **From Code Review:**
    - Export comments from GitHub, GitLab, or other platforms
+   - **Only include straightforward, low-risk issues**
    - Format as a simple list
    - Include file paths and line numbers
 
 2. **From CodeFrog Scans:**
-   - Export findings from security scans
-   - Export accessibility issues
+   - Export findings from security scans (only simple fixes)
+   - Export accessibility issues (only straightforward fixes)
    - Include severity and descriptions
 
 3. **Format for AI:**
    - One issue per line or bullet point
    - Include context (file, line, description)
    - Group by file or type
+   - **Maximum 15-20 issues** for optimal AI performance
 
-### 2. Create AI Prompt
+### 3. Create AI Prompt
 
 Use this prompt template with Cursor or other AI agents:
 
@@ -46,27 +93,29 @@ Requirements:
 - Summarize what was changed and why
 ```
 
-### 3. Batch Processing
+### 4. Batch Processing
 
-Work in manageable batches:
+Work in manageable batches with careful review:
 
-1. **Recommended Batch Size:**
-   - **10-15 issues:** Optimal for focused work
-   - Small enough to review carefully
-   - Large enough to be efficient
+1. **Recommended Batch Sizes:**
+   - **Small batch (5-10 issues):** Recommended for first-time users or complex codebases
+   - **Medium batch (10-15 issues):** Optimal for most cases, standard workflow
+   - **Large batch (15-20 issues):** Only for very simple, routine fixes
+   - **Maximum: 20 issues** - Never exceed this limit
 
 2. **Grouping Strategy:**
    - **By file:** Fix all issues in one file together
-   - **By type:** Fix similar issues together (e.g., all null checks)
+   - **By type:** Fix similar issues together (e.g., all null checks
    - **By dependency:** Fix issues that depend on each other
 
 3. **Process:**
-   - Paste issue list into AI agent
-   - Review AI suggestions
-   - Accept or modify fixes
-   - Test changes
+   - Paste issue list into AI agent (one batch at a time)
+   - **Review AI suggestions carefully** - don't accept blindly
+   - Accept or modify fixes based on your review
+   - Test changes before moving to next batch
+   - Complete one batch before starting the next
 
-### 4. Testing and Verification
+### 5. Testing and Verification
 
 After AI makes fixes:
 
@@ -85,7 +134,7 @@ After AI makes fixes:
    - Verify no regressions
    - Check edge cases
 
-### 5. Commit Strategy
+### 6. Commit Strategy
 
 Commit changes in logical chunks:
 
@@ -124,8 +173,10 @@ Fix bugs
 ### Batch Size Guidelines
 
 - **Too Small (1-5):** Inefficient, too much context switching
-- **Optimal (10-15):** Good balance of focus and efficiency
-- **Too Large (20+):** Overwhelming, hard to review properly
+- **Small (5-10):** Good for first-time users or complex codebases
+- **Optimal (10-15):** Good balance of focus and efficiency, standard workflow
+- **Large (15-20):** Only for very simple, routine fixes
+- **Too Large (20+):** Overwhelming, hard to review properly - **NEVER exceed 20 issues**
 
 ### Code Review
 

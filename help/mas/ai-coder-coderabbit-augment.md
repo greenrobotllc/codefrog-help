@@ -7,9 +7,52 @@ layout: help
 
 This workflow helps you efficiently handle code review feedback from CodeRabbit by importing comments into Augment Code tasks, fixing issues with AI assistance, and tracking progress.
 
+## ⚠️ Critical: Manual Review First
+
+**Before using any bulk import or automation, you MUST:**
+
+1. **Review all issues manually** - Don't skip this step!
+2. **Identify major/complex issues** - These include:
+   - Security vulnerabilities
+   - Architectural changes
+   - Complex logic bugs
+   - Performance issues
+   - Breaking changes
+3. **Handle major/complex issues individually** - Fix these one at a time with careful review
+4. **Identify simple/routine issues** - These include:
+   - Style fixes (formatting, naming)
+   - Simple null checks
+   - Minor refactoring
+   - Simple validation additions
+5. **Only bulk import simple/routine issues** - Never bulk import complex issues
+
+**Why this matters:** Bulk processing complex issues can lead to incorrect fixes, introduce bugs, or miss important context. Always triage manually first.
+
 ## Workflow Steps
 
-### 1. Export PR Comments to Markdown
+### 1. Manual Review and Triage
+
+**CRITICAL STEP - Do not skip:**
+
+1. **Review all CodeRabbit comments:**
+   - Read through every comment carefully
+   - Understand the context and severity
+   - Note which issues are related
+
+2. **Categorize issues:**
+   - **Major/Complex:** Handle individually (see above)
+   - **Simple/Routine:** Can be bulk processed (see above)
+
+3. **Create separate lists:**
+   - List A: Major/complex issues (handle individually)
+   - List B: Simple/routine issues (can bulk import)
+
+4. **Handle major issues first:**
+   - Fix each major/complex issue individually
+   - Test thoroughly
+   - Commit separately with clear messages
+
+### 2. Export PR Comments to Markdown
 
 When CodeRabbit reviews your pull request, export the comments:
 
@@ -28,7 +71,9 @@ When CodeRabbit reviews your pull request, export the comments:
    - Save as `pr-comments.md` or similar
    - Keep it accessible for import
 
-### 2. Import into Augment Code Tasks
+### 3. Selective Bulk Import (Simple/Routine Issues Only)
+
+**⚠️ Only import simple/routine issues in bulk. Major/complex issues should already be handled individually.**
 
 Import the exported comments as tasks in CodeFrog:
 
@@ -36,42 +81,56 @@ Import the exported comments as tasks in CodeFrog:
    - Navigate to the Tasks tab
    - Select "Import Tasks" or "Bulk Create"
 
-2. **Format Tasks:**
+2. **Select Issues to Import:**
+   - **Only select simple/routine issues** from your List B
+   - Skip any major/complex issues (these should be handled individually)
+   - Verify you're only importing low-risk, straightforward fixes
+
+3. **Format Tasks:**
    - Task title format: `PR#{pr} Comment #{id}: {description}`
    - Example: `PR#123 Comment #456: Fix null pointer exception`
    - Include file path and line number in description
 
-3. **Import Settings:**
+4. **Import Settings:**
    - **Import unresolved only:** Don't import comments that are already resolved
    - **Hide nitpicks:** Filter out minor style suggestions
    - **Group by file:** Optionally group related comments
 
-4. **Review Imported Tasks:**
-   - Verify all important comments were imported
+5. **Review Imported Tasks:**
+   - Verify only simple/routine issues were imported
    - Check task descriptions are complete
    - Adjust priorities if needed
 
-### 3. Fix with Augment
+### 4. Fix with Augment (Batch Processing)
 
-Use Augment Code to fix the issues:
+Use Augment Code to fix the simple/routine issues in batches:
 
-1. **Batch Processing:**
-   - Work on 10-20 issues at a time
+1. **Recommended Batch Sizes:**
+   - **Small batch (5-10 issues):** Recommended for first-time users or complex codebases
+   - **Medium batch (10-15 issues):** Standard workflow, optimal for most cases
+   - **Large batch (15-20 issues):** Only for very simple, routine fixes
+   - **Never exceed 20 issues** in a single batch
+
+2. **Batch Processing Steps:**
+   - Select one batch of issues (same file or similar fixes)
+   - Work on one batch at a time
    - Keep related issues together (same file, similar fixes)
    - Don't try to fix everything at once
 
-2. **Using Augment:**
-   - Open the file with the issue
+3. **Using Augment:**
+   - Open the file with the issues
    - Select the problematic code
    - Use Augment's AI suggestions to fix
-   - Review and test each fix
+   - **Review each fix carefully** before accepting
+   - Test each fix before moving to the next
 
-3. **Task Management:**
+4. **Task Management:**
    - Mark tasks as "In Progress" while working
    - Mark as "Completed" when fixed and tested
    - CodeFrog supports auto-completion when code changes are detected
+   - Complete one batch before starting the next
 
-### 4. Verify Fixes
+### 5. Verify Fixes
 
 After fixing issues:
 
