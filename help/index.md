@@ -41,6 +41,8 @@ This is the authoritative, comprehensive list of all CodeFrog features. Use this
 
 - [Accessibility Testing](/help/mas/accessibility) - WCAG AA compliance testing
 - [Security Scanning](/help/mas/security) - Comprehensive security validation
+- [Mega Report](/help/mas/mega-report) - Unified web testing and code analysis report
+- [SEO Testing](/help/mas/seo-testing) - Complete SEO analysis and optimization
 - [OSV / Supply Chain](/help/mas/osv) - Open Source Vulnerability detection
 - [Secrets Detection](/help/mas/secrets) - Gitleaks integration for secrets scanning
 

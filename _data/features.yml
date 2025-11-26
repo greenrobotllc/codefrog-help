@@ -66,7 +66,9 @@ categories:
     description: "Testing and quality assurance tools"
     items:
       - "Web testing (HTML files)"
+      - "Mega Report - unified web testing and code analysis"
+      - "SEO testing and optimization"
       - "Bulk domain security testing via DNS API"
       - "Automated test execution"
-      - "Result export and reporting"
+      - "Result export and reporting (PDF, Markdown, HTML)"
 

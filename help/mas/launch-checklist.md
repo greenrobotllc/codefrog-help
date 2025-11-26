@@ -147,9 +147,11 @@ If using CodeRabbit for automated code review:
    - Configure review rules
    - Enable PR comment export
 
-2. **Export PR Comments:**
-   - Export unresolved comments to Markdown
-   - Include PR number and comment IDs
+2. **Import PR Comments to Tasks:**
+   - Go to the GitHub tab in CodeFrog
+   - Click on the PR you want to view
+   - Use the PR Import Banner to import comments as tasks
+   - Export to Markdown from the Tasks screen (upper right export button)
    - See [CodeRabbit + Augment workflow](/help/mas/ai-coder-coderabbit-augment) for details
 
 3. **Import to Tasks:**

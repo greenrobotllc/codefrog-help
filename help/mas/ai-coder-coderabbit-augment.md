@@ -5,7 +5,7 @@ layout: help
 
 ## Overview
 
-This workflow helps you efficiently handle code review feedback from CodeRabbit by importing comments into Augment Code tasks, fixing issues with AI assistance, and tracking progress.
+This workflow helps you efficiently handle code review feedback from CodeRabbit by importing comments into CodeFrog tasks, exporting them to Markdown format, fixing issues with Augment Code AI assistance, and tracking progress.
 
 ## ⚠️ Critical: Manual Review First
 
@@ -52,49 +52,57 @@ This workflow helps you efficiently handle code review feedback from CodeRabbit 
    - Test thoroughly
    - Commit separately with clear messages
 
-### 2. Export PR Comments to Markdown
+### 2. Import PR Comments to Tasks and Export to Markdown
 
-When CodeRabbit reviews your pull request, export the comments:
+When CodeRabbit reviews your pull request, import the comments into CodeFrog tasks and then export them:
 
-1. **In CodeRabbit Interface:**
-   - Navigate to your PR
-   - Find the export option (usually in PR settings or comments section)
-   - Export unresolved comments to Markdown format
+1. **Navigate to GitHub Tab:**
+   - Open CodeFrog
+   - Go to the **GitHub** tab
+   - Click on the PR you want to view
 
-2. **Include in Export:**
-   - PR number (e.g., `PR#123`)
-   - Comment IDs (e.g., `Comment #456`)
-   - Comment text and context
-   - File paths and line numbers
+2. **Import PR Comments to Tasks:**
+   - In the **PR Import Banner** (shown at the top of the PR view), you'll see options to import comments
+   - Click the import button to import PR comments to the Tasks screen in CodeFrog
+   - The banner will guide you through the import process
+   - After importing, you'll be prompted to export to Markdown format
 
-3. **Save Export:**
-   - Save as `pr-comments.md` or similar
-   - Keep it accessible for import
+3. **Export Tasks:**
+   - Navigate to the **Tasks** screen (🤖 Task Manager)
+   - Find the **Export Tasks to Markdown** button in the upper right corner of the screen (download icon)
+   - Click it to export your imported tasks
+   - Choose your export format:
+     - **Augment Code format**: For automated import into Augment Code (import the MD task list directly)
+     - **Simple text format**: For other AI agents like Cursor (automated export, then paste the list of issues into the agent)
+   - The file will be saved automatically
+
+**Note:** The PR Import Banner also provides guidance on exporting the file after importing comments.
 
 ### 3. Selective Bulk Import (Simple/Routine Issues Only)
 
 **⚠️ Only import simple/routine issues in bulk. Major/complex issues should already be handled individually.**
 
-Import the exported comments as tasks in CodeFrog:
+The import process happens directly in the PR Import Banner:
 
-1. **Open CodeFrog:**
-   - Navigate to the Tasks tab
-   - Select "Import Tasks" or "Bulk Create"
+1. **In the PR Import Banner:**
+   - The banner shows available comments to import
+   - **Only simple/routine issues** with AI summaries can be imported automatically
+   - Complex comments and those without AI summaries are marked and must be handled on the web
 
-2. **Select Issues to Import:**
-   - **Only select simple/routine issues** from your List B
-   - Skip any major/complex issues (these should be handled individually)
-   - Verify you're only importing low-risk, straightforward fixes
+2. **Import Options:**
+   - **Import Importable Comments:** Imports all simple/routine comments that have AI summaries
+   - **Import First 20 Comments:** Imports the first 20 importable comments (recommended batch size)
+   - **Import First 50 Comments:** Imports the first 50 importable comments (for larger batches)
 
-3. **Format Tasks:**
-   - Task title format: `PR#{pr} Comment #{id}: {description}`
+3. **Task Format (Automatic):**
+   - Tasks are automatically formatted as: `PR#{pr} Comment #{id}: {description}`
    - Example: `PR#123 Comment #456: Fix null pointer exception`
-   - Include file path and line number in description
+   - File paths and line numbers are included automatically
 
-4. **Import Settings:**
-   - **Import unresolved only:** Don't import comments that are already resolved
-   - **Hide nitpicks:** Filter out minor style suggestions
-   - **Group by file:** Optionally group related comments
+4. **After Import:**
+   - You'll be prompted to export immediately
+   - Choose **Augment Code format** for automated import, or **Simple text format** for pasting into other agents
+   - Or navigate to the Tasks screen to export later using the export button in the upper right
 
 5. **Review Imported Tasks:**
    - Verify only simple/routine issues were imported
@@ -117,7 +125,9 @@ Use Augment Code to fix the simple/routine issues in batches:
    - Keep related issues together (same file, similar fixes)
    - Don't try to fix everything at once
 
-3. **Using Augment:**
+3. **Using Augment Code:**
+   - Import the exported Markdown file (Augment Code format) into Augment Code
+   - The task list will be automatically imported
    - Open the file with the issues
    - Select the problematic code
    - Use Augment's AI suggestions to fix
@@ -126,8 +136,8 @@ Use Augment Code to fix the simple/routine issues in batches:
 
 4. **Task Management:**
    - Mark tasks as "In Progress" while working
-   - Mark as "Completed" when fixed and tested
-   - CodeFrog supports auto-completion when code changes are detected
+   - Mark as "Completed" manually in CodeFrog when fixed and tested, or delete completed tickets (one or all) as an alternative
+   - **Note:** CodeFrog does not automatically close tickets or mark PR comments as done
    - Complete one batch before starting the next
 
 ### 5. Verify Fixes
@@ -139,15 +149,17 @@ After fixing issues:
    - Verify no regressions introduced
    - Check edge cases
 
-2. **Update Tasks:**
-   - Mark tasks as completed
-   - Add notes about the fix
+2. **Update Tasks in CodeFrog:**
+   - Manually mark tasks as completed in CodeFrog, or delete completed tickets (one or all) as an alternative
+   - Add notes about the fix before marking complete or deleting
    - Link to commit or PR
+   - **Note:** CodeFrog does not automatically close tickets or mark PR comments as done
 
-3. **Re-run CodeRabbit:**
+3. **CodeRabbit Resolution Tracking:**
    - Push changes to PR
-   - Let CodeRabbit re-review
-   - Verify issues are resolved
+   - CodeRabbit AI automatically verifies your fixes when you commit
+   - CodeRabbit marks PR comments as resolved once your changes are committed
+   - Let CodeRabbit re-review to verify all issues are resolved
 
 ## Best Practices
 
@@ -171,7 +183,7 @@ Group related issues:
 - **Set priorities:** Critical issues first
 - **Track progress:** Use task status to see what's done
 
-## Screenshots and Examples
+## Examples and Workflow
 
 ### Example Task Import
 
@@ -188,30 +200,29 @@ Issue: Potential null pointer when user not found
 2. Open file in editor
 3. Use Augment to fix all issues
 4. Test changes
-5. Mark all tasks complete
+5. Mark all tasks complete (or delete completed tickets as an alternative)
 6. Commit with message: "Fix CodeRabbit issues in UserService.java"
 
-## Auto-Completion Support
+## Task and Comment Resolution
 
-CodeFrog supports automatic task completion:
+**CodeFrog Task Management:**
+- CodeFrog does **not** support automatic task completion
+- You must manually mark tasks as completed in CodeFrog, or delete completed tickets (one or all) as an alternative
+- CodeFrog does not automatically close tickets or mark PR comments as done
 
-- **Code Detection:** Detects when code matching task description is changed
-- **Git Integration:** Links tasks to commits
-- **Status Updates:** Automatically updates task status
-
-To enable:
-
-1. Open Task Settings
-2. Enable "Auto-complete on code change"
-3. Configure matching rules
+**CodeRabbit Resolution Tracking:**
+- CodeRabbit AI automatically verifies your fixes when you commit changes to the PR
+- CodeRabbit marks PR comments as resolved once your committed changes address the issues
+- This happens automatically on the GitHub PR - no manual action needed in CodeRabbit
+- CodeRabbit's AI verification ensures your fixes actually resolve the reported issues
 
 ## Troubleshooting
 
 ### Import Issues
 
-- **Format Problems:** Ensure Markdown export includes PR# and Comment# IDs
-- **Missing Comments:** Check CodeRabbit export settings
-- **Duplicate Tasks:** CodeFrog should detect and skip duplicates
+- **Format Problems:** Tasks are automatically formatted with PR# and Comment# IDs when imported from the PR Import Banner
+- **Missing Comments:** Check that comments have AI summaries (required for automatic import). Complex comments must be handled on the web
+- **Duplicate Tasks:** CodeFrog automatically detects and skips duplicates when importing
 
 ### Augment Issues
 
@@ -221,6 +232,7 @@ To enable:
 
 ## Related Topics
 
+- [Handling PRs with Many Comments](/help/mas/handling-pr-comments) - Efficiently process large code reviews with many comments
 - [Cursor / Other AI Agents](/help/mas/ai-coder-cursor) - Using other AI tools
 - [Getting Started](/help/mas/getting-started) - CodeFrog basics
 - [Project Workflows](/help/mas/workflows) - Development workflows

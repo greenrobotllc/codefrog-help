@@ -59,7 +59,8 @@ This workflow helps you use Cursor or other AI coding agents to fix code review 
 Collect only the straightforward, low-risk issues from your List B:
 
 1. **From Code Review:**
-   - Export comments from GitHub, GitLab, or other platforms
+   - For GitHub PRs: Use CodeFrog's GitHub tab → PR Import Banner → Import to Tasks → Export in **Simple text format** (automated export, then paste the list of issues into the agent)
+   - For other platforms: Export comments manually
    - **Only include straightforward, low-risk issues**
    - Format as a simple list
    - Include file paths and line numbers
@@ -105,7 +106,7 @@ Work in manageable batches with careful review:
 
 2. **Grouping Strategy:**
    - **By file:** Fix all issues in one file together
-   - **By type:** Fix similar issues together (e.g., all null checks
+   - **By type:** Fix similar issues together (e.g., all null checks, naming issues, or formatting problems)
    - **By dependency:** Fix issues that depend on each other
 
 3. **Process:**

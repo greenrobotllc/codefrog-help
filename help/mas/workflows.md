@@ -30,16 +30,17 @@ Work with files and folders directly on your Mac. This is the fastest and most s
 4. Click **Select Folder**
 5. Navigate to your project folder in the macOS folder picker
 6. Click **Open** to grant access
-7. Configure optional settings (color theme, Git repository)
+7. Configure optional settings (color theme)
 8. Click **Create Project**
 
 ### What You Can Do
 
 - **File Browser:** Browse, edit, create, and delete files
-- **Git Integration:** View changes, commit, push, and pull
-- **GitHub PR Comments:** Import and manage pull request feedback
+- **GitHub Integration:** Import pull request comments and issues from the GitHub API for bulk import into your AI agent of choice
 - **Code Validation:** Run security scans and code analysis
 - **Web Testing:** Test HTML files in your browser
+
+**Note:** For Git operations like viewing changes, committing, pushing, and pulling, we recommend using [GitHub Desktop](https://desktop.github.com/) or your preferred Git client.
 
 ### File Access
 
@@ -81,16 +82,18 @@ Connect to remote servers via SSH to work with projects hosted on cloud instance
    - Authentication method (SSH key or password)
 5. Test the connection
 6. Select the remote project directory
-7. Configure optional settings (color theme, Git repository)
+7. Configure optional settings (color theme)
 8. Click **Create Project**
 
 ### What You Can Do
 
 - **SSH Terminal:** Full terminal access to the remote server
 - **File Browser:** Browse and edit files via SFTP
-- **Git Integration:** Manage Git repositories on the remote server
+- **GitHub Integration:** Import pull request comments and issues from the GitHub API for bulk import into your AI agent of choice
 - **Remote Builds:** Build and run projects using server resources
 - **Server Admin:** Manage server settings, disk monitoring, etc.
+
+**Note:** For Git operations like viewing changes, committing, pushing, and pulling, we recommend using [GitHub Desktop](https://desktop.github.com/) or your preferred Git client.
 
 ### SSH Key Management
 
@@ -153,7 +156,6 @@ Each project has its own settings that you can customize.
 
 - **General:** Project name, color theme, description
 - **Connection:** SSH settings, folder path, connection details
-- **Git:** Repository URL, default branch, Git user config
 - **Build & Sync:** Build commands, SFTP sync settings
 - **AI Tools:** Which AI CLI tools to use for this project
 
@@ -171,8 +173,7 @@ Assign custom colors to projects for easy visual identification:
 ### For Local Projects
 
 - Keep projects in a dedicated folder (e.g., `~/Projects`)
-- Use Git for version control
-- Regularly commit and push changes
+- Use [GitHub Desktop](https://desktop.github.com/) or your preferred Git client for version control operations (viewing changes, committing, pushing, pulling)
 - Use meaningful project names
 
 ### For Remote Projects
@@ -185,8 +186,6 @@ Assign custom colors to projects for easy visual identification:
 
 ## Next Steps
 
-- [Learn about AI tools](/help/mas/ai-tools) - Get started with AI-assisted coding
-- [GitHub integration](/help/mas/github) - Connect your GitHub account
-- [Explore features](/help/mas/features) - Discover what CodeFrog can do
+- [GitHub integration](/help/mas/github) - Import PR comments and issues for AI agents
 - [Troubleshooting](/help/mas/troubleshooting) - Find solutions to common issues
 

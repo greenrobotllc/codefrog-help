@@ -10,8 +10,9 @@ layout: help
 
 | Shortcut | Action |
 |----------|--------|
-| `⌘N` | New Project… |
-| `⌘⇧N` | New Window |
+| `⌘N` | New File… |
+| `⌘⇧N` | New Project… |
+| `⌘⌥N` | New Folder… |
 | `⌘W` | Close Window |
 | `⌘⇧P` | Quick Project Switcher |
 | `⌘,` | App Settings |
@@ -48,8 +49,8 @@ layout: help
 
 | Shortcut | Action |
 |----------|--------|
-| `⌘⇧N` | New Folder |
-| `⌘N` | New File |
+| `⌘N` | New File (in current directory) |
+| `⌘⌥N` | New Folder (in current directory) |
 | `⌘D` | Duplicate File/Folder |
 | `⌘⌫` | Delete File/Folder |
 | `⌘R` | Rename File/Folder |
@@ -57,6 +58,8 @@ layout: help
 | `Space` | Quick Look (Preview) |
 | `↑/↓` | Navigate Files |
 | `Enter` | Open Selected File/Folder |
+
+*Note: When in the File Browser or Workspace screen, `⌘N` creates a new file in the current directory without prompting for a location. When not in these screens, it shows a save dialog.*
 
 ## Code Editor Shortcuts
 
@@ -93,6 +96,5 @@ layout: help
 
 ## Next Steps
 
-- [Explore features](/help/mas/features) - See what CodeFrog can do
 - [Troubleshooting](/help/mas/troubleshooting) - Find solutions to common issues
 
