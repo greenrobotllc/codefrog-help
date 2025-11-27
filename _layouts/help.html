@@ -54,6 +54,16 @@
 
   <footer>
     <p>&copy; 2025 CodeFrog. All rights reserved.</p>
+    <p class="build-info">
+      <small>
+        Built: {{ site.time | date: "%B %d, %Y at %H:%M UTC" }}
+        {% if site.github.build_revision %}
+          | Commit: <a href="https://github.com/{{ site.github.repository_nwo }}/commit/{{ site.github.build_revision }}" target="_blank" rel="noopener">{{ site.github.build_revision | truncate: 7 }}</a>
+        {% elsif jekyll.environment == "production" %}
+          | Version: {{ site.time | date: "%Y%m%d-%H%M%S" }}
+        {% endif %}
+      </small>
+    </p>
   </footer>
 
   <script src="https://unpkg.com/lunr@2.3.9/lunr.min.js" integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli" crossorigin="anonymous"></script>

@@ -27,12 +27,19 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
 
+# GitHub Pages metadata (for build info)
+github: [metadata]
+
 # Defaults
 defaults:
   - scope:
       path: "help"
     values:
       layout: help
+
+# Include .well-known directory (for security.txt, etc.)
+include:
+  - .well-known
 
 # Exclude files from processing
 exclude:

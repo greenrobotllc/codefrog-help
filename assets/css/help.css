@@ -331,6 +331,21 @@ footer {
   margin-top: 3rem;
 }
 
+footer .build-info {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  opacity: 0.8;
+}
+
+footer .build-info a {
+  color: #86868b;
+  text-decoration: underline;
+}
+
+footer .build-info a:hover {
+  color: #a6b1c2;
+}
+
 a {
   color: var(--help-link);
   text-decoration: underline;
