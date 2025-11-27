@@ -347,12 +347,26 @@ footer .build-info a:hover {
 }
 
 a {
-  color: var(--help-link);
+  color: #0051a5;
   text-decoration: underline;
 }
 
 a:hover {
-  opacity: 0.8;
+  color: #003d7a;
+  opacity: 1;
+}
+
+/* Ensure anchor links in content have good contrast */
+.content a {
+  color: #0051a5;
+}
+
+.content a:hover {
+  color: #003d7a;
+}
+
+.content a:visited {
+  color: #0051a5;
 }
 
 /* Responsive Design */
@@ -456,6 +470,18 @@ a:hover {
   
   a:hover {
     color: #7dd3fc;
+  }
+  
+  .content a {
+    color: #5ac8fa;
+  }
+  
+  .content a:hover {
+    color: #7dd3fc;
+  }
+  
+  .content a:visited {
+    color: #5ac8fa;
   }
   
   .help-nav a {

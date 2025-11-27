@@ -1,9 +1,9 @@
 title: CodeFrog Help
 url: https://help.codefrog.app
 baseurl: ""
-description: "Complete help documentation for CodeFrog - your comprehensive code analysis and security testing tool. Learn about features, workflows, keyboard shortcuts, and advanced capabilities."
+description: "Complete help documentation for CodeFrog - code analysis and security testing tool. Features, workflows, shortcuts, and advanced capabilities."
 logo: /assets/images/codefrog-1024-transparent.png
-image: /assets/images/codefrog-1024-transparent.png
+image: /assets/images/codefrog_og_image.png
 twitter:
   username: codefrog
   card: summary_large_image
