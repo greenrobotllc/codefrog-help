@@ -49,7 +49,7 @@ body {
   margin: 0;
 }
 
-.help-header h1 {
+.help-header .header-title {
   font-size: 1.25rem;
   font-weight: 600;
   margin: 0;
@@ -171,7 +171,7 @@ body {
 }
 
 .help-nav a {
-  color: var(--help-link);
+  color: #0051a5;
   text-decoration: none;
   padding: 0.4rem 0.5rem;
   border-radius: 4px;
@@ -182,13 +182,13 @@ body {
 }
 
 .help-nav a:hover {
-  background: var(--help-link);
+  background: #0051a5;
   color: white;
   text-decoration: none;
 }
 
 .help-nav a.active {
-  background: var(--help-link);
+  background: #0051a5;
   color: white;
   font-weight: 600;
   text-decoration: none;
@@ -436,25 +436,25 @@ a:hover {
   }
   
   a, a:visited {
-    color: #0066D6;
+    color: #5ac8fa;
   }
   
   a:hover {
-    color: #0052B3;
+    color: #7dd3fc;
   }
   
   .help-nav a {
-    color: #0066D6;
+    color: #5ac8fa;
   }
 
   .help-nav a:hover {
-    background: #0066D6;
-    color: white;
+    background: #5ac8fa;
+    color: #1d1d1f;
   }
 
   .help-nav a.active {
-    background: #0066D6;
-    color: white;
+    background: #5ac8fa;
+    color: #1d1d1f;
   }
   
   footer {

@@ -1,6 +1,25 @@
 title: CodeFrog Help
 url: https://help.codefrog.app
 baseurl: ""
+description: "Complete help documentation for CodeFrog - your comprehensive code analysis and security testing tool. Learn about features, workflows, keyboard shortcuts, and advanced capabilities."
+logo: /assets/images/codefrog-1024-transparent.png
+image: /assets/images/codefrog-1024-transparent.png
+twitter:
+  username: codefrog
+  card: summary_large_image
+
+# Markdown processor configuration
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  entity_output: as_char
+  toc_levels: 1..6
+  auto_ids: true
+  footnote_nr: 1
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    disable: false
 
 # GitHub Pages plugins
 plugins:
