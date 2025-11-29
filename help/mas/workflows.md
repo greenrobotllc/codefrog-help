@@ -88,7 +88,14 @@ Connect to remote servers via SSH to work with projects hosted on cloud instance
 ### What You Can Do
 
 - **SSH Terminal:** Full terminal access to the remote server
-- **File Browser:** Browse and edit files via SFTP
+- **File Browser:** Browse and edit files via SFTP with comprehensive file management:
+  - Upload files and folders (drag and drop or file picker)
+  - Download files and folders (recursive directory downloads)
+  - Delete files and folders (with recursive directory deletion)
+  - Move and rename files and folders
+  - Copy files and folders (recursive for directories)
+  - Create new files and directories
+  - View file properties (size, permissions, modified time)
 - **GitHub Integration:** Import pull request comments and issues from the GitHub API for bulk import into your AI agent of choice
 - **Remote Builds:** Build and run projects using server resources
 - **Server Admin:** Manage server settings, disk monitoring, etc.

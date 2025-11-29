@@ -24,5 +24,6 @@ layout: help
 ## Next Steps
 
 - Try [Remote Development](/help/mas/workflows#remote-workflow) for server-based projects.
+- Learn about [Security Scanning](/help/mas/security) and [Security Headers](/help/mas/security-headers) to secure your applications.
 - See [Troubleshooting](/help/mas/troubleshooting) if you hit issues.
 

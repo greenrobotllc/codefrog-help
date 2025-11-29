@@ -10,17 +10,21 @@ layout: help
 
 CodeFrog provides a comprehensive suite of development and testing tools. This guide gives you an overview of all available tools and how to access them.
 
-## Server Management
+## Server Management & File Operations
 
 **Access**: Welcome screen → **Manage Servers** or Navigation → **Servers**
 
-Connect to and monitor remote servers via SSH:
+Connect to and monitor remote servers via SSH with comprehensive SFTP file management:
 
 - **SSH Connections**: Secure connections using RSA 4096-bit keys
 - **Real-time Monitoring**: CPU, RAM, and disk usage tracking
 - **Terminal Access**: Persistent terminal sessions
 - **Connection Pooling**: Efficient connection management
 - **Server Health**: Monitor connection status and health
+- **File Upload**: Upload files and folders to remote servers (drag and drop or file picker)
+- **File Download**: Download files and folders from remote servers (recursive directory downloads)
+- **File Operations**: Delete, move, copy, and rename files and folders on remote servers
+- **Directory Management**: Create directories, browse remote file systems, view file properties
 
 ### Use Cases
 
@@ -28,6 +32,10 @@ Connect to and monitor remote servers via SSH:
 - Execute commands remotely
 - Manage remote servers
 - Debug production issues
+- Upload application files and assets to production servers
+- Download logs and configuration files
+- Organize and manage remote file structures
+- Sync files between local and remote environments
 
 ## Web Testing
 
@@ -75,7 +83,7 @@ Scan multiple domains concurrently for security vulnerabilities:
 - Security compliance checking
 - Regular security monitoring
 
-> **Important**: Only scan systems you own or have explicit authorization to test. Unauthorized scanning may violate laws and terms of service.
+> **Important**: Only scan systems you own or have explicit authorization to test. See our [Security Scanning Policy](/help/mas/security-scanning-policy) for details.
 
 See [Security Scanning](/help/mas/security) for detailed security guidance.
 

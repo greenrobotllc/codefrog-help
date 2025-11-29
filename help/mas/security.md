@@ -28,6 +28,28 @@ CodeFrog integrates with Gitleaks for comprehensive secrets detection. See the [
 - Adding custom exclusions
 - Exporting and acting on results
 
+## Security Headers
+
+Security headers are HTTP response headers that instruct browsers how to handle your website's content. They provide defense-in-depth protection against common web vulnerabilities.
+
+CodeFrog checks for the presence and proper configuration of security headers including:
+
+- **HSTS (Strict-Transport-Security):** Enforces HTTPS connections to prevent MITM attacks
+- **X-Content-Type-Options: nosniff:** Prevents MIME-sniffing and content type confusion attacks
+- **Referrer-Policy:** Controls referrer information leakage to third-party sites
+- **X-Frame-Options / CSP frame-ancestors:** Prevents clickjacking attacks
+- **Content-Security-Policy (CSP):** Restricts resource loading sources to reduce XSS impact
+- **Permissions-Policy:** Controls browser feature access (camera, microphone, geolocation, etc.)
+- **Cross-Origin-Opener-Policy (COOP):** Isolates browsing context from cross-origin windows
+- **Cross-Origin-Embedder-Policy (COEP):** Requires cross-origin resources to opt in to embedding
+- **Cookie Security Flags:** Secure, HttpOnly, and SameSite flags to prevent cookie theft and CSRF
+
+Without security headers, your site relies on default browser behavior, which is often permissive and can leave you vulnerable to XSS, clickjacking, MITM attacks, and information leakage.
+
+For detailed information about each header, what it prevents, and how to configure it, see the [Security Headers: Why They Matter](/help/mas/security-headers) guide.
+
+See also the [What We Check](https://codefrog.app/what-we-check) page for a complete list of all security checks performed by CodeFrog.
+
 ## Vulnerability Coverage
 
 The security scanner checks for:

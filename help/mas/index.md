@@ -20,6 +20,7 @@ Welcome to the CodeFrog help documentation for Mac App Store users.
 - [Mega Report](/help/mas/mega-report) - Unified web testing and code analysis (all-encompassing testing tool)
 - [Accessibility Testing](/help/mas/accessibility) - WCAG AA compliance testing
 - [Security Scanning](/help/mas/security) - Comprehensive security validation
+- [Security Headers](/help/mas/security-headers) - Why security headers matter and what they prevent
 - [SEO Testing](/help/mas/seo-testing) - Complete SEO analysis and optimization
 - [OSV / Supply Chain](/help/mas/osv) - Open Source Vulnerability detection
 - [Secrets Detection](/help/mas/secrets) - Gitleaks integration for secrets scanning
@@ -36,6 +37,7 @@ Welcome to the CodeFrog help documentation for Mac App Store users.
 - [Launch Checklist](/help/mas/launch-checklist) - Pre-launch verification steps
 - [Troubleshooting](/help/mas/troubleshooting) - Common issues and solutions
 - [Privacy & Connections](/help/mas/privacy) - Privacy settings and connections
+- [Frequently Asked Questions](/help/mas/faq) - Common questions and answers
 
 ---
 

@@ -325,25 +325,33 @@ pre code {
 
 footer {
   background: #1d1d1f;
-  color: #86868b;
+  color: #a6b1c2; /* Improved contrast: 4.5:1 ratio on #1d1d1f */
   text-align: center;
   padding: 2rem;
   margin-top: 3rem;
 }
 
+footer p {
+  color: #a6b1c2; /* Override paragraph color for better contrast */
+}
+
+footer small {
+  color: #a6b1c2; /* Ensure small text has good contrast */
+}
+
 footer .build-info {
   margin-top: 0.5rem;
   font-size: 0.875rem;
-  opacity: 0.8;
+  color: #a6b1c2; /* Ensure build info has good contrast */
 }
 
 footer .build-info a {
-  color: #86868b;
+  color: #a6b1c2;
   text-decoration: underline;
 }
 
 footer .build-info a:hover {
-  color: #a6b1c2;
+  color: #c7d2e3; /* Lighter on hover for better visibility */
 }
 
 a {
@@ -354,19 +362,6 @@ a {
 a:hover {
   color: #003d7a;
   opacity: 1;
-}
-
-/* Ensure anchor links in content have good contrast */
-.content a {
-  color: #0051a5;
-}
-
-.content a:hover {
-  color: #003d7a;
-}
-
-.content a:visited {
-  color: #0051a5;
 }
 
 /* Responsive Design */

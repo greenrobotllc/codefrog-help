@@ -39,10 +39,12 @@ See [Accessibility Testing](/help/mas/accessibility) for detailed guidance.
 ### Security Testing
 
 - **OWASP-based Checks**: Industry-standard security validation
-- **Security Headers**: Validates security headers (CSP, HSTS, X-Frame-Options, etc.)
+- **Security Headers**: Validates security headers (CSP, HSTS, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy, COOP, COEP, and cookie security flags) to prevent XSS, clickjacking, MITM attacks, and information leakage
 - **SSL/TLS Configuration**: Checks certificate validity and configuration
 - **Vulnerability Detection**: Identifies common security issues
 - **Severity Classification**: Findings categorized by severity (Critical, High, Medium, Low, Info)
+
+Security headers provide defense-in-depth protection by instructing browsers how to handle your site's content. Missing or misconfigured headers leave your site vulnerable to common attacks. See [Security Headers: Why They Matter](/help/mas/security-headers) for detailed information about each header and what it prevents.
 
 See [Security Scanning](/help/mas/security) for detailed security guidance.
 
@@ -176,11 +178,55 @@ Findings are categorized by severity:
 
 ### Health Score
 
-The report includes an overall health score that aggregates all findings:
+The report includes an overall health score (A through F) that aggregates findings from all test sections. The grade provides a quick visual assessment of your project's overall health.
 
-- **Calculation**: Based on severity and count of findings
-- **Trend Tracking**: Compare scores across multiple reports
-- **Quick Assessment**: Get a quick sense of overall project health
+#### How Grades Are Calculated
+
+The grade is calculated based on the total count of findings across all sections (accessibility, security, SEO, HTML validation, secrets detection, OSV vulnerabilities, and static analysis). The calculation uses the following thresholds:
+
+- **F**: Any critical findings (1 or more critical issues)
+- **D**: More than 5 high severity findings (6+ high issues)
+- **C**: Any high findings OR more than 10 medium findings (1+ high OR 11+ medium)
+- **B**: Any medium findings OR more than 20 low findings (1+ medium OR 21+ low)
+- **A**: No critical, no high, no medium, and low ≤ 20
+
+**Examples:**
+- 1 critical finding = **F** (regardless of other findings)
+- 6 high findings = **D**
+- 1 high finding = **C**
+- 11 medium findings (no high) = **C**
+- 1 medium finding (no high) = **B**
+- 21 low findings (no medium, no high) = **B**
+- 0 critical, 0 high, 0 medium, 5 low = **A**
+
+**Important Note on Info Findings:**
+- Info findings are counted and displayed in reports
+- Most info findings do **NOT** directly affect the A-F grade calculation (the calculation only checks critical, high, medium, and low)
+- **Exception: OSV (supply chain) info-level findings are treated as high severity for grade calculation** - OSV vulnerabilities are real security issues and should affect the grade
+- Any OSV findings (including info) cause that section to fail
+- Always review info findings, especially from OSV scans
+
+#### Understanding Your Grade
+
+- **A (Excellent)**: No critical, high, or medium issues; low issues ≤ 20. Your project is in excellent shape.
+- **B (Good)**: Some medium issues or low issues > 20. Good overall, but improvements can be made.
+- **C (Needs Improvement)**: High issues present OR medium issues > 10. Significant issues need attention.
+- **D (Poor)**: High issues > 5. Multiple high-priority issues require immediate attention.
+- **F (Critical)**: Any critical findings present. Critical security or functionality issues must be addressed immediately.
+
+#### Improving Your Grade
+
+1. **Prioritize by Severity**: Start with critical and high issues first
+2. **Fix Critical Issues**: Any critical finding results in an F grade
+3. **Address High Issues**: More than 5 high issues drops you to D; any high issues drop you to C
+4. **Reduce Medium Issues**: More than 10 medium issues drops you to C
+5. **Manage Low Issues**: More than 20 low issues drops you to B
+6. **Address OSV Findings**: OSV info-level findings are treated as high severity and will affect your grade
+7. **Re-run Report**: After fixing issues, generate a new report to see your improved grade
+
+#### Trend Tracking
+
+Compare grades across multiple reports to track improvement over time. A grade that improves from F → D → C → B → A shows clear progress in addressing issues.
 
 ## Exporting Reports
 

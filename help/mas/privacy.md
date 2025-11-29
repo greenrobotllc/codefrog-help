@@ -64,6 +64,36 @@ CodeFrog is designed with privacy in mind. This page explains what external serv
 **Setup:** Completely optional. You configure your own SendGrid API key.  
 **When:** Only if you set up disk monitoring with SendGrid notifications
 
+## Web Testing User-Agent
+
+**What User-Agent does CodeFrog use?**
+
+When CodeFrog performs web testing (HTML validation, meta tags analysis, SEO testing, etc.), it identifies itself transparently using the following User-Agent string:
+
+```
+CodeFrog/1.0.0 (Web Testing Tool; +https://codefrog.app)
+```
+
+**Why this User-Agent?**
+
+- **Transparency:** CodeFrog honestly identifies itself as an automated testing tool rather than impersonating a browser
+- **Ethical:** This approach respects website terms of service and bot detection policies
+- **Professional:** Follows web standards for tool identification (the `+https://` format provides contact information)
+- **Maintainable:** Automatically uses the current app version from AppConfig
+
+**What if a site blocks automated tools?**
+
+Some websites (like Microsoft.com) may block automated testing tools. This is their choice and CodeFrog respects it. When a request is blocked, you'll see a clear error message like "Request was blocked by the server" with the HTTP status code.
+
+**Can I customize the User-Agent?**
+
+Yes! You can provide a custom User-Agent string in the Web Testing options. This is useful for:
+- Testing sites that require specific User-Agent strings
+- Debugging bot detection issues
+- Testing with different browser identifiers
+
+**Note:** Using a browser-like User-Agent to bypass bot detection may violate some websites' terms of service. CodeFrog's default transparent identification is the recommended approach.
+
 ## AI Features & Internet Requirements
 
 **Current Status:**

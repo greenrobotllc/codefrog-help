@@ -40,6 +40,10 @@ This is the authoritative, comprehensive list of all CodeFrog features. Use this
 ## Advanced Features
 
 - [Accessibility Testing](/help/mas/accessibility) - WCAG AA compliance testing
+- [Getting Started with Accessibility](/help/mas/getting-started-accessibility) - Quick start guide for accessibility testing
+- [Why Accessibility Matters](/help/mas/why-accessibility-matters) - Understanding the importance of accessibility for disabled users and screen readers
+- [Accessibility Best Practices](/help/mas/accessibility-best-practices) - Best practices for accessibility and HTML validation
+- [Benefits of Valid HTML and Accessibility](/help/mas/benefits-valid-html-accessibility) - SEO, performance, and user experience benefits
 - [Security Scanning](/help/mas/security) - Comprehensive security validation
 - [Mega Report](/help/mas/mega-report) - Unified web testing and code analysis report
 - [SEO Testing](/help/mas/seo-testing) - Complete SEO analysis and optimization
