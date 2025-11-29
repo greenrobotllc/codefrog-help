@@ -50,7 +50,7 @@ This workflow helps you use Cursor or other AI coding agents to fix code review 
 4. **Handle major problems first:**
    - Fix each major/complex problem individually
    - Test thoroughly
-   - Commit separately with clear messages
+   - Use [GitHub Desktop](https://desktop.github.com/) or your Git client to commit separately with clear messages
 
 ### 2. Prepare Issue List (Straightforward Issues Only)
 
@@ -137,7 +137,7 @@ After AI makes fixes:
 
 ### 6. Commit Strategy
 
-Commit changes in logical chunks:
+Use [GitHub Desktop](https://desktop.github.com/) or your Git client to commit changes in logical chunks:
 
 1. **One File Per Commit:**
    - Commit all fixes in one file together

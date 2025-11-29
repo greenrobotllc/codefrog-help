@@ -10,6 +10,7 @@ Welcome to the CodeFrog help documentation for Mac App Store users.
 ## Getting Started
 
 - [Getting Started Guide](/help/mas/getting-started) - Quick start guide for new users
+- [macOS Setup Guide](/help/mas/macos-setup) - Enable Remote Login and Full Disk Access on macOS
 - [Tips for New Users](/help/mas/tips) - Platform-specific tips and AI assistant guidance
 - [Project Workflows](/help/mas/workflows) - Learn about local and remote development
 - [Keyboard Shortcuts](/help/mas/shortcuts) - Master CodeFrog's keyboard shortcuts
@@ -27,6 +28,7 @@ Welcome to the CodeFrog help documentation for Mac App Store users.
 
 ## AI & Automation
 
+- [GitHub Integration](/help/mas/github) - View PRs, import comments as markdown for AI agents
 - [CodeRabbit + Augment Workflow](/help/mas/ai-coder-coderabbit-augment) - Automated code review workflow
 - [Handling PRs with Many Comments](/help/mas/handling-pr-comments) - Efficiently process large code reviews
 - [Cursor / Other AI Agents](/help/mas/ai-coder-cursor) - Using Cursor and other AI tools

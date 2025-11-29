@@ -50,7 +50,7 @@ This workflow helps you efficiently handle code review feedback from CodeRabbit 
 4. **Handle major issues first:**
    - Fix each major/complex issue individually
    - Test thoroughly
-   - Commit separately with clear messages
+   - Use [GitHub Desktop](https://desktop.github.com/) or your Git client to commit separately with clear messages
 
 ### 2. Import PR Comments to Tasks and Export to Markdown
 
@@ -156,7 +156,7 @@ After fixing issues:
    - **Note:** CodeFrog does not automatically close tickets or mark PR comments as done
 
 3. **CodeRabbit Resolution Tracking:**
-   - Push changes to PR
+   - Use [GitHub Desktop](https://desktop.github.com/) or your Git client to push changes to PR
    - CodeRabbit AI automatically verifies your fixes when you commit
    - CodeRabbit marks PR comments as resolved once your changes are committed
    - Let CodeRabbit re-review to verify all issues are resolved
@@ -201,7 +201,7 @@ Issue: Potential null pointer when user not found
 3. Use Augment to fix all issues
 4. Test changes
 5. Mark all tasks complete (or delete completed tickets as an alternative)
-6. Commit with message: "Fix CodeRabbit issues in UserService.java"
+6. Use [GitHub Desktop](https://desktop.github.com/) or your Git client to commit with message: "Fix CodeRabbit issues in UserService.java"
 
 ## Task and Comment Resolution
 

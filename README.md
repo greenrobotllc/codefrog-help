@@ -136,6 +136,46 @@ The site is configured for `help.codefrog.app`:
 - **Update Layout:** Edit `_layouts/help.html`
 - **Add Pages:** Create new Markdown files in `help/`
 
+### Link Checking
+
+Use the link checker script to validate all internal links in the help documentation:
+
+```bash
+cd landing-page/help-docs
+python3 scripts/check_links.py
+```
+
+The script will:
+- Scan all `.md` files in the `help/` directory
+- Extract internal links matching `/help/mas/...` or `/help/direct/...`
+- Check if corresponding `.md` files exist
+- Report broken links with file location and line number
+- Display summary statistics (total, valid, broken, external links)
+
+**Exit codes:**
+- `0` - All internal links are valid
+- `1` - Broken links found (see output for details)
+
+**Example output:**
+```
+Checking links in help documentation...
+Help directory: /path/to/help
+
+========================================
+Link Check Results
+========================================
+Total links found: 178
+Valid internal links: 135
+Broken internal links: 8
+External/other links: 35
+
+Broken Links:
+========================================
+✗ mas/getting-started.md:19: [macOS Setup Guide](/help/mas/macos-setup) -> Expected: ...
+```
+
+This helps catch broken links before deployment and ensures all documentation links are valid.
+
 ## Resources
 
 - [Jekyll Documentation](https://jekyllrb.com/docs/)

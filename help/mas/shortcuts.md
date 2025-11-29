@@ -78,14 +78,13 @@ layout: help
 | `⌘V` | Paste |
 | `⌘/` | Toggle Comment |
 
-## Git & Changes Shortcuts
+## Changes View Shortcuts
 
 | Shortcut | Action |
 |----------|--------|
-| `⌘⇧C` | Commit Changes |
-| `⌘⇧P` | Push to Remote |
-| `⌘⇧L` | Pull from Remote |
 | `⌘R` | Refresh Changes View |
+
+**Note:** CodeFrog does not support git operations (commit, push, pull). Use [GitHub Desktop](https://desktop.github.com/) or your preferred Git client for version control operations.
 
 ## Keyboard Shortcut Tips
 

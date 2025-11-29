@@ -133,20 +133,22 @@ See [OSV / Supply Chain](/help/mas/osv) and [Secrets Detection](/help/mas/secret
 
 **Access**: Navigation → **GitHub** (requires open project)
 
-GitHub workflow automation and management:
+GitHub integration for viewing and importing PR comments and issues:
 
-- **PR Comments**: View pull request comments with AI summaries
-- **Task Import**: Import PR feedback as markdown task lists
-- **Task Export**: Export tasks to Augment Code's task manager
-- **Comment Management**: Resolve/unresolve comments directly from the app
-- **Issue Tracking**: View and manage GitHub issues
+- **PR Viewing**: View pull requests and comments
+- **PR Comment Import**: Import PR comments as markdown for AI agents (Cursor, Augment, etc.)
+- **Issue Viewing**: View GitHub issues
+- **Issue Import**: Import issues as markdown
+- **AI Summaries**: Automatic summaries for PR comments
+
+**Note:** CodeFrog does NOT support git operations (commit, push, pull, diff viewing, branch detection). Use [GitHub Desktop](https://desktop.github.com/) or your preferred Git client for version control.
 
 ### Use Cases
 
-- Code review automation
-- PR feedback management
-- Issue tracking
-- Task organization
+- Import PR comments for AI coding assistants
+- Bulk process code review feedback
+- View and import GitHub issues
+- Streamline code review workflows
 
 ## Quick Access
 

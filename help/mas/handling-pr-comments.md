@@ -43,7 +43,7 @@ Before importing anything, manually review all PR comments to identify issues th
 3. **Handle Critical Issues First:**
    - Fix each critical issue individually
    - Test thoroughly after each fix
-   - Commit separately with clear commit messages
+   - Use [GitHub Desktop](https://desktop.github.com/) or your Git client to commit separately with clear commit messages
    - Mark as resolved in GitHub if applicable
 
 4. **Note Simple/Routine Issues:**
@@ -139,7 +139,7 @@ When pasting into AI agents:
    - Review all 150 comments
    - Identify 15 critical issues (security, architecture)
    - Fix 15 critical issues individually
-   - Commit each fix separately
+   - Use your Git client to commit each fix separately
 
 2. **Bulk Import (5 minutes):**
    - Import remaining 135 comments via GitHub tab
@@ -178,7 +178,7 @@ When pasting into AI agents:
 
 - **Always Review**: Even AI-generated fixes need human review
 - **Test Everything**: Test all changes, especially bulk-processed ones
-- **Commit Strategically**: Group related fixes in single commits
+- **Commit Strategically**: Use your Git client to group related fixes in single commits
 - **Document Decisions**: Add comments explaining non-obvious fixes
 
 ## Troubleshooting

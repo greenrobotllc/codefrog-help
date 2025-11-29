@@ -36,7 +36,7 @@ Work with files and folders directly on your Mac. This is the fastest and most s
 ### What You Can Do
 
 - **File Browser:** Browse, edit, create, and delete files
-- **GitHub Integration:** Import pull request comments and issues from the GitHub API for bulk import into your AI agent of choice
+- **GitHub Integration:** View pull requests, import PR comments as markdown, and view/import GitHub issues (no git operations - use GitHub Desktop for version control)
 - **Code Validation:** Run security scans and code analysis
 - **Web Testing:** Test HTML files in your browser
 
@@ -96,7 +96,7 @@ Connect to remote servers via SSH to work with projects hosted on cloud instance
   - Copy files and folders (recursive for directories)
   - Create new files and directories
   - View file properties (size, permissions, modified time)
-- **GitHub Integration:** Import pull request comments and issues from the GitHub API for bulk import into your AI agent of choice
+- **GitHub Integration:** View pull requests, import PR comments as markdown, and view/import GitHub issues (no git operations - use GitHub Desktop for version control)
 - **Remote Builds:** Build and run projects using server resources
 - **Server Admin:** Manage server settings, disk monitoring, etc.
 

@@ -36,14 +36,13 @@ categories:
       - "Static analysis integration"
       - "Linting support"
   
-  - name: Git Integration
-    description: "Git and GitHub workflow tools"
+  - name: GitHub Integration
+    description: "GitHub workflow tools for PR comments and issues"
     items:
-      - "Visual diff viewer"
-      - "GitHub PR comments import"
-      - "Change management"
-      - "Commit, push, pull operations"
-      - "Branch management"
+      - "GitHub PR comments import (as markdown for AI agents)"
+      - "GitHub issues viewing and import"
+      - "Device Flow OAuth authentication"
+      - "AI-powered comment summaries"
   
   - name: Development Workflows
     description: "Local and remote development support"
