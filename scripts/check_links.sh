@@ -46,7 +46,10 @@ find "$HELP_DIR" -name "*.md" -type f | while IFS= read -r file; do
         
         # Extract all markdown links from the line using grep
         # Pattern: [text](url)
-        echo "$line" | grep -oE '\[([^\]]+)\]\(([^)]+)\)' | while IFS= read -r link_match; do
+        # Capture output first to avoid grep exit code 1 aborting the script
+        link_matches=$(echo "$line" | grep -oE '\[([^\]]+)\]\(([^)]+)\)' || true)
+        if [ -n "$link_matches" ]; then
+            echo "$link_matches" | while IFS= read -r link_match; do
             # Extract link text and URL
             link_text=$(echo "$link_match" | sed -E 's/\[([^\]]+)\]\([^)]+\)/\1/')
             link_url=$(echo "$link_match" | sed -E 's/\[[^\]]+\]\(([^)]+)\)/\1/')
@@ -59,14 +62,17 @@ find "$HELP_DIR" -name "*.md" -type f | while IFS= read -r file; do
             ((total++))
             
             # Check if it's an internal help link
-            if echo "$link_url" | grep -qE '^/help/(mas|direct)/'; then
+            # Pattern matches both /help/mas/ and /help/mas (with or without trailing slash)
+            if echo "$link_url" | grep -qE '^/help/(mas|direct)(/|$)'; then
                 # Extract section (mas or direct)
-                if echo "$link_url" | grep -qE '^/help/mas/'; then
+                if echo "$link_url" | grep -qE '^/help/mas'; then
                     section="mas"
-                    page_with_anchor=$(echo "$link_url" | sed -E 's|^/help/mas/||')
+                    # Remove /help/mas/ or /help/mas prefix, handling both cases
+                    page_with_anchor=$(echo "$link_url" | sed -E 's|^/help/mas/?||')
                 else
                     section="direct"
-                    page_with_anchor=$(echo "$link_url" | sed -E 's|^/help/direct/||')
+                    # Remove /help/direct/ or /help/direct prefix, handling both cases
+                    page_with_anchor=$(echo "$link_url" | sed -E 's|^/help/direct/?||')
                 fi
                 
                 # Remove anchor if present (everything after #)
@@ -74,6 +80,11 @@ find "$HELP_DIR" -name "*.md" -type f | while IFS= read -r file; do
                 
                 # Remove trailing slash
                 page_path="${page_path%/}"
+                
+                # If page_path is empty, treat it as "index"
+                if [ -z "$page_path" ]; then
+                    page_path="index"
+                fi
                 
                 # Check if file exists
                 expected_file="$HELP_DIR/$section/$page_path.md"
@@ -103,7 +114,8 @@ find "$HELP_DIR" -name "*.md" -type f | while IFS= read -r file; do
             
             # Write updated counts back
             echo "$total $valid $broken $external" > "$TEMP_COUNTS"
-        done
+            done
+        fi
     done < "$file"
 done
 

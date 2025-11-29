@@ -9,7 +9,7 @@ import os
 import re
 import sys
 from pathlib import Path
-from typing import List, Tuple
+from typing import List, Tuple, Optional
 
 # Colors for output
 RED = '\033[0;31m'
@@ -41,12 +41,14 @@ def extract_links(content: str) -> List[Tuple[str, str]]:
 
 def is_internal_help_link(url: str) -> bool:
     """Check if URL is an internal help documentation link."""
-    return bool(re.match(r'^/help/(mas|direct)/', url))
+    # Match both /help/mas/ and /help/mas (with or without trailing slash)
+    return bool(re.match(r'^/help/(mas|direct)(/|$)', url))
 
-def get_expected_file_path(help_dir: Path, url: str) -> Path:
+def get_expected_file_path(help_dir: Path, url: str) -> Optional[Path]:
     """Get the expected file path for an internal help link."""
-    # Extract section and page path
-    match = re.match(r'^/help/(mas|direct)/(.+)$', url)
+    # Extract section and page path (page path can be empty for section-root URLs)
+    # Pattern handles both /help/mas/ and /help/mas (with or without trailing slash)
+    match = re.match(r'^/help/(mas|direct)/?(.*)$', url)
     if not match:
         return None
     
@@ -58,6 +60,10 @@ def get_expected_file_path(help_dir: Path, url: str) -> Path:
     
     # Remove trailing slash
     page_path = page_path.rstrip('/')
+    
+    # If page_path is empty, treat it as "index"
+    if not page_path:
+        page_path = "index"
     
     # Build expected file path
     expected_file = help_dir / section / f"{page_path}.md"

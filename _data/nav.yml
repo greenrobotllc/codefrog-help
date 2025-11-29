@@ -1,0 +1,145 @@
+items:
+  - title: "Complete Feature List"
+    url: "/help/"
+    match_paths:
+      - "/help/"
+      - "/help/index.html"
+  
+  - title: "Mac App Store Help"
+    url: "/help/mas/"
+    match_paths:
+      - "/help/mas/"
+      - "/help/mas/index.html"
+  
+  - title: "Getting Started"
+    url: "/help/mas/getting-started"
+    match_paths:
+      - "/help/mas/getting-started/"
+      - "/help/mas/getting-started.html"
+  
+  - title: "macOS Setup"
+    url: "/help/mas/macos-setup"
+    match_paths:
+      - "/help/mas/macos-setup/"
+      - "/help/mas/macos-setup.html"
+  
+  - title: "Tips for New Users"
+    url: "/help/mas/tips"
+    match_paths:
+      - "/help/mas/tips/"
+      - "/help/mas/tips.html"
+  
+  - title: "Keyboard Shortcuts"
+    url: "/help/mas/shortcuts"
+    match_paths:
+      - "/help/mas/shortcuts/"
+      - "/help/mas/shortcuts.html"
+  
+  - title: "Project Workflows"
+    url: "/help/mas/workflows"
+    match_paths:
+      - "/help/mas/workflows/"
+      - "/help/mas/workflows.html"
+  
+  - title: "Tools Available"
+    url: "/help/mas/tools"
+    match_paths:
+      - "/help/mas/tools/"
+      - "/help/mas/tools.html"
+  
+  - title: "Server Management"
+    url: "/help/mas/server-management"
+    match_paths:
+      - "/help/mas/server-management/"
+      - "/help/mas/server-management.html"
+  
+  - title: "Accessibility"
+    url: "/help/mas/accessibility"
+    match_paths:
+      - "/help/mas/accessibility/"
+      - "/help/mas/accessibility.html"
+  
+  - title: "Security"
+    url: "/help/mas/security"
+    match_paths:
+      - "/help/mas/security/"
+      - "/help/mas/security.html"
+  
+  - title: "SEO Testing"
+    url: "/help/mas/seo-testing"
+    match_paths:
+      - "/help/mas/seo-testing/"
+      - "/help/mas/seo-testing.html"
+  
+  - title: "OSV / Supply Chain"
+    url: "/help/mas/osv"
+    match_paths:
+      - "/help/mas/osv/"
+      - "/help/mas/osv.html"
+  
+  - title: "Secrets / Gitleaks"
+    url: "/help/mas/secrets"
+    match_paths:
+      - "/help/mas/secrets/"
+      - "/help/mas/secrets.html"
+  
+  - title: "Code Analysis"
+    url: "/help/mas/code-analysis"
+    match_paths:
+      - "/help/mas/code-analysis/"
+      - "/help/mas/code-analysis.html"
+  
+  - title: "Mega Report"
+    url: "/help/mas/mega-report"
+    match_paths:
+      - "/help/mas/mega-report/"
+      - "/help/mas/mega-report.html"
+  
+  - title: "Launch Checklist"
+    url: "/help/mas/launch-checklist"
+    match_paths:
+      - "/help/mas/launch-checklist/"
+      - "/help/mas/launch-checklist.html"
+  
+  - title: "GitHub Integration"
+    url: "/help/mas/github"
+    match_paths:
+      - "/help/mas/github/"
+      - "/help/mas/github.html"
+  
+  - title: "AI: CodeRabbit + Augment"
+    url: "/help/mas/ai-coder-coderabbit-augment"
+    match_paths:
+      - "/help/mas/ai-coder-coderabbit-augment/"
+      - "/help/mas/ai-coder-coderabbit-augment.html"
+  
+  - title: "Handling PRs with Many Comments"
+    url: "/help/mas/handling-pr-comments"
+    match_paths:
+      - "/help/mas/handling-pr-comments/"
+      - "/help/mas/handling-pr-comments.html"
+  
+  - title: "AI: Cursor / Other Agents"
+    url: "/help/mas/ai-coder-cursor"
+    match_paths:
+      - "/help/mas/ai-coder-cursor/"
+      - "/help/mas/ai-coder-cursor.html"
+  
+  - title: "Recommended Tools & Integrations"
+    url: "/help/mas/recommended-tools"
+    match_paths:
+      - "/help/mas/recommended-tools/"
+      - "/help/mas/recommended-tools.html"
+  
+  - title: "Troubleshooting"
+    url: "/help/mas/troubleshooting"
+    match_paths:
+      - "/help/mas/troubleshooting/"
+      - "/help/mas/troubleshooting.html"
+  
+  - title: "Privacy & Connections"
+    url: "/help/mas/privacy"
+    match_paths:
+      - "/help/mas/privacy/"
+      - "/help/mas/privacy.html"
+

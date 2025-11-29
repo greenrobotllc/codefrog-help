@@ -1,0 +1,10 @@
+{% for item in site.data.nav.items %}
+  {% assign is_active = false %}
+  {% for match_path in item.match_paths %}
+    {% if page.url == match_path %}
+      {% assign is_active = true %}
+    {% endif %}
+  {% endfor %}
+  <li><a href="{{ item.url | relative_url }}" {% if is_active %}class="active"{% endif %}>{{ item.title }}</a></li>
+{% endfor %}
+

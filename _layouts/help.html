@@ -41,30 +41,7 @@
       <nav class="help-nav">
         <h2>Contents</h2>
         <ul>
-          <li><a href="{{ '/help/' | relative_url }}" {% if page.url == '/help/' or page.url == '/help/index.html' %}class="active"{% endif %}>Complete Feature List</a></li>
-          <li><a href="{{ '/help/mas/' | relative_url }}" {% if page.url == '/help/mas/' or page.url == '/help/mas/index.html' %}class="active"{% endif %}>Mac App Store Help</a></li>
-          <li><a href="{{ '/help/mas/getting-started' | relative_url }}" {% if page.url == '/help/mas/getting-started/' or page.url == '/help/mas/getting-started.html' %}class="active"{% endif %}>Getting Started</a></li>
-          <li><a href="{{ '/help/mas/macos-setup' | relative_url }}" {% if page.url == '/help/mas/macos-setup/' or page.url == '/help/mas/macos-setup.html' %}class="active"{% endif %}>macOS Setup</a></li>
-          <li><a href="{{ '/help/mas/tips' | relative_url }}" {% if page.url == '/help/mas/tips/' or page.url == '/help/mas/tips.html' %}class="active"{% endif %}>Tips for New Users</a></li>
-          <li><a href="{{ '/help/mas/shortcuts' | relative_url }}" {% if page.url == '/help/mas/shortcuts/' or page.url == '/help/mas/shortcuts.html' %}class="active"{% endif %}>Keyboard Shortcuts</a></li>
-          <li><a href="{{ '/help/mas/workflows' | relative_url }}" {% if page.url == '/help/mas/workflows/' or page.url == '/help/mas/workflows.html' %}class="active"{% endif %}>Project Workflows</a></li>
-          <li><a href="{{ '/help/mas/tools' | relative_url }}" {% if page.url == '/help/mas/tools/' or page.url == '/help/mas/tools.html' %}class="active"{% endif %}>Tools Available</a></li>
-          <li><a href="{{ '/help/mas/server-management' | relative_url }}" {% if page.url == '/help/mas/server-management/' or page.url == '/help/mas/server-management.html' %}class="active"{% endif %}>Server Management</a></li>
-          <li><a href="{{ '/help/mas/accessibility' | relative_url }}" {% if page.url == '/help/mas/accessibility/' or page.url == '/help/mas/accessibility.html' %}class="active"{% endif %}>Accessibility</a></li>
-          <li><a href="{{ '/help/mas/security' | relative_url }}" {% if page.url == '/help/mas/security/' or page.url == '/help/mas/security.html' %}class="active"{% endif %}>Security</a></li>
-          <li><a href="{{ '/help/mas/seo-testing' | relative_url }}" {% if page.url == '/help/mas/seo-testing/' or page.url == '/help/mas/seo-testing.html' %}class="active"{% endif %}>SEO Testing</a></li>
-          <li><a href="{{ '/help/mas/osv' | relative_url }}" {% if page.url == '/help/mas/osv/' or page.url == '/help/mas/osv.html' %}class="active"{% endif %}>OSV / Supply Chain</a></li>
-          <li><a href="{{ '/help/mas/secrets' | relative_url }}" {% if page.url == '/help/mas/secrets/' or page.url == '/help/mas/secrets.html' %}class="active"{% endif %}>Secrets / Gitleaks</a></li>
-          <li><a href="{{ '/help/mas/code-analysis' | relative_url }}" {% if page.url == '/help/mas/code-analysis/' or page.url == '/help/mas/code-analysis.html' %}class="active"{% endif %}>Code Analysis</a></li>
-          <li><a href="{{ '/help/mas/mega-report' | relative_url }}" {% if page.url == '/help/mas/mega-report/' or page.url == '/help/mas/mega-report.html' %}class="active"{% endif %}>Mega Report</a></li>
-          <li><a href="{{ '/help/mas/launch-checklist' | relative_url }}" {% if page.url == '/help/mas/launch-checklist/' or page.url == '/help/mas/launch-checklist.html' %}class="active"{% endif %}>Launch Checklist</a></li>
-          <li><a href="{{ '/help/mas/github' | relative_url }}" {% if page.url == '/help/mas/github/' or page.url == '/help/mas/github.html' %}class="active"{% endif %}>GitHub Integration</a></li>
-          <li><a href="{{ '/help/mas/ai-coder-coderabbit-augment' | relative_url }}" {% if page.url == '/help/mas/ai-coder-coderabbit-augment/' or page.url == '/help/mas/ai-coder-coderabbit-augment.html' %}class="active"{% endif %}>AI: CodeRabbit + Augment</a></li>
-          <li><a href="{{ '/help/mas/handling-pr-comments' | relative_url }}" {% if page.url == '/help/mas/handling-pr-comments/' or page.url == '/help/mas/handling-pr-comments.html' %}class="active"{% endif %}>Handling PRs with Many Comments</a></li>
-          <li><a href="{{ '/help/mas/ai-coder-cursor' | relative_url }}" {% if page.url == '/help/mas/ai-coder-cursor/' or page.url == '/help/mas/ai-coder-cursor.html' %}class="active"{% endif %}>AI: Cursor / Other Agents</a></li>
-          <li><a href="{{ '/help/mas/recommended-tools' | relative_url }}" {% if page.url == '/help/mas/recommended-tools/' or page.url == '/help/mas/recommended-tools.html' %}class="active"{% endif %}>Recommended Tools & Integrations</a></li>
-          <li><a href="{{ '/help/mas/troubleshooting' | relative_url }}" {% if page.url == '/help/mas/troubleshooting/' or page.url == '/help/mas/troubleshooting.html' %}class="active"{% endif %}>Troubleshooting</a></li>
-          <li><a href="{{ '/help/mas/privacy' | relative_url }}" {% if page.url == '/help/mas/privacy/' or page.url == '/help/mas/privacy.html' %}class="active"{% endif %}>Privacy & Connections</a></li>
+          {% include nav-list.html %}
         </ul>
       </nav>
     </aside>
@@ -88,7 +65,7 @@
     </p>
   </footer>
 
-  <script src="https://unpkg.com/lunr@2.3.9/lunr.min.js" integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli" crossorigin="anonymous"></script>
+  <script src="{{ '/assets/vendor/lunr/lunr.min.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/lunr-search.js' | relative_url }}"></script>
 </body>
 </html>

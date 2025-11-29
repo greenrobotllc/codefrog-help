@@ -18,7 +18,7 @@ Code Analysis helps you:
 
 ## Accessing Code Analysis
 
-**Access**: Navigation → **Analyze Code** (requires open project)
+**Access**: Navigation → **Analyze** (requires open project)
 
 Code Analysis requires an open project in CodeFrog. You can analyze both local projects and remote projects (via SSH), though local projects provide the best performance and most complete results.
 
@@ -69,7 +69,7 @@ See [Secrets Detection](/help/mas/secrets) for detailed information on secrets s
 
 CodeFrog integrates with the Open Source Vulnerabilities (OSV) database to scan your dependencies:
 
-- **Dependency Scanning**: Automatically detects dependency files (package.json, requirements.txt, etc.)
+- **Dependency Scanning**: Automatically detects dependency files: `pubspec.lock`, `package-lock.json` (v1–v3), `requirements.txt`, and `composer.lock`. The scanner relies on lock files with pinned versions rather than source manifests.
 - **Vulnerability Matching**: Matches dependencies against known vulnerabilities
 - **Remediation Guidance**: Provides information on fixed versions and patches
 
@@ -80,7 +80,7 @@ See [OSV / Supply Chain Security](/help/mas/osv) for detailed information on vul
 ### Basic Analysis
 
 1. **Open Your Project**: Ensure a project is open in CodeFrog
-2. **Navigate to Analyze**: Click **Analyze Code** in the navigation menu
+2. **Navigate to Analyze**: Click **Analyze** in the navigation menu
 3. **Select Analysis Type**: Choose which analyses to run:
    - Line Counting
    - Static Analysis (Semgrep)
