@@ -3,6 +3,8 @@ title: Why Accessibility Matters
 layout: help
 ---
 
+# Why Accessibility Matters
+
 ## The Human Impact
 
 Accessibility testing isn't just about compliance or technical standards—it's about ensuring that your digital products are usable by everyone, including people with disabilities who rely on assistive technologies.

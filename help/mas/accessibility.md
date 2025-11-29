@@ -3,6 +3,8 @@ title: Accessibility Testing
 layout: help
 ---
 
+# Accessibility Testing
+
 ## Overview
 
 CodeFrog includes comprehensive accessibility testing tools designed to help you meet WCAG AA (Web Content Accessibility Guidelines Level AA) standards. These tools help identify and fix accessibility issues before your app or website goes live.

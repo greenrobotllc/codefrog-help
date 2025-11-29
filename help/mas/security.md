@@ -3,6 +3,8 @@ title: Security Testing
 layout: help
 ---
 
+# Security Testing
+
 ## Overview
 
 CodeFrog provides comprehensive security scanning capabilities to help identify vulnerabilities, security misconfigurations, and potential security risks in your codebase.

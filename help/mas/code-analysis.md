@@ -1,5 +1,5 @@
 ---
-title: Code Analysis
+title: Code Analysis Tools and Features
 layout: help
 ---
 

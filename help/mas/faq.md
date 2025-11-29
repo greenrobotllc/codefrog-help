@@ -3,6 +3,8 @@ title: Frequently Asked Questions
 layout: help
 ---
 
+# Frequently Asked Questions
+
 ## Web Testing
 
 ### Why is my web testing request being blocked?

@@ -1,5 +1,5 @@
 ---
-title: Unified Web Testing and Code Analysis - Mega Report
+title: Mega Report - Unified Web Testing & Analysis
 redirect_from:
   - /help/mega-report.php
   - /help/mega-report.php?flavor=mas

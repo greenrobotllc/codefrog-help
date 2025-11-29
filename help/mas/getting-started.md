@@ -6,6 +6,8 @@ redirect_from:
 layout: help
 ---
 
+# Getting Started with CodeFrog
+
 ## Quick Start
 
 1. Open CodeFrog and choose **Run Onboarding** to set preferences.

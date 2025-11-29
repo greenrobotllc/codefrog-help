@@ -1,8 +1,11 @@
+---
 title: Privacy & External Connections
 redirect_from:
   - /help/privacy.php
 layout: help
-----
+---
+
+# Privacy & External Connections
 
 ## Privacy Overview
 

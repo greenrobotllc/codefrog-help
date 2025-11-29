@@ -1,12 +1,12 @@
 ---
-title: How to Handle Pull Requests with Many Code Review Comments
+title: Handling Pull Requests with Many Comments
 redirect_from:
   - /help/handling-pr-comments.php
   - /help/handling-pr-comments.php?flavor=mas
 layout: help
 ---
 
-# How to Handle Pull Requests with Many Code Review Comments
+# Handling Pull Requests with Many Comments
 
 When a pull request receives dozens or hundreds of code review comments (especially from automated tools like CodeRabbit), it can feel overwhelming. CodeFrog provides a streamlined workflow to help you efficiently process and address all feedback.
 

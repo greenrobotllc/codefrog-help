@@ -3,6 +3,8 @@ title: OSV / Supply Chain Security
 layout: help
 ---
 
+# OSV / Supply Chain Security
+
 ## What is OSV?
 
 OSV (Open Source Vulnerabilities) is a distributed vulnerability database that aggregates security advisories from various open source ecosystems. CodeFrog integrates with OSV to help you identify known vulnerabilities in your project dependencies.

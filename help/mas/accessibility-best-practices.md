@@ -3,6 +3,8 @@ title: Accessibility Best Practices
 layout: help
 ---
 
+# Accessibility Best Practices
+
 ## Overview
 
 This guide combines best practices for both accessibility and HTML validation to help you build websites that are usable, standards-compliant, and performant.

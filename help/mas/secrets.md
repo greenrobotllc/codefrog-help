@@ -3,6 +3,8 @@ title: Secrets Detection / Gitleaks
 layout: help
 ---
 
+# Secrets Detection / Gitleaks
+
 ## Why Secrets Detection Matters
 
 Secrets (API keys, passwords, tokens, certificates) accidentally committed to version control are a major security risk:

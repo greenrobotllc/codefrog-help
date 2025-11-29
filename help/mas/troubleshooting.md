@@ -6,6 +6,8 @@ redirect_from:
 layout: help
 ---
 
+# Troubleshooting & FAQ
+
 ## macOS-Specific Issues
 
 ### Cannot Access Local Folder

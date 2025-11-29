@@ -67,6 +67,48 @@
 
   <script src="{{ '/assets/js/lunr.min.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/lunr-search.js' | relative_url }}"></script>
+  <script>
+    // Make scrollable code blocks keyboard accessible
+    (function() {
+      document.addEventListener('DOMContentLoaded', function() {
+        // Find all scrollable pre elements
+        const scrollablePres = document.querySelectorAll('pre');
+        scrollablePres.forEach(function(pre) {
+          // Check if element is scrollable
+          if (pre.scrollWidth > pre.clientWidth || pre.scrollHeight > pre.clientHeight) {
+            // Make it keyboard accessible
+            if (!pre.hasAttribute('tabindex')) {
+              pre.setAttribute('tabindex', '0');
+            }
+            // Add aria-label if missing
+            if (!pre.hasAttribute('aria-label')) {
+              const code = pre.querySelector('code');
+              const lang = code ? code.className.match(/language-(\w+)/) : null;
+              const label = lang ? 'Code block in ' + lang[1] + ' (scrollable)' : 'Scrollable code block';
+              pre.setAttribute('aria-label', label);
+            }
+          }
+        });
+
+        // Add labels to task list checkboxes
+        const taskCheckboxes = document.querySelectorAll('.task-list-item-checkbox');
+        taskCheckboxes.forEach(function(checkbox) {
+          if (!checkbox.hasAttribute('aria-label') && !checkbox.id) {
+            // Get the text content of the parent list item
+            const listItem = checkbox.closest('.task-list-item');
+            if (listItem) {
+              const text = listItem.textContent.trim();
+              // Remove the checkbox text and clean up
+              const label = text.replace(/^\s*\[[ xX]\]\s*/, '').trim();
+              if (label) {
+                checkbox.setAttribute('aria-label', label);
+              }
+            }
+          }
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
 

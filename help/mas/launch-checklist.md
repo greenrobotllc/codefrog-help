@@ -3,6 +3,8 @@ title: Launch Checklist
 layout: help
 ---
 
+# Launch Checklist
+
 ## Overview
 
 This checklist helps ensure your application is ready for launch. Follow these steps to verify accessibility, security, and overall quality before releasing your app or website.

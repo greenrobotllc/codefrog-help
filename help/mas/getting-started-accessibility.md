@@ -3,6 +3,8 @@ title: Getting Started with Accessibility
 layout: help
 ---
 
+# Getting Started with Accessibility
+
 ## Quick Start Guide
 
 This guide will help you get started with accessibility testing in CodeFrog. Follow these steps to begin making your website more accessible.

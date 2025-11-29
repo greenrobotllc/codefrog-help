@@ -3,6 +3,8 @@ title: Benefits of Valid HTML and Accessibility
 layout: help
 ---
 
+# Benefits of Valid HTML and Accessibility
+
 ## Overview
 
 Valid HTML and accessibility features provide numerous benefits beyond just meeting compliance standards. These practices improve your website's performance, user experience, search engine visibility, and technical quality.

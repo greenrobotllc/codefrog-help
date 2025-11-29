@@ -6,6 +6,8 @@ redirect_from:
 layout: help
 ---
 
+# Project Workflows
+
 ## Workflow Overview
 
 CodeFrog on macOS supports two primary development workflows. Choose the one that best fits your project and development style.

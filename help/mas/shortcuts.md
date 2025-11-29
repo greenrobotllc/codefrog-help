@@ -6,6 +6,8 @@ redirect_from:
 layout: help
 ---
 
+# Keyboard Shortcuts
+
 ## Global Shortcuts
 
 | Shortcut | Action |

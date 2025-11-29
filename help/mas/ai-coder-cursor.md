@@ -1,7 +1,9 @@
 ---
-title: AI Code Review Workflow - Cursor / Other Agents
+title: AI Code Review: Cursor & Other Agents
 layout: help
 ---
+
+# AI Code Review: Cursor & Other Agents
 
 ## Overview
 
