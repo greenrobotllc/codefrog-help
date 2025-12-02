@@ -7,7 +7,7 @@ layout: help
 
 ## Overview
 
-CodeFrog includes comprehensive accessibility testing tools designed to help you meet WCAG AA (Web Content Accessibility Guidelines Level AA) standards. These tools help identify and fix accessibility issues before your app or website goes live.
+CodeFrog includes comprehensive accessibility testing tools designed to help you meet WCAG (Web Content Accessibility Guidelines) standards at all three conformance levels: A, AA, and AAA. These tools help identify and fix accessibility issues before your app or website goes live.
 
 ## Purpose
 
@@ -18,7 +18,7 @@ Accessibility testing ensures your application is usable by people with disabili
 - Cognitive impairments (attention disorders, learning disabilities)
 - Hearing impairments (deafness, hard of hearing)
 
-Meeting WCAG AA standards is not just good practice—it's often required by law in many jurisdictions.
+Meeting WCAG standards is not just good practice—it's often required by law in many jurisdictions. Level AA is typically the target for legal compliance, while Level A is the minimum and Level AAA represents enhanced accessibility.
 
 ## How to Run Accessibility Tests
 
@@ -44,13 +44,15 @@ The accessibility scanner will check:
 
 The scanner reports contrast ratios for all text elements:
 
-- **AA Standard:** 4.5:1 for normal text, 3:1 for large text
-- **AAA Standard:** 7:1 for normal text, 4.5:1 for large text
+- **WCAG AA Standard:** 4.5:1 for normal text, 3:1 for large text
+- **WCAG AAA Standard:** 7:1 for normal text, 4.5:1 for large text
 
 Results show:
-- ✅ Pass: Meets or exceeds AA standards
+- ✅ Pass: Meets or exceeds WCAG AA standards
 - ⚠️ Warning: Close to threshold, consider improving
-- ❌ Fail: Below AA standards, must be fixed
+- ❌ Fail: Below WCAG AA standards, must be fixed
+
+CodeFrog tests for both AA and AAA contrast requirements. The WCAG rating in your results shows which level your page passes.
 
 ### Keyboard Navigation
 

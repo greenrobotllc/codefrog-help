@@ -1,9 +1,9 @@
 ---
-title: AI Code Review: CodeRabbit + Augment Code
+title: CodeRabbit + Augment Workflow
 layout: help
 ---
 
-# AI Code Review Workflow - CodeRabbit + Augment Code
+# CodeRabbit + Augment Workflow
 
 ## Overview
 

@@ -202,9 +202,14 @@ The grade is calculated based on the total count of findings across all sections
 **Important Note on Info Findings:**
 - Info findings are counted and displayed in reports
 - Most info findings do **NOT** directly affect the A-F grade calculation (the calculation only checks critical, high, medium, and low)
-- **Exception: OSV (supply chain) info-level findings are treated as high severity for grade calculation** - OSV vulnerabilities are real security issues and should affect the grade
-- Any OSV findings (including info) cause that section to fail
-- Always review info findings, especially from OSV scans
+- **OSV (supply chain) findings are treated as real security issues** and are included in grading. OSV findings are mapped to severity based on CVSS scores:
+  - CVSS ≥ 9.0 → Critical
+  - CVSS ≥ 7.0 → High
+  - CVSS ≥ 4.0 → Medium
+  - CVSS > 0 (but < 4.0) → Low
+  - **OSV entries without CVSS scores (or invalid/≤0 scores) are promoted to High severity** to ensure they are properly prioritized
+- Any OSV findings cause that section to fail
+- Always review OSV findings carefully, as they represent real security vulnerabilities in your dependencies
 
 #### Understanding Your Grade
 
@@ -221,7 +226,7 @@ The grade is calculated based on the total count of findings across all sections
 3. **Address High Issues**: More than 5 high issues drops you to D; any high issues drop you to C
 4. **Reduce Medium Issues**: More than 10 medium issues drops you to C
 5. **Manage Low Issues**: More than 20 low issues drops you to B
-6. **Address OSV Findings**: OSV info-level findings are treated as high severity and will affect your grade
+6. **Address OSV Findings**: OSV findings are treated as real security issues and are included in grading. Findings without CVSS scores (or invalid scores) are promoted to high severity. Any OSV findings cause that section to fail.
 7. **Re-run Report**: After fixing issues, generate a new report to see your improved grade
 
 #### Trend Tracking
