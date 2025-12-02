@@ -128,6 +128,7 @@ CodeFrog's accessibility testing, powered by **axe-core**, identifies these issu
 
 For detailed information on accessibility testing with CodeFrog, see:
 
+- [WCAG Levels Explained](/help/mas/wcag-levels) - Understanding WCAG A, AA, and AAA conformance levels
 - [Accessibility Testing Guide](/help/mas/accessibility) - How to use CodeFrog's accessibility tools
 - [Benefits of Valid HTML and Accessibility](/help/mas/benefits-valid-html-accessibility) - Technical and business benefits
 - [Building Inclusive Web Applications](https://codefrog.app/docs/accessibility_testing_with_codefrog) - Blog post on accessibility testing

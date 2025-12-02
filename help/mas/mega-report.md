@@ -383,6 +383,7 @@ Integrate Mega Report into your workflow:
 
 ## Related Guides
 
+- [WCAG Levels Explained](/help/mas/wcag-levels) - Understanding WCAG A, AA, and AAA conformance levels
 - [Accessibility Testing](/help/mas/accessibility) - Detailed accessibility guidance
 - [Security Scanning](/help/mas/security) - Security testing details
 - [OSV / Supply Chain](/help/mas/osv) - Dependency vulnerability scanning

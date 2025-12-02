@@ -172,5 +172,6 @@ All tools are accessible from:
 - [Getting Started](/help/mas/getting-started) - Learn the basics
 - [Project Workflows](/help/mas/workflows) - Set up your workflow
 - [Security Scanning](/help/mas/security) - Deep dive into security tools
+- [WCAG Levels Explained](/help/mas/wcag-levels) - Understanding WCAG A, AA, and AAA conformance levels
 - [Accessibility Testing](/help/mas/accessibility) - WCAG compliance guide
 
