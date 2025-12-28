@@ -33,35 +33,41 @@ This is the authoritative, comprehensive list of all CodeFrog features. Use this
 
 ## Getting Started
 
-- [Getting Started Guide](/help/mas/getting-started) - Quick start guide for new users
+- [Getting Started Guide](/help/mas/getting-started) - Quick start guide for new users (macOS)
+- [Windows Setup Guide](/help/windows/windows-setup) - Windows setup and configuration
 - [macOS Setup Guide](/help/mas/macos-setup) - Enable Remote Login and Full Disk Access on macOS
-- [Project Workflows](/help/mas/workflows) - Learn about local and remote development
-- [Keyboard Shortcuts](/help/mas/shortcuts) - Master CodeFrog's keyboard shortcuts
+- [Project Workflows](/help/common/workflows) - Learn about local and remote development
+- [Keyboard Shortcuts](/help/mas/shortcuts) - Master CodeFrog's keyboard shortcuts (macOS)
 
 ## Advanced Features
 
-- [Accessibility Testing](/help/mas/accessibility) - WCAG AA compliance testing
-- [Getting Started with Accessibility](/help/mas/getting-started-accessibility) - Quick start guide for accessibility testing
-- [Why Accessibility Matters](/help/mas/why-accessibility-matters) - Understanding the importance of accessibility for disabled users and screen readers
-- [Accessibility Best Practices](/help/mas/accessibility-best-practices) - Best practices for accessibility and HTML validation
-- [Benefits of Valid HTML and Accessibility](/help/mas/benefits-valid-html-accessibility) - SEO, performance, and user experience benefits
-- [Security Scanning](/help/mas/security) - Comprehensive security validation
-- [Mega Report](/help/mas/mega-report) - Unified web testing and code analysis report
-- [SEO Testing](/help/mas/seo-testing) - Complete SEO analysis and optimization
-- [GitHub Integration](/help/mas/github) - View PRs, import comments as markdown for AI agents
-- [OSV / Supply Chain](/help/mas/osv) - Open Source Vulnerability detection
-- [Secrets Detection](/help/mas/secrets) - Gitleaks integration for secrets scanning
+- [Accessibility Testing](/help/common/accessibility) - WCAG AA compliance testing
+- [Getting Started with Accessibility](/help/common/getting-started-accessibility) - Quick start guide for accessibility testing
+- [Why Accessibility Matters](/help/common/why-accessibility-matters) - Understanding the importance of accessibility for disabled users and screen readers
+- [Accessibility Best Practices](/help/common/accessibility-best-practices) - Best practices for accessibility and HTML validation
+- [Benefits of Valid HTML and Accessibility](/help/common/benefits-valid-html-accessibility) - SEO, performance, and user experience benefits
+- [Security Scanning](/help/common/security) - Comprehensive security validation
+- [Mega Report](/help/common/mega-report) - Unified web testing and code analysis report
+- [SEO Testing](/help/common/seo-testing) - Complete SEO analysis and optimization
+- [GitHub Integration](/help/common/github) - View PRs, import comments as markdown for AI agents
+- [OSV / Supply Chain](/help/common/osv) - Open Source Vulnerability detection
+- [Secrets Detection](/help/common/secrets) - Gitleaks integration for secrets scanning
+- [Code Analysis](/help/common/code-analysis) - Static analysis and code quality metrics
+- [Server Management](/help/common/server-management) - SSH server management and SFTP file operations
 
 ## AI & Automation
 
-- [GitHub Integration](/help/mas/github) - View PRs, import comments as markdown for AI agents
-- [CodeRabbit + Augment Workflow](/help/mas/ai-coder-coderabbit-augment) - Automated code review workflow
-- [Cursor / Other AI Agents](/help/mas/ai-coder-cursor) - Using Cursor and other AI tools
+- [GitHub Integration](/help/common/github) - View PRs, import comments as markdown for AI agents
+- [CodeRabbit + Augment Workflow](/help/common/ai-coder-coderabbit-augment) - Automated code review workflow
+- [Cursor / Other AI Agents](/help/common/ai-coder-cursor) - Using Cursor and other AI tools
+- [Handling PRs with Many Comments](/help/common/handling-pr-comments) - Efficiently process large code reviews
+- [Recommended Tools & Integrations](/help/common/recommended-tools) - IDEs, cloud services, and tools that work with CodeFrog
 
 ## Launch & Quality
 
-- [Launch Checklist](/help/mas/launch-checklist) - Pre-launch verification steps
-- [Troubleshooting](/help/mas/troubleshooting) - Common issues and solutions
+- [Launch Checklist](/help/common/launch-checklist) - Pre-launch verification steps
+- [Troubleshooting](/help/mas/troubleshooting) - Common macOS issues and solutions
+- [Windows Troubleshooting](/help/windows/windows-troubleshooting) - Common Windows issues and solutions
 
 ---
 

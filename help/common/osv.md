@@ -153,7 +153,6 @@ OSV scan results can be exported for:
 
 ## Related Topics
 
-- [Security Testing](/help/mas/security) - Comprehensive security scanning
-- [Secrets Detection](/help/mas/secrets) - Finding secrets in code
-- [Launch Checklist](/help/mas/launch-checklist) - Pre-launch security verification
+- [Security Testing](/help/common/security) - Comprehensive security scanning
+- [Secrets Detection](/help/common/secrets) - Finding secrets in code
 

@@ -236,17 +236,12 @@ SEO Testing is part of CodeFrog's comprehensive Mega Report, which combines:
 
 ## Related Guides
 
-- [Mega Report](/help/mas/mega-report) - Comprehensive testing and analysis
-- [WCAG Levels Explained](/help/mas/wcag-levels) - Understanding WCAG A, AA, and AAA conformance levels
-- [Accessibility Testing](/help/mas/accessibility) - WCAG compliance (also affects SEO)
-- [Benefits of Valid HTML and Accessibility](/help/mas/benefits-valid-html-accessibility) - SEO benefits of valid HTML
-- [Meta Tags Analysis](/help/mas/tools) - Detailed meta tags validation
-- [Launch Checklist](/help/mas/launch-checklist) - Pre-launch SEO checks
+- [Mega Report](/help/common/mega-report) - Comprehensive testing and analysis
+- [WCAG Levels Explained](/help/common/wcag-levels) - Understanding WCAG A, AA, and AAA conformance levels
+- [Accessibility Testing](/help/common/accessibility) - WCAG compliance (also affects SEO)
 
 ## Next Steps
 
-- [Mega Report](/help/mas/mega-report) - Run comprehensive SEO analysis
-- [Accessibility Testing](/help/mas/accessibility) - Improve accessibility (also helps SEO)
-- [Launch Checklist](/help/mas/launch-checklist) - Pre-launch validation
-- [Tools Available](/help/mas/tools) - Overview of all CodeFrog tools
+- [Mega Report](/help/common/mega-report) - Run comprehensive SEO analysis
+- [Accessibility Testing](/help/common/accessibility) - Improve accessibility (also helps SEO)
 

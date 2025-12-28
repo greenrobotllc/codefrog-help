@@ -234,8 +234,7 @@ Issue: Potential null pointer when user not found
 
 ## Related Topics
 
-- [Handling PRs with Many Comments](/help/mas/handling-pr-comments) - Efficiently process large code reviews with many comments
-- [Cursor / Other AI Agents](/help/mas/ai-coder-cursor) - Using other AI tools
-- [Getting Started](/help/mas/getting-started) - CodeFrog basics
-- [Project Workflows](/help/mas/workflows) - Development workflows
+- [Handling PRs with Many Comments](/help/common/handling-pr-comments) - Efficiently process large code reviews with many comments
+- [Cursor / Other AI Agents](/help/common/ai-coder-cursor) - Using other AI tools
+- [Project Workflows](/help/common/workflows) - Development workflows
 

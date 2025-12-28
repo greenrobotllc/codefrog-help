@@ -1,5 +1,9 @@
 ---
 title: Accessibility Testing
+redirect_from:
+  - /help/accessibility.php
+  - /help/accessibility.php?flavor=mas
+  - /help/common/accessibility.php
 layout: help
 ---
 
@@ -147,16 +151,11 @@ Some automated checks may flag issues that aren't actual problems:
 
 ## Related Topics
 
-- [WCAG Levels Explained](/help/mas/wcag-levels) - Detailed explanation of WCAG A, AA, and AAA conformance levels
-- [Getting Started with Accessibility](/help/mas/getting-started-accessibility) - Quick start guide for new users
-- [Why Accessibility Matters](/help/mas/why-accessibility-matters) - Learn about the importance of accessibility for disabled users and screen readers
-- [Accessibility Best Practices](/help/mas/accessibility-best-practices) - Best practices for accessibility and HTML validation
-- [Benefits of Valid HTML and Accessibility](/help/mas/benefits-valid-html-accessibility) - Discover the indirect benefits including SEO, performance, and user experience
+- [WCAG Levels Explained](/help/common/wcag-levels) - Detailed explanation of WCAG A, AA, and AAA conformance levels
 - [Building Inclusive Web Applications](https://codefrog.app/docs/accessibility_testing_with_codefrog) - Blog post on accessibility testing with CodeFrog
 
 ## Next Steps
 
-- [Launch Checklist](/help/mas/launch-checklist) - Include accessibility in your pre-launch checks
-- [Security Testing](/help/mas/security) - Comprehensive security validation
-- [Troubleshooting](/help/mas/troubleshooting) - Common issues and solutions
+- [Launch Checklist](/help/common/launch-checklist) - Include accessibility in your pre-launch checks
+- [Security Testing](/help/common/security) - Comprehensive security validation
 

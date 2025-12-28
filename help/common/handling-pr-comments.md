@@ -203,10 +203,10 @@ When pasting into AI agents:
 
 ## Related Guides
 
-- [CodeRabbit + Augment Workflow](/help/mas/ai-coder-coderabbit-augment) - Detailed AI integration workflow
-- [Recommended Tools & Integrations](/help/mas/recommended-tools) - IDEs and tools that work with CodeFrog
-- [Project Workflows](/help/mas/workflows) - Setting up your development workflow
-- [Tips for New Users](/help/mas/tips) - General productivity tips
+- [CodeRabbit + Augment Workflow](/help/common/ai-coder-coderabbit-augment) - Detailed AI integration workflow
+- [Recommended Tools & Integrations](/help/common/recommended-tools) - IDEs and tools that work with CodeFrog
+- [Project Workflows](/help/common/workflows) - Setting up your development workflow
+- [Tips for New Users](/help/common/tips) - Helpful tips for getting started with CodeFrog
 
 ## Summary
 

@@ -111,6 +111,6 @@ For more detailed troubleshooting, see the [Troubleshooting Guide](/help/mas/tro
 ## Next Steps
 
 - [Getting Started Guide](/help/mas/getting-started) - Learn how to create your first project
-- [Project Workflows](/help/mas/workflows) - Understand local vs. remote development
+- [Project Workflows](/help/common/workflows) - Understand local vs. remote development
 - [Troubleshooting](/help/mas/troubleshooting) - Find solutions to common issues
 

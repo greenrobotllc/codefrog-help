@@ -57,7 +57,7 @@ While CodeFrog provides code editing capabilities, we recommend using dedicated 
 
 **Integration with CodeFrog**: CodeFrog can import CodeRabbit PR comments as tasks and export them to task management systems.
 
-See [CodeRabbit + Augment Workflow](/help/mas/ai-coder-coderabbit-augment) for integration details.
+See [CodeRabbit + Augment Workflow](/help/common/ai-coder-coderabbit-augment) for integration details.
 
 ### Cursor
 
@@ -139,7 +139,7 @@ As mentioned above, Cursor provides AI-powered coding assistance that complement
 - Track GitHub issues
 - Automate code review workflows
 
-See [Project Workflows](/help/mas/workflows) for GitHub integration details.
+See [Project Workflows](/help/common/workflows) for GitHub integration details.
 
 ## Recommended Workflow Combinations
 
@@ -181,8 +181,6 @@ This approach provides:
 
 ## Next Steps
 
-- [Tips for New Users](/help/mas/tips) - Learn productivity tips
-- [Project Workflows](/help/mas/workflows) - Set up your development workflow
-- [Tools Available](/help/mas/tools) - Explore CodeFrog's built-in tools
-- [CodeRabbit + Augment Workflow](/help/mas/ai-coder-coderabbit-augment) - AI integration guide
+- [Project Workflows](/help/common/workflows) - Set up your development workflow
+- [CodeRabbit + Augment Workflow](/help/common/ai-coder-coderabbit-augment) - AI integration guide
 

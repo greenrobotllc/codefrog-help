@@ -1,0 +1,214 @@
+---
+title: Project Workflows
+redirect_from:
+  - /help/workflows.php
+  - /help/workflows.php?flavor=windows
+layout: help
+---
+
+# Project Workflows
+
+## Workflow Overview
+
+CodeFrog on Windows supports two primary development workflows. Choose the one that best fits your project and development style.
+
+## Local Development Workflow
+
+Work with files and folders directly on your Windows computer. This is the fastest and most straightforward workflow for local projects.
+
+### When to Use Local Workflow
+
+- Flutter or React Native projects on your Windows PC
+- Web development projects (HTML, CSS, JavaScript)
+- Any project stored on your Windows file system
+- Offline development without network dependency
+- Projects that don't require remote server resources
+
+### Setting Up a Local Project
+
+1. Click **New Project** from the Welcome screen
+2. Choose **Local Folder** as the connection type
+3. Enter a project name
+4. Click **Select Folder**
+5. Navigate to your project folder in the Windows folder picker
+6. Click **Select Folder** to grant access
+7. Configure optional settings (color theme)
+8. Click **Create Project**
+
+### What You Can Do
+
+- **File Browser:** Browse, edit, create, and delete files
+- **GitHub Integration:** View pull requests, import PR comments as markdown, and view/import GitHub issues (no git operations - use GitHub Desktop for version control)
+- **Code Validation:** Run security scans and code analysis
+- **Web Testing:** Test HTML files in your browser
+
+**Note:** For Git operations like viewing changes, committing, pushing, and pulling, we recommend using [GitHub Desktop](https://desktop.github.com/) or your preferred Git client.
+
+### File Access
+
+CodeFrog uses Windows file system permissions to access your project folder. This means:
+
+- You explicitly grant access when creating the project
+- CodeFrog can access the folder you selected
+- Windows UAC may prompt for permission (click "Yes" when prompted)
+- You can revoke access by deleting the project
+
+### Windows-Specific Considerations
+
+- **Long Paths**: Enable long path support if working with deep directory structures (see [Windows Setup Guide](/help/windows/windows-setup))
+- **Case Sensitivity**: Windows file system is case-insensitive (unlike macOS/Linux)
+- **Path Formats**: Use standard Windows paths or UNC network paths
+- **Permissions**: Keep projects in user folders (Documents, Desktop) for easier access
+
+### Limitations
+
+- Cannot access files outside the selected folder without explicit permission
+- Some system folders may require elevated permissions
+- Build operations run locally (no remote server resources)
+
+## Remote Development Workflow
+
+Connect to remote servers via SSH to work with projects hosted on cloud instances, remote Linux servers, or other machines.
+
+### When to Use Remote Workflow
+
+- Projects hosted on cloud servers (AWS, DigitalOcean, Linode, etc.)
+- Remote Linux development environments
+- Shared development servers
+- Projects requiring server-side resources (databases, APIs)
+- Collaborative development on shared machines
+
+### Setting Up a Remote Project
+
+1. Click **New Project** from the Welcome screen
+2. Choose **SSH Connection** as the connection type
+3. Enter a project name
+4. Configure SSH connection:
+   - Server hostname or IP address
+   - Port (default: 22)
+   - Username
+   - Authentication method (SSH key or password)
+5. Test the connection
+6. Select the remote project directory
+7. Configure optional settings (color theme)
+8. Click **Create Project**
+
+### What You Can Do
+
+- **SSH Terminal:** Full terminal access to the remote server (PowerShell, Windows Terminal, or CMD)
+- **File Browser:** Browse and edit files via SFTP with comprehensive file management:
+  - Upload files and folders (drag and drop or file picker)
+  - Download files and folders (recursive directory downloads)
+  - Delete files and folders (with recursive directory deletion)
+  - Move and rename files and folders
+  - Copy files and folders (recursive for directories)
+  - Create new files and directories
+  - View file properties (size, permissions, modified time)
+- **GitHub Integration:** View pull requests, import PR comments as markdown, and view/import GitHub issues (no git operations - use GitHub Desktop for version control)
+- **Remote Builds:** Build and run projects using server resources
+- **Server Admin:** Manage server settings, disk monitoring, etc.
+
+**Note:** For Git operations like viewing changes, committing, pushing, and pulling, we recommend using [GitHub Desktop](https://desktop.github.com/) or your preferred Git client.
+
+### SSH Key Management
+
+For secure, password-less authentication:
+
+1. Generate an SSH key pair in CodeFrog (or import existing keys)
+2. Copy the public key to your server's `~/.ssh/authorized_keys`
+3. Use the private key when creating SSH connections
+
+**Windows-Specific:**
+- SSH keys are stored in `C:\Users\YourUsername\.ssh\`
+- Use `ssh-keygen -t ed25519` in PowerShell to generate keys
+- See [GitHub Integration](/help/windows/github-integration) for Windows-specific SSH setup
+
+*Tip: CodeFrog can automatically inject your public key to new servers during setup.*
+
+## Switching Between Projects
+
+CodeFrog makes it easy to work with multiple projects and switch between them quickly.
+
+### Quick Project Switcher
+
+Press `Ctrl+Shift+P` to open the Quick Project Switcher:
+
+- See all your projects at a glance
+- Search by project name
+- See connection status (local/remote)
+- Switch with a single click or Enter key
+
+### Recent Projects
+
+The Welcome screen shows your most recently used projects:
+
+- Click any project to open it immediately
+- See project type (local folder or SSH connection)
+- View last accessed time
+
+### Project Name Tab
+
+Click the project name in the tab bar to:
+
+- Return to the Workspace view
+- Refresh the current project
+- See project details
+
+### What Happens When You Switch
+
+When switching projects, CodeFrog:
+
+- Saves your current work
+- Disconnects from SSH (if applicable)
+- Loads the new project
+- Reconnects to SSH (if applicable)
+
+## Project Settings
+
+Each project has its own settings that you can customize.
+
+### Accessing Project Settings
+
+- Click the hamburger menu (☰) in the app bar
+- Select **Project Settings**
+
+### Available Settings
+
+- **General:** Project name, color theme, description
+- **Connection:** SSH settings, folder path, connection details
+- **Build & Sync:** Build commands, SFTP sync settings
+- **AI Tools:** Which AI CLI tools to use for this project
+
+### Color Themes
+
+Assign custom colors to projects for easy visual identification:
+
+- Choose from preset colors or use a custom color picker
+- Colors appear in the project list and tab bar
+- Helps distinguish between local and remote projects
+- All colors meet WCAG AA contrast standards
+
+## Workflow Best Practices
+
+### For Local Projects
+
+- Keep projects in a dedicated folder (e.g., `C:\Projects` or `C:\Dev`)
+- Use [GitHub Desktop](https://desktop.github.com/) or your preferred Git client for version control operations (viewing changes, committing, pushing, pulling)
+- Use meaningful project names
+- Enable long path support if working with deep directory structures
+
+### For Remote Projects
+
+- Use SSH keys instead of passwords
+- Keep SSH keys secure with strong passphrases
+- Store SSH keys in `C:\Users\YourUsername\.ssh\`
+- Regularly update remote servers
+- Use descriptive server names
+- Test connections before starting work
+
+## Next Steps
+
+- [GitHub integration](/help/windows/github-integration) - Import PR comments and issues for AI agents
+- [Windows Troubleshooting](/help/windows/windows-troubleshooting) - Find solutions to common issues
+- [Windows Setup Guide](/help/windows/windows-setup) - Configure Windows for optimal workflow
+

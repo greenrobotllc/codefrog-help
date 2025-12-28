@@ -1,5 +1,9 @@
 ---
 title: Getting Started with Accessibility
+redirect_from:
+  - /help/getting-started-accessibility.php
+  - /help/getting-started-accessibility.php?flavor=mas
+  - /help/common/getting-started-accessibility.php
 layout: help
 ---
 
@@ -131,7 +135,7 @@ Automated testing catches many issues, but manual testing is essential:
 
 - Run a comprehensive accessibility scan
 - Test with actual screen readers
-- Review the [Launch Checklist](/help/mas/launch-checklist)
+- Review the [Launch Checklist](/help/common/launch-checklist)
 
 ### Continuous Improvement
 
@@ -208,11 +212,11 @@ Use this checklist for each page:
 
 Now that you've started with accessibility:
 
-- [WCAG Levels Explained](/help/mas/wcag-levels) - Understand WCAG A, AA, and AAA conformance levels
-- [Accessibility Testing Guide](/help/mas/accessibility) - Detailed guide on all accessibility features
-- [Why Accessibility Matters](/help/mas/why-accessibility-matters) - Understand the importance
-- [Accessibility Best Practices](/help/mas/accessibility-best-practices) - Learn advanced techniques
-- [Benefits of Valid HTML and Accessibility](/help/mas/benefits-valid-html-accessibility) - Discover additional benefits
+- [WCAG Levels Explained](/help/common/wcag-levels) - Understand WCAG A, AA, and AAA conformance levels
+- [Accessibility Testing Guide](/help/common/accessibility) - Detailed guide on all accessibility features
+- [Why Accessibility Matters](/help/common/why-accessibility-matters) - Understand the importance
+- [Accessibility Best Practices](/help/common/accessibility-best-practices) - Learn advanced techniques
+- [Benefits of Valid HTML and Accessibility](/help/common/benefits-valid-html-accessibility) - Discover additional benefits
 
 ## Resources
 

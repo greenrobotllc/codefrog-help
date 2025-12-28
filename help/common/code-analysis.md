@@ -1,5 +1,9 @@
 ---
 title: Code Analysis Tools and Features
+redirect_from:
+  - /help/code-analysis.php
+  - /help/code-analysis.php?flavor=mas
+  - /help/common/code-analysis.php
 layout: help
 ---
 
@@ -63,7 +67,7 @@ CodeFrog uses Gitleaks to scan your codebase for accidentally committed secrets:
 - **Credentials**: Identifies database credentials and connection strings
 - **Private Keys**: Detects SSH keys and certificates
 
-See [Secrets Detection](/help/mas/secrets) for detailed information on secrets scanning.
+See [Secrets Detection](/help/common/secrets) for detailed information on secrets scanning.
 
 ### OSV Integration
 
@@ -73,7 +77,7 @@ CodeFrog integrates with the Open Source Vulnerabilities (OSV) database to scan 
 - **Vulnerability Matching**: Matches dependencies against known vulnerabilities
 - **Remediation Guidance**: Provides information on fixed versions and patches
 
-See [OSV / Supply Chain Security](/help/mas/osv) for detailed information on vulnerability scanning.
+See [OSV / Supply Chain Security](/help/common/osv) for detailed information on vulnerability scanning.
 
 ## Running Code Analysis
 
@@ -182,7 +186,7 @@ Code Analysis is integrated into CodeFrog's Mega Report, which combines:
 
 Running a Mega Report gives you a comprehensive view of both your web application and codebase health in a single report with an overall A-F health grade.
 
-See [Mega Report](/help/mas/mega-report) for more information.
+See [Mega Report](/help/common/mega-report) for more information.
 
 ## Export and Reporting
 
@@ -229,9 +233,8 @@ Code Analysis results can be exported for:
 
 ## Related Topics
 
-- [OSV / Supply Chain Security](/help/mas/osv) - Dependency vulnerability scanning
-- [Secrets Detection](/help/mas/secrets) - Finding secrets in code
-- [Mega Report](/help/mas/mega-report) - Comprehensive testing and analysis
-- [Tools Available](/help/mas/tools) - Overview of all CodeFrog tools
-- [Project Workflows](/help/mas/workflows) - Setting up projects for analysis
+- [OSV / Supply Chain Security](/help/common/osv) - Dependency vulnerability scanning
+- [Secrets Detection](/help/common/secrets) - Finding secrets in code
+- [Mega Report](/help/common/mega-report) - Comprehensive testing and analysis
+- [Project Workflows](/help/common/workflows) - Setting up projects for analysis
 

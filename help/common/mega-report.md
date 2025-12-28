@@ -34,7 +34,7 @@ Mega Report includes comprehensive web testing capabilities:
 - **Issue Detection**: Identifies accessibility barriers and violations
 - **Recommendations**: Provides actionable fixes for accessibility issues
 
-See [Accessibility Testing](/help/mas/accessibility) for detailed guidance.
+See [Accessibility Testing](/help/common/accessibility) for detailed guidance.
 
 ### Security Testing
 
@@ -44,9 +44,9 @@ See [Accessibility Testing](/help/mas/accessibility) for detailed guidance.
 - **Vulnerability Detection**: Identifies common security issues
 - **Severity Classification**: Findings categorized by severity (Critical, High, Medium, Low, Info)
 
-Security headers provide defense-in-depth protection by instructing browsers how to handle your site's content. Missing or misconfigured headers leave your site vulnerable to common attacks. See [Security Headers: Why They Matter](/help/mas/security-headers) for detailed information about each header and what it prevents.
+Security headers provide defense-in-depth protection by instructing browsers how to handle your site's content. Missing or misconfigured headers leave your site vulnerable to common attacks. See [Security Headers: Why They Matter](/help/common/security-headers) for detailed information about each header and what it prevents.
 
-See [Security Scanning](/help/mas/security) for detailed security guidance.
+See [Security Scanning](/help/common/security) for detailed security guidance.
 
 ### Meta Tags Analysis
 
@@ -80,7 +80,7 @@ When you have a project open, Mega Report can also analyze your codebase:
 - **Exclusions**: Automatically excludes build directories, dependencies, and common false positives
 - **Severity Levels**: Classifies findings by risk level
 
-See [Secrets Detection](/help/mas/secrets) for detailed information.
+See [Secrets Detection](/help/common/secrets) for detailed information.
 
 ### Supply Chain Vulnerabilities (OSV)
 
@@ -89,7 +89,7 @@ See [Secrets Detection](/help/mas/secrets) for detailed information.
 - **Vulnerability Details**: Provides CVE information and remediation guidance
 - **Severity Assessment**: Categorizes vulnerabilities by severity
 
-See [OSV / Supply Chain](/help/mas/osv) for detailed information.
+See [OSV / Supply Chain](/help/common/osv) for detailed information.
 
 ### Static Analysis
 
@@ -383,13 +383,10 @@ Integrate Mega Report into your workflow:
 
 ## Related Guides
 
-- [WCAG Levels Explained](/help/mas/wcag-levels) - Understanding WCAG A, AA, and AAA conformance levels
-- [Accessibility Testing](/help/mas/accessibility) - Detailed accessibility guidance
-- [Security Scanning](/help/mas/security) - Security testing details
-- [OSV / Supply Chain](/help/mas/osv) - Dependency vulnerability scanning
-- [Secrets Detection](/help/mas/secrets) - Secrets scanning with Gitleaks
-- [Tools Available](/help/mas/tools) - Overview of all CodeFrog tools
-- [Launch Checklist](/help/mas/launch-checklist) - Pre-launch validation steps
+- [WCAG Levels Explained](/help/common/wcag-levels) - Understanding WCAG A, AA, and AAA conformance levels
+- [Security Scanning](/help/common/security) - Security testing details
+- [OSV / Supply Chain](/help/common/osv) - Dependency vulnerability scanning
+- [Secrets Detection](/help/common/secrets) - Secrets scanning with Gitleaks
 
 ## Summary
 

@@ -11,6 +11,7 @@ items:
       - "/help/mas/"
       - "/help/mas/index.html"
   
+  # macOS-specific documentation
   - title: "Getting Started"
     url: "/help/mas/getting-started"
     match_paths:
@@ -35,101 +36,11 @@ items:
       - "/help/mas/shortcuts/"
       - "/help/mas/shortcuts.html"
   
-  - title: "Project Workflows"
-    url: "/help/mas/workflows"
-    match_paths:
-      - "/help/mas/workflows/"
-      - "/help/mas/workflows.html"
-  
   - title: "Tools Available"
     url: "/help/mas/tools"
     match_paths:
       - "/help/mas/tools/"
       - "/help/mas/tools.html"
-  
-  - title: "Server Management"
-    url: "/help/mas/server-management"
-    match_paths:
-      - "/help/mas/server-management/"
-      - "/help/mas/server-management.html"
-  
-  - title: "Accessibility"
-    url: "/help/mas/accessibility"
-    match_paths:
-      - "/help/mas/accessibility/"
-      - "/help/mas/accessibility.html"
-  
-  - title: "Security"
-    url: "/help/mas/security"
-    match_paths:
-      - "/help/mas/security/"
-      - "/help/mas/security.html"
-  
-  - title: "SEO Testing"
-    url: "/help/mas/seo-testing"
-    match_paths:
-      - "/help/mas/seo-testing/"
-      - "/help/mas/seo-testing.html"
-  
-  - title: "OSV / Supply Chain"
-    url: "/help/mas/osv"
-    match_paths:
-      - "/help/mas/osv/"
-      - "/help/mas/osv.html"
-  
-  - title: "Secrets / Gitleaks"
-    url: "/help/mas/secrets"
-    match_paths:
-      - "/help/mas/secrets/"
-      - "/help/mas/secrets.html"
-  
-  - title: "Code Analysis"
-    url: "/help/mas/code-analysis"
-    match_paths:
-      - "/help/mas/code-analysis/"
-      - "/help/mas/code-analysis.html"
-  
-  - title: "Mega Report"
-    url: "/help/mas/mega-report"
-    match_paths:
-      - "/help/mas/mega-report/"
-      - "/help/mas/mega-report.html"
-  
-  - title: "Launch Checklist"
-    url: "/help/mas/launch-checklist"
-    match_paths:
-      - "/help/mas/launch-checklist/"
-      - "/help/mas/launch-checklist.html"
-  
-  - title: "GitHub Integration"
-    url: "/help/mas/github"
-    match_paths:
-      - "/help/mas/github/"
-      - "/help/mas/github.html"
-  
-  - title: "AI: CodeRabbit + Augment"
-    url: "/help/mas/ai-coder-coderabbit-augment"
-    match_paths:
-      - "/help/mas/ai-coder-coderabbit-augment/"
-      - "/help/mas/ai-coder-coderabbit-augment.html"
-  
-  - title: "Handling PRs with Many Comments"
-    url: "/help/mas/handling-pr-comments"
-    match_paths:
-      - "/help/mas/handling-pr-comments/"
-      - "/help/mas/handling-pr-comments.html"
-  
-  - title: "AI: Cursor / Other Agents"
-    url: "/help/mas/ai-coder-cursor"
-    match_paths:
-      - "/help/mas/ai-coder-cursor/"
-      - "/help/mas/ai-coder-cursor.html"
-  
-  - title: "Recommended Tools & Integrations"
-    url: "/help/mas/recommended-tools"
-    match_paths:
-      - "/help/mas/recommended-tools/"
-      - "/help/mas/recommended-tools.html"
   
   - title: "Troubleshooting"
     url: "/help/mas/troubleshooting"
@@ -137,9 +48,118 @@ items:
       - "/help/mas/troubleshooting/"
       - "/help/mas/troubleshooting.html"
   
-  - title: "Privacy & Connections"
-    url: "/help/mas/privacy"
+  # Windows-specific documentation
+  - title: "Windows Setup"
+    url: "/help/windows/windows-setup"
     match_paths:
-      - "/help/mas/privacy/"
-      - "/help/mas/privacy.html"
-
+      - "/help/windows/windows-setup/"
+      - "/help/windows/windows-setup.html"
+  
+  - title: "Windows Store Subscriptions"
+    url: "/help/windows/windows-iap"
+    match_paths:
+      - "/help/windows/windows-iap/"
+      - "/help/windows/windows-iap.html"
+  
+  - title: "Windows Troubleshooting"
+    url: "/help/windows/windows-troubleshooting"
+    match_paths:
+      - "/help/windows/windows-troubleshooting/"
+      - "/help/windows/windows-troubleshooting.html"
+  
+  # Common/Cross-platform documentation
+  - title: "Project Workflows"
+    url: "/help/common/workflows"
+    match_paths:
+      - "/help/common/workflows/"
+      - "/help/common/workflows.html"
+  
+  - title: "Server Management"
+    url: "/help/common/server-management"
+    match_paths:
+      - "/help/common/server-management/"
+      - "/help/common/server-management.html"
+  
+  - title: "Accessibility"
+    url: "/help/common/accessibility"
+    match_paths:
+      - "/help/common/accessibility/"
+      - "/help/common/accessibility.html"
+  
+  - title: "Security"
+    url: "/help/common/security"
+    match_paths:
+      - "/help/common/security/"
+      - "/help/common/security.html"
+  
+  - title: "SEO Testing"
+    url: "/help/common/seo-testing"
+    match_paths:
+      - "/help/common/seo-testing/"
+      - "/help/common/seo-testing.html"
+  
+  - title: "OSV / Supply Chain"
+    url: "/help/common/osv"
+    match_paths:
+      - "/help/common/osv/"
+      - "/help/common/osv.html"
+  
+  - title: "Secrets / Gitleaks"
+    url: "/help/common/secrets"
+    match_paths:
+      - "/help/common/secrets/"
+      - "/help/common/secrets.html"
+  
+  - title: "Code Analysis"
+    url: "/help/common/code-analysis"
+    match_paths:
+      - "/help/common/code-analysis/"
+      - "/help/common/code-analysis.html"
+  
+  - title: "Mega Report"
+    url: "/help/common/mega-report"
+    match_paths:
+      - "/help/common/mega-report/"
+      - "/help/common/mega-report.html"
+  
+  - title: "Launch Checklist"
+    url: "/help/common/launch-checklist"
+    match_paths:
+      - "/help/common/launch-checklist/"
+      - "/help/common/launch-checklist.html"
+  
+  - title: "GitHub Integration"
+    url: "/help/common/github"
+    match_paths:
+      - "/help/common/github/"
+      - "/help/common/github.html"
+  
+  - title: "AI: CodeRabbit + Augment"
+    url: "/help/common/ai-coder-coderabbit-augment"
+    match_paths:
+      - "/help/common/ai-coder-coderabbit-augment/"
+      - "/help/common/ai-coder-coderabbit-augment.html"
+  
+  - title: "Handling PRs with Many Comments"
+    url: "/help/common/handling-pr-comments"
+    match_paths:
+      - "/help/common/handling-pr-comments/"
+      - "/help/common/handling-pr-comments.html"
+  
+  - title: "AI: Cursor / Other Agents"
+    url: "/help/common/ai-coder-cursor"
+    match_paths:
+      - "/help/common/ai-coder-cursor/"
+      - "/help/common/ai-coder-cursor.html"
+  
+  - title: "Recommended Tools & Integrations"
+    url: "/help/common/recommended-tools"
+    match_paths:
+      - "/help/common/recommended-tools/"
+      - "/help/common/recommended-tools.html"
+  
+  - title: "Privacy & Connections"
+    url: "/help/common/privacy"
+    match_paths:
+      - "/help/common/privacy/"
+      - "/help/common/privacy.html"

@@ -22,7 +22,7 @@ This approach ensures maximum security while maintaining compatibility with lega
 
 ## Secrets Detection Basics
 
-CodeFrog integrates with Gitleaks for comprehensive secrets detection. See the [Secrets / Gitleaks page](/help/mas/secrets) for detailed information about:
+CodeFrog integrates with Gitleaks for comprehensive secrets detection. See the [Secrets / Gitleaks page](/help/common/secrets) for detailed information about:
 
 - What secrets are and why they matter
 - How Gitleaks works
@@ -48,7 +48,7 @@ CodeFrog checks for the presence and proper configuration of security headers in
 
 Without security headers, your site relies on default browser behavior, which is often permissive and can leave you vulnerable to XSS, clickjacking, MITM attacks, and information leakage.
 
-For detailed information about each header, what it prevents, and how to configure it, see the [Security Headers: Why They Matter](/help/mas/security-headers) guide.
+For detailed information about each header, what it prevents, and how to configure it, see the [Security Headers: Why They Matter](/help/common/security-headers) guide.
 
 See also the [What We Check](https://codefrog.app/what-we-check) page for a complete list of all security checks performed by CodeFrog.
 
@@ -168,7 +168,6 @@ Security scan results can be exported for:
 
 ## Related Topics
 
-- [Secrets / Gitleaks](/help/mas/secrets) - Detailed secrets detection guide
-- [OSV / Supply Chain](/help/mas/osv) - Open Source Vulnerability database
-- [Launch Checklist](/help/mas/launch-checklist) - Pre-launch security checks
+- [Secrets / Gitleaks](/help/common/secrets) - Detailed secrets detection guide
+- [OSV / Supply Chain](/help/common/osv) - Open Source Vulnerability database
 

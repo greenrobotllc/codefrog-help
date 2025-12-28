@@ -3,6 +3,7 @@ title: Getting Started with CodeFrog
 redirect_from:
   - /help/getting-started.php
   - /help/getting-started.php?flavor=mas
+  - /help/mas/getting-started.php
 layout: help
 ---
 
@@ -19,13 +20,13 @@ layout: help
 ## Recommended Setup
 
 - macOS users: Follow the [macOS Setup Guide](/help/mas/macos-setup) to enable Remote Login and permissions.
-- Decide your [workflow](/help/mas/workflows): Local or Remote.
-- Connect [GitHub](/help/mas/github) for PR comments and issues.
+- Decide your [workflow](/help/common/workflows): Local or Remote.
+- Connect [GitHub](/help/common/github) for PR comments and issues.
 - Review [keyboard shortcuts](/help/mas/shortcuts) for productivity.
 
 ## Next Steps
 
-- Try [Remote Development](/help/mas/workflows#remote-workflow) for server-based projects.
-- Learn about [Security Scanning](/help/mas/security) and [Security Headers](/help/mas/security-headers) to secure your applications.
+- Try [Remote Development](/help/common/workflows#remote-workflow) for server-based projects.
+- Learn about [Security Scanning](/help/common/security) and [Security Headers](/help/common/security-headers) to secure your applications.
 - See [Troubleshooting](/help/mas/troubleshooting) if you hit issues.
 

@@ -163,7 +163,6 @@ Mark these as false positives to exclude from future scans.
 
 ## Related Topics
 
-- [Security Testing](/help/mas/security) - Comprehensive security scanning
-- [OSV / Supply Chain](/help/mas/osv) - Dependency vulnerability scanning
-- [Launch Checklist](/help/mas/launch-checklist) - Pre-launch security verification
+- [Security Testing](/help/common/security) - Comprehensive security scanning
+- [OSV / Supply Chain](/help/common/osv) - Dependency vulnerability scanning
 

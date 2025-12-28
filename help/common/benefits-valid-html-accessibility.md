@@ -1,5 +1,9 @@
 ---
 title: Benefits of Valid HTML and Accessibility
+redirect_from:
+  - /help/benefits-valid-html-accessibility.php
+  - /help/benefits-valid-html-accessibility.php?flavor=mas
+  - /help/common/benefits-valid-html-accessibility.php
 layout: help
 ---
 
@@ -91,10 +95,10 @@ CodeFrog's HTML validation and accessibility testing tools help you achieve thes
 
 ## Related Resources
 
-- [Getting Started with Accessibility](/help/mas/getting-started-accessibility) - Quick start guide for accessibility testing
-- [Accessibility Testing](/help/mas/accessibility) - Learn how to use CodeFrog's accessibility testing tools
-- [Why Accessibility Matters](/help/mas/why-accessibility-matters) - Understand the importance of accessibility for disabled users
-- [Accessibility Best Practices](/help/mas/accessibility-best-practices) - Best practices for accessibility and HTML validation
+- [Getting Started with Accessibility](/help/common/getting-started-accessibility) - Quick start guide for accessibility testing
+- [Accessibility Testing](/help/common/accessibility) - Learn how to use CodeFrog's accessibility testing tools
+- [Why Accessibility Matters](/help/common/why-accessibility-matters) - Understand the importance of accessibility for disabled users
+- [Accessibility Best Practices](/help/common/accessibility-best-practices) - Best practices for accessibility and HTML validation
 
 ## Next Steps
 

@@ -3,6 +3,7 @@ title: Keyboard Shortcuts
 redirect_from:
   - /help/shortcuts.php
   - /help/shortcuts.php?flavor=mas
+  - /help/mas/shortcuts.php
 layout: help
 ---
 

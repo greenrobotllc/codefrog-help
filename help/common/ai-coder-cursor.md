@@ -279,7 +279,6 @@ git commit -m "Fix code review issues: null checks, validation, error handling"
 
 ## Related Topics
 
-- [CodeRabbit + Augment Workflow](/help/mas/ai-coder-coderabbit-augment) - Automated code review workflow
-- [Getting Started](/help/mas/getting-started) - CodeFrog basics
-- [Project Workflows](/help/mas/workflows) - Development workflows
+- [CodeRabbit + Augment Workflow](/help/common/ai-coder-coderabbit-augment) - Automated code review workflow
+- [Project Workflows](/help/common/workflows) - Development workflows
 

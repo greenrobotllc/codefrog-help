@@ -3,6 +3,7 @@ title: Tips for New Users
 redirect_from:
   - /help/tips.php
   - /help/tips.php?flavor=mas
+  - /help/mas/tips.php
 layout: help
 ---
 
@@ -46,7 +47,7 @@ For the best development experience, we recommend using CodeFrog alongside dedic
 
 - **AI Code Review**: Use [CodeRabbit](https://coderabbit.ai) for automated PR reviews
   - CodeFrog can import CodeRabbit PR comments as tasks
-  - See [CodeRabbit + Augment Workflow](/help/mas/ai-coder-coderabbit-augment) for integration details
+  - See [CodeRabbit + Augment Workflow](/help/common/ai-coder-coderabbit-augment) for integration details
 
 - **CLI Workflows**: Use your Mac's Terminal app for AI CLI tools
   - CodeFrog doesn't include embedded AI CLI tools by design
@@ -64,7 +65,7 @@ This approach provides better security, more flexibility, and lets you choose th
 
 ### Recommended Tools & Integrations
 
-For a complete list of recommended tools and services that work well with CodeFrog, see our [Recommended Tools & Integrations](/help/mas/recommended-tools) guide. This includes:
+For a complete list of recommended tools and services that work well with CodeFrog, see our [Recommended Tools & Integrations](/help/common/recommended-tools) guide. This includes:
 
 - **IDEs**: Cursor, VS Code, and other development environments
 - **Cloud Services**: Hetzner, Linode for infrastructure
@@ -109,7 +110,7 @@ For a complete list of recommended tools and services that work well with CodeFr
 ## Next Steps
 
 - [Getting Started Guide](/help/mas/getting-started) - Learn the basics
-- [Project Workflows](/help/mas/workflows) - Choose your workflow
+- [Project Workflows](/help/common/workflows) - Choose your workflow
 - [Keyboard Shortcuts](/help/mas/shortcuts) - Boost productivity
 - [Troubleshooting](/help/mas/troubleshooting) - Solve common issues
 

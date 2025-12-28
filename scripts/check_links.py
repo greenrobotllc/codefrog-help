@@ -41,14 +41,14 @@ def extract_links(content: str) -> List[Tuple[str, str]]:
 
 def is_internal_help_link(url: str) -> bool:
     """Check if URL is an internal help documentation link."""
-    # Match both /help/mas/ and /help/mas (with or without trailing slash)
-    return bool(re.match(r'^/help/(mas|direct)(/|$)', url))
+    # Match /help/mas/, /help/direct/, /help/windows/, and /help/common/ (with or without trailing slash)
+    return bool(re.match(r'^/help/(mas|direct|windows|common)(/|$)', url))
 
 def get_expected_file_path(help_dir: Path, url: str) -> Optional[Path]:
     """Get the expected file path for an internal help link."""
     # Extract section and page path (page path can be empty for section-root URLs)
-    # Pattern handles both /help/mas/ and /help/mas (with or without trailing slash)
-    match = re.match(r'^/help/(mas|direct)/?(.*)$', url)
+    # Pattern handles /help/mas/, /help/direct/, /help/windows/, and /help/common/ (with or without trailing slash)
+    match = re.match(r'^/help/(mas|direct|windows|common)/?(.*)$', url)
     if not match:
         return None
     

@@ -1,5 +1,9 @@
 ---
 title: Server Management & File Operations
+redirect_from:
+  - /help/server-management.php
+  - /help/server-management.php?flavor=mas
+  - /help/common/server-management.php
 layout: help
 ---
 
@@ -230,7 +234,7 @@ Once a remote project is created, you can:
 - **Code Analysis**: Run code analysis on remote files
 - **GitHub Integration**: View PRs and import comments (Git operations require terminal)
 
-See [Project Workflows](/help/mas/workflows) for detailed information on remote development.
+See [Project Workflows](/help/common/workflows) for detailed information on remote development.
 
 ## Security Best Practices
 
@@ -301,7 +305,7 @@ See [Project Workflows](/help/mas/workflows) for detailed information on remote 
 - Check server logs for SSH errors
 - Verify terminal is enabled in server SSH config
 
-See [Troubleshooting](/help/mas/troubleshooting) for more detailed troubleshooting guidance.
+See platform-specific troubleshooting guides for more detailed troubleshooting guidance.
 
 ## Use Cases
 
@@ -327,7 +331,7 @@ See [Troubleshooting](/help/mas/troubleshooting) for more detailed troubleshooti
 
 ## Related Topics
 
-- [Project Workflows](/help/mas/workflows) - Setting up local and remote projects
+- [Project Workflows](/help/common/workflows) - Setting up local and remote projects
 - [macOS Setup Guide](/help/mas/macos-setup) - macOS configuration for local SSH
 - [Tools Available](/help/mas/tools) - Overview of all CodeFrog tools
 - [Troubleshooting](/help/mas/troubleshooting) - Common issues and solutions

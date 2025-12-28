@@ -154,7 +154,7 @@ If using CodeRabbit for automated code review:
    - Click on the PR you want to view
    - Use the PR Import Banner to import comments as tasks
    - Export to Markdown from the Tasks screen (upper right export button)
-   - See [CodeRabbit + Augment workflow](/help/mas/ai-coder-coderabbit-augment) for details
+   - See [CodeRabbit + Augment workflow](/help/common/ai-coder-coderabbit-augment) for details
 
 3. **Import to Tasks:**
    - Import comments as tasks in CodeFrog
@@ -231,10 +231,9 @@ You can export this checklist as a Markdown file for:
 
 ## Related Topics
 
-- [WCAG Levels Explained](/help/mas/wcag-levels) - Understanding WCAG A, AA, and AAA conformance levels
-- [Accessibility Testing](/help/mas/accessibility) - Detailed accessibility guide
-- [Security Testing](/help/mas/security) - Comprehensive security scanning
-- [OSV / Supply Chain](/help/mas/osv) - Dependency vulnerability scanning
-- [Secrets Detection](/help/mas/secrets) - Finding secrets in code
-- [CodeRabbit + Augment Workflow](/help/mas/ai-coder-coderabbit-augment) - Automated code review
+- [WCAG Levels Explained](/help/common/wcag-levels) - Understanding WCAG A, AA, and AAA conformance levels
+- [Security Testing](/help/common/security) - Comprehensive security scanning
+- [OSV / Supply Chain](/help/common/osv) - Dependency vulnerability scanning
+- [Secrets Detection](/help/common/secrets) - Finding secrets in code
+- [CodeRabbit + Augment Workflow](/help/common/ai-coder-coderabbit-augment) - Automated code review
 

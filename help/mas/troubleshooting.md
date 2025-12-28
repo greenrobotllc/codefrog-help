@@ -132,6 +132,6 @@ layout: help
 
 - [Getting Started Guide](/help/mas/getting-started) - Basic setup instructions
 - [macOS Setup](/help/mas/macos-setup) - Detailed macOS configuration
-- [Project Workflows](/help/mas/workflows) - Understanding local vs. remote workflows
+- [Project Workflows](/help/common/workflows) - Understanding local vs. remote workflows
 - [Send Feedback](https://greenrobot.freshdesk.com/support/solutions/9000119001) - Contact support
 

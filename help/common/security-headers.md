@@ -350,10 +350,10 @@ If cookies stop working:
 
 ## Related Topics
 
-- [Security Scanning](/help/mas/security) - Comprehensive security testing guide
+- [Security Scanning](/help/common/security) - Comprehensive security testing guide
 - [What We Check](https://codefrog.app/what-we-check) - Complete list of security checks
 - [OWASP Coverage](https://codefrog.app/owasp-coverage) - How CodeFrog maps to OWASP Top 10
-- [Mega Report](/help/mas/mega-report) - Unified security and quality testing
+- [Mega Report](/help/common/mega-report) - Unified security and quality testing
 
 ## Summary
 

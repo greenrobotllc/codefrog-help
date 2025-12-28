@@ -177,7 +177,7 @@ You can also view and import GitHub issues:
 4. Fix issues and commit (using GitHub Desktop or Git client)
 5. CodeRabbit automatically verifies fixes when you push
 
-See [CodeRabbit + Augment Workflow](/help/mas/ai-coder-coderabbit-augment) for detailed instructions.
+See [CodeRabbit + Augment Workflow](/help/common/ai-coder-coderabbit-augment) for detailed instructions.
 
 ### Cursor / Other AI Agents Workflow
 
@@ -187,7 +187,7 @@ See [CodeRabbit + Augment Workflow](/help/mas/ai-coder-coderabbit-augment) for d
 4. Review and apply fixes
 5. Commit and push using your Git client
 
-See [Cursor / Other AI Agents](/help/mas/ai-coder-cursor) for detailed instructions.
+See [Cursor / Other AI Agents](/help/common/ai-coder-cursor) for detailed instructions.
 
 ### Handling Large PRs
 
@@ -197,7 +197,7 @@ For PRs with many comments:
 3. Process bulk comments with AI agents
 4. Fix and commit systematically
 
-See [Handling PRs with Many Comments](/help/mas/handling-pr-comments) for a complete workflow.
+See [Handling PRs with Many Comments](/help/common/handling-pr-comments) for a complete workflow.
 
 ## Limitations
 
@@ -254,13 +254,13 @@ For version control operations, use:
 - Try importing smaller batches (20-50 comments at a time)
 - Complex comments without AI summaries must be handled on GitHub web interface
 
-For more troubleshooting help, see [Troubleshooting Guide](/help/mas/troubleshooting).
+For more troubleshooting help, see platform-specific troubleshooting guides.
 
 ## Next Steps
 
-- [Handling PRs with Many Comments](/help/mas/handling-pr-comments) - Efficiently process large code reviews
-- [CodeRabbit + Augment Workflow](/help/mas/ai-coder-coderabbit-augment) - Automated code review workflow
-- [Cursor / Other AI Agents](/help/mas/ai-coder-cursor) - Using Cursor and other AI tools
-- [Project Workflows](/help/mas/workflows) - Understanding local vs. remote development
+- [Handling PRs with Many Comments](/help/common/handling-pr-comments) - Efficiently process large code reviews
+- [CodeRabbit + Augment Workflow](/help/common/ai-coder-coderabbit-augment) - Automated code review workflow
+- [Cursor / Other AI Agents](/help/common/ai-coder-cursor) - Using Cursor and other AI tools
+- [Project Workflows](/help/common/workflows) - Understanding local vs. remote development
 - [Troubleshooting](/help/mas/troubleshooting) - Common issues and solutions
 

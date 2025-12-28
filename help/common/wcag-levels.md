@@ -254,10 +254,8 @@ Not necessarily. Consider:
 
 ## Related Topics
 
-- [Accessibility Testing](/help/mas/accessibility) - How to run accessibility tests in CodeFrog
-- [Why Accessibility Matters](/help/mas/why-accessibility-matters) - The importance of accessibility
-- [Accessibility Best Practices](/help/mas/accessibility-best-practices) - Tips for improving accessibility
-- [Mega Report](/help/mas/mega-report) - Comprehensive testing including accessibility
+- [Accessibility Testing](/help/common/accessibility) - How to run accessibility tests in CodeFrog
+- [Mega Report](/help/common/mega-report) - Comprehensive testing including accessibility
 
 ## External Resources
 

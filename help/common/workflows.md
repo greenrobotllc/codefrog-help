@@ -10,17 +10,17 @@ layout: help
 
 ## Workflow Overview
 
-CodeFrog on macOS supports two primary development workflows. Choose the one that best fits your project and development style.
+CodeFrog supports two primary development workflows. Choose the one that best fits your project and development style.
 
 ## Local Development Workflow
 
-Work with files and folders directly on your Mac. This is the fastest and most straightforward workflow for local projects.
+Work with files and folders directly on your computer. This is the fastest and most straightforward workflow for local projects.
 
 ### When to Use Local Workflow
 
-- Flutter or React Native projects on your Mac
+- Flutter or React Native projects on your computer
 - Web development projects (HTML, CSS, JavaScript)
-- Any project stored on your Mac's file system
+- Any project stored on your computer's file system
 - Offline development without network dependency
 - Projects that don't require remote server resources
 
@@ -30,8 +30,8 @@ Work with files and folders directly on your Mac. This is the fastest and most s
 2. Choose **Local Folder** as the connection type
 3. Enter a project name
 4. Click **Select Folder**
-5. Navigate to your project folder in the macOS folder picker
-6. Click **Open** to grant access
+5. Navigate to your project folder in the folder picker
+6. Click **Select Folder** or **Open** to grant access
 7. Configure optional settings (color theme)
 8. Click **Create Project**
 
@@ -46,8 +46,10 @@ Work with files and folders directly on your Mac. This is the fastest and most s
 
 ### File Access
 
-CodeFrog uses macOS security-scoped bookmarks to access your project folder. This means:
+CodeFrog uses platform-specific file access mechanisms to access your project folder:
 
+- **macOS**: Uses security-scoped bookmarks for folder access
+- **Windows**: Uses Windows file system permissions and UAC prompts
 - You explicitly grant access when creating the project
 - CodeFrog can only access the folder you selected
 - Access persists across app launches
@@ -56,7 +58,7 @@ CodeFrog uses macOS security-scoped bookmarks to access your project folder. Thi
 ### Limitations
 
 - Cannot access files outside the selected folder
-- Some system folders may require Full Disk Access
+- Some system folders may require additional permissions (Full Disk Access on macOS, elevated permissions on Windows)
 - Build operations run locally (no remote server resources)
 
 ## Remote Development Workflow
@@ -68,7 +70,7 @@ Connect to remote servers via SSH to work with projects hosted on cloud instance
 - Projects hosted on cloud servers (AWS, DigitalOcean, Linode, etc.)
 - Remote Linux development environments
 - Shared development servers
-- Android-to-macOS remote development
+- Cross-platform remote development
 - Projects requiring server-side resources (databases, APIs)
 - Collaborative development on shared machines
 
@@ -120,7 +122,7 @@ CodeFrog makes it easy to work with multiple projects and switch between them qu
 
 ### Quick Project Switcher
 
-Press `⌘⇧P` to open the Quick Project Switcher:
+Press `Ctrl+Shift+P` (Windows) or `⌘⇧P` (macOS) to open the Quick Project Switcher:
 
 - See all your projects at a glance
 - Search by project name
@@ -181,7 +183,9 @@ Assign custom colors to projects for easy visual identification:
 
 ### For Local Projects
 
-- Keep projects in a dedicated folder (e.g., `~/Projects`)
+- Keep projects in a dedicated folder:
+  - macOS: `~/Projects`
+  - Windows: `C:\Projects` (requires manual creation) or `C:\Users\YourUsername\Documents\Projects`
 - Use [GitHub Desktop](https://desktop.github.com/) or your preferred Git client for version control operations (viewing changes, committing, pushing, pulling)
 - Use meaningful project names
 
@@ -189,12 +193,19 @@ Assign custom colors to projects for easy visual identification:
 
 - Use SSH keys instead of passwords
 - Keep SSH keys secure with strong passphrases
+- Store SSH keys in platform-specific locations:
+  - macOS: `~/.ssh/`
+  - Windows: `C:\Users\YourUsername\.ssh\`
 - Regularly update remote servers
 - Use descriptive server names
 - Test connections before starting work
 
+## Platform-Specific Guides
+
+- **macOS**: See [macOS Setup Guide](/help/mas/macos-setup) for macOS-specific configuration
+- **Windows**: See [Windows Setup Guide](/help/windows/windows-setup) for Windows-specific configuration
+
 ## Next Steps
 
-- [GitHub integration](/help/mas/github) - Import PR comments and issues for AI agents
-- [Troubleshooting](/help/mas/troubleshooting) - Find solutions to common issues
+- [GitHub integration](/help/common/github) - Import PR comments and issues for AI agents
 

@@ -1,5 +1,9 @@
 ---
 title: Accessibility Best Practices
+redirect_from:
+  - /help/accessibility-best-practices.php
+  - /help/accessibility-best-practices.php?flavor=mas
+  - /help/common/accessibility-best-practices.php
 layout: help
 ---
 
@@ -342,11 +346,11 @@ Search engines favor:
 
 ## Related Resources
 
-- [WCAG Levels Explained](/help/mas/wcag-levels) - Detailed explanation of WCAG A, AA, and AAA conformance levels
-- [Getting Started with Accessibility](/help/mas/getting-started-accessibility) - Quick start guide
-- [Accessibility Testing Guide](/help/mas/accessibility) - Detailed testing instructions
-- [Why Accessibility Matters](/help/mas/why-accessibility-matters) - Understanding the importance
-- [Benefits of Valid HTML and Accessibility](/help/mas/benefits-valid-html-accessibility) - Additional benefits
+- [WCAG Levels Explained](/help/common/wcag-levels) - Detailed explanation of WCAG A, AA, and AAA conformance levels
+- [Getting Started with Accessibility](/help/common/getting-started-accessibility) - Quick start guide
+- [Accessibility Testing Guide](/help/common/accessibility) - Detailed testing instructions
+- [Why Accessibility Matters](/help/common/why-accessibility-matters) - Understanding the importance
+- [Benefits of Valid HTML and Accessibility](/help/common/benefits-valid-html-accessibility) - Additional benefits
 
 ## External Resources
 

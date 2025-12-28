@@ -15,7 +15,7 @@ Some websites block automated testing tools. CodeFrog identifies itself transpar
 - Try the full URL path (e.g., `https://www.microsoft.com/en-us/` instead of `microsoft.com`)
 - Check if the site requires authentication or has specific bot policies
 - Use the accessibility test instead (it uses a real browser via Puppeteer/Playwright)
-- Configure a custom User-Agent in Web Testing options (see [Privacy page](/help/mas/privacy) for details)
+- Configure a custom User-Agent in Web Testing options (see [Privacy page](/help/common/privacy) for details)
 
 ### Why does accessibility testing work but meta tags testing doesn't?
 
@@ -158,7 +158,7 @@ Some features require a project:
 
 ### What data does CodeFrog send to external services?
 
-See the [Privacy & External Connections](/help/mas/privacy) page for complete details. CodeFrog only sends data when you explicitly use features, and your code is never sent without your action.
+See the [Privacy & External Connections](/help/common/privacy) page for complete details. CodeFrog only sends data when you explicitly use features, and your code is never sent without your action.
 
 ### Are my API keys secure?
 
@@ -182,5 +182,5 @@ Features that require internet:
 
 ---
 
-**Still have questions?** [Contact Support](https://greenrobot.freshdesk.com/support/solutions/9000119001) or check the [Troubleshooting](/help/mas/troubleshooting) page.
+**Still have questions?** [Contact Support](https://greenrobot.freshdesk.com/support/solutions/9000119001) or check the [Troubleshooting](/help/common/troubleshooting) page.
 
