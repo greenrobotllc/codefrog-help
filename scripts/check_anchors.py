@@ -253,8 +253,20 @@ def check_anchors(help_dir: Path) -> Tuple[int, int, int, List[str]]:
                     similar_msg = ""
                     if similar:
                         similar_msg = f" (similar: {', '.join(similar[:3])})"
+                    
+                    # Get target file path for error message - handle files outside help_dir
+                    try:
+                        target_path = target_file.relative_to(help_dir)
+                    except ValueError:
+                        # File is outside help_dir (like root index.md)
+                        try:
+                            target_path = target_file.relative_to(help_docs_dir)
+                        except ValueError:
+                            # Fallback to just the filename if both fail
+                            target_path = target_file.name
+                    
                     broken_list.append(
-                        f"{rel_path}:{line_num}: [{link_text}]({link_url}) -> Anchor '#{anchor}' not found in {target_file.relative_to(help_dir)}{similar_msg}"
+                        f"{rel_path}:{line_num}: [{link_text}]({link_url}) -> Anchor '#{anchor}' not found in {target_path}{similar_msg}"
                     )
     
     return total_anchor_links, valid_anchors, broken_anchors, broken_list

@@ -148,8 +148,8 @@ python3 scripts/check_links.py
 ```
 
 The script will:
-- Scan all `.md` files in the `help/` directory
-- Extract internal links matching `/help/mas/...` or `/help/direct/...`
+- Scan all `.md` files in the `help/` directory and root `index.md`
+- Extract internal links matching `/help/mas/...`, `/help/direct/...`, `/help/windows/...`, or `/help/common/...`
 - Check if corresponding `.md` files exist
 - Report broken links with file location and line number
 - Display summary statistics (total, valid, broken, external links)

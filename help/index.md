@@ -49,7 +49,6 @@ This is the authoritative, comprehensive list of all CodeFrog features. Use this
 - [Security Scanning](/help/common/security) - Comprehensive security validation
 - [Mega Report](/help/common/mega-report) - Unified web testing and code analysis report
 - [SEO Testing](/help/common/seo-testing) - Complete SEO analysis and optimization
-- [GitHub Integration](/help/common/github) - View PRs, import comments as markdown for AI agents
 - [OSV / Supply Chain](/help/common/osv) - Open Source Vulnerability detection
 - [Secrets Detection](/help/common/secrets) - Gitleaks integration for secrets scanning
 - [Code Analysis](/help/common/code-analysis) - Static analysis and code quality metrics

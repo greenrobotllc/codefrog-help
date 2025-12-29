@@ -146,7 +146,7 @@ body {
   width: 260px;
   background: var(--help-sidebar);
   border-right: 1px solid #e5e5e7;
-  padding: 1rem 0.5rem 1rem 0.5rem;
+  padding: 1rem 0.5rem 1rem 0;
   position: sticky;
   top: 60px; /* Account for compact header */
   height: calc(100vh - 60px);

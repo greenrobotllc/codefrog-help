@@ -94,7 +94,7 @@ def check_links(help_dir: Path) -> Tuple[int, int, int, int, List[str]]:
     for md_file in md_files:
         # Get relative path - handle both help/ subdirectory and root files
         try:
-            rel_path = md_file.relative_to(help_dir)
+        rel_path = md_file.relative_to(help_dir)
         except ValueError:
             # File is outside help_dir (like root index.md)
             rel_path = md_file.relative_to(help_docs_dir)

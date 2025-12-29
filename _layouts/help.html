@@ -79,8 +79,9 @@
             const header = document.querySelector('.help-header');
             const headerHeight = header ? header.offsetHeight : 0;
             
-            // Calculate scroll position: element position - header height - padding
-            const scrollPosition = element.offsetTop - headerHeight - 20;
+            // Calculate scroll position using viewport-relative position
+            const elementRect = element.getBoundingClientRect();
+            const scrollPosition = elementRect.top + window.scrollY - headerHeight - 20;
             
             // Use setTimeout to ensure layout is complete
             setTimeout(function() {
