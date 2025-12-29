@@ -168,12 +168,15 @@ body {
   padding: 0;
 }
 
-.help-nav ul {
-  list-style: none;
+.help-nav ul,
+.sidebar .help-nav ul,
+aside.sidebar nav.help-nav ul {
+  list-style: none !important;
   padding: 0 !important;
   margin: 0 !important;
   padding-left: 0 !important;
   margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 .help-nav li {
