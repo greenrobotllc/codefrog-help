@@ -164,6 +164,8 @@ body {
 
 .help-nav ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .help-nav li {
@@ -173,7 +175,7 @@ body {
 .help-nav a {
   color: #0051a5;
   text-decoration: none;
-  padding: 0.4rem 0.5rem 0.4rem 0;
+  padding: 0.4rem 0.5rem;
   border-radius: 4px;
   display: block;
   transition: all 0.2s ease;
