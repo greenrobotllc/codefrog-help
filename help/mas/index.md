@@ -14,9 +14,9 @@ Welcome to the CodeFrog help documentation for Mac App Store users.
 
 - [Getting Started Guide](/help/mas/getting-started) - Quick start guide for new users
 - [macOS Setup Guide](/help/mas/macos-setup) - Enable Remote Login and Full Disk Access on macOS
-- [Tips for New Users](/help/mas/tips) - Platform-specific tips and AI assistant guidance
+- [Tips for New Users](/help/common/tips) - Platform-specific tips and AI assistant guidance
 - [Project Workflows](/help/common/workflows) - Learn about local and remote development
-- [Keyboard Shortcuts](/help/mas/shortcuts) - Master CodeFrog's keyboard shortcuts
+- [Keyboard Shortcuts](/help/common/shortcuts) - Master CodeFrog's keyboard shortcuts
 - [Tools Available](/help/common/tools) - Overview of all available tools
 
 ## Core Features
@@ -40,7 +40,7 @@ Welcome to the CodeFrog help documentation for Mac App Store users.
 ## Launch & Quality
 
 - [Launch Checklist](/help/common/launch-checklist) - Pre-launch verification steps
-- [Troubleshooting](/help/mas/troubleshooting) - Common issues and solutions
+- [Troubleshooting](/help/common/troubleshooting) - Common issues and solutions
 - [Privacy & Connections](/help/common/privacy) - Privacy settings and connections
 - [Frequently Asked Questions](/help/common/faq) - Common questions and answers
 

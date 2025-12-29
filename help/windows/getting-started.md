@@ -75,7 +75,7 @@ Install Windows Terminal for the best experience:
 - **Windows users**: Follow the [Windows Setup Guide](/help/windows/windows-setup) for complete configuration
 - **Decide your workflow**: Choose between [Local or Remote](/help/windows/workflows) development
 - **Connect GitHub**: Link your [GitHub account](/help/windows/github-integration) for PR comments and issues
-- **Review shortcuts**: Check [keyboard shortcuts](/help/windows/shortcuts) for productivity
+- **Review shortcuts**: Check [keyboard shortcuts](/help/common/shortcuts) for productivity
 
 ## Creating Your First Project
 
@@ -124,12 +124,12 @@ Install Windows Terminal for the best experience:
 - Try [Remote Development](/help/windows/workflows#remote-workflow) for server-based projects
 - Learn about [Security Scanning](/help/common/security) and [Security Headers](/help/common/security-headers) to secure your applications
 - See [Windows Troubleshooting](/help/windows/windows-troubleshooting) if you hit issues
-- Check [Windows Tips](/help/windows/tips) for Windows-specific productivity tips
+- Check [Tips for New Users](/help/common/tips) for Windows-specific productivity tips
 
 ## Getting Help
 
 - [Windows Setup Guide](/help/windows/windows-setup) - Detailed Windows configuration
 - [Windows Troubleshooting](/help/windows/windows-troubleshooting) - Solve common Windows issues
-- [Windows Tips](/help/windows/tips) - Windows-specific tips and best practices
+- [Tips for New Users](/help/common/tips) - Platform-specific tips and best practices
 - [Windows Store Subscriptions](/help/windows/windows-iap) - Manage your subscription
 

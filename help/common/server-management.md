@@ -334,5 +334,5 @@ See platform-specific troubleshooting guides for more detailed troubleshooting g
 - [Project Workflows](/help/common/workflows) - Setting up local and remote projects
 - [macOS Setup Guide](/help/mas/macos-setup) - macOS configuration for local SSH
 - [Tools Available](/help/common/tools) - Overview of all CodeFrog tools
-- [Troubleshooting](/help/mas/troubleshooting) - Common issues and solutions
+- [Troubleshooting](/help/common/troubleshooting) - Common issues and solutions
 

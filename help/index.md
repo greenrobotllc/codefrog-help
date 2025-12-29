@@ -37,7 +37,7 @@ This is the authoritative, comprehensive list of all CodeFrog features. Use this
 - [Windows Setup Guide](/help/windows/windows-setup) - Windows setup and configuration
 - [macOS Setup Guide](/help/mas/macos-setup) - Enable Remote Login and Full Disk Access on macOS
 - [Project Workflows](/help/common/workflows) - Learn about local and remote development
-- [Keyboard Shortcuts](/help/mas/shortcuts) - Master CodeFrog's keyboard shortcuts (macOS)
+- [Keyboard Shortcuts](/help/common/shortcuts) - Master CodeFrog's keyboard shortcuts
 
 ## Advanced Features
 
@@ -66,7 +66,7 @@ This is the authoritative, comprehensive list of all CodeFrog features. Use this
 ## Launch & Quality
 
 - [Launch Checklist](/help/common/launch-checklist) - Pre-launch verification steps
-- [Troubleshooting](/help/mas/troubleshooting) - Common macOS issues and solutions
+- [Troubleshooting](/help/common/troubleshooting) - Common issues and solutions
 - [Windows Troubleshooting](/help/windows/windows-troubleshooting) - Common Windows issues and solutions
 
 ---

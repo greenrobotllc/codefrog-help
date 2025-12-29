@@ -11,154 +11,154 @@ items:
       - "/help/mas/"
       - "/help/mas/index.html"
   
-  # macOS-specific documentation
-  - title: "Getting Started"
+  # Mac-specific documentation
+  - title: "Mac: Getting Started"
     url: "/help/mas/getting-started"
     match_paths:
       - "/help/mas/getting-started/"
       - "/help/mas/getting-started.html"
   
-  - title: "macOS Setup"
+  - title: "Mac: macOS Setup"
     url: "/help/mas/macos-setup"
     match_paths:
       - "/help/mas/macos-setup/"
       - "/help/mas/macos-setup.html"
   
-  - title: "Tips for New Users"
-    url: "/help/mas/tips"
-    match_paths:
-      - "/help/mas/tips/"
-      - "/help/mas/tips.html"
-  
-  - title: "Keyboard Shortcuts"
-    url: "/help/mas/shortcuts"
-    match_paths:
-      - "/help/mas/shortcuts/"
-      - "/help/mas/shortcuts.html"
-  
-  - title: "Troubleshooting"
-    url: "/help/mas/troubleshooting"
-    match_paths:
-      - "/help/mas/troubleshooting/"
-      - "/help/mas/troubleshooting.html"
-  
   # Windows-specific documentation
-  - title: "Windows Setup"
+  - title: "Windows: Windows Setup"
     url: "/help/windows/windows-setup"
     match_paths:
       - "/help/windows/windows-setup/"
       - "/help/windows/windows-setup.html"
   
-  - title: "Windows Store Subscriptions"
+  - title: "Windows: Windows Store Subscriptions"
     url: "/help/windows/windows-iap"
     match_paths:
       - "/help/windows/windows-iap/"
       - "/help/windows/windows-iap.html"
   
-  - title: "Windows Troubleshooting"
+  - title: "Windows: Windows Troubleshooting"
     url: "/help/windows/windows-troubleshooting"
     match_paths:
       - "/help/windows/windows-troubleshooting/"
       - "/help/windows/windows-troubleshooting.html"
   
   # Common/Cross-platform documentation
-  - title: "Tools Available"
+  - title: "Common: Tips for New Users"
+    url: "/help/common/tips"
+    match_paths:
+      - "/help/common/tips/"
+      - "/help/common/tips.html"
+  
+  - title: "Common: Keyboard Shortcuts"
+    url: "/help/common/shortcuts"
+    match_paths:
+      - "/help/common/shortcuts/"
+      - "/help/common/shortcuts.html"
+  
+  - title: "Common: Troubleshooting"
+    url: "/help/common/troubleshooting"
+    match_paths:
+      - "/help/common/troubleshooting/"
+      - "/help/common/troubleshooting.html"
+  
+  - title: "Common: Tools Available"
     url: "/help/common/tools"
     match_paths:
       - "/help/common/tools/"
       - "/help/common/tools.html"
   
-  - title: "Project Workflows"
+  - title: "Common: Project Workflows"
     url: "/help/common/workflows"
     match_paths:
       - "/help/common/workflows/"
       - "/help/common/workflows.html"
   
-  - title: "Server Management"
+  - title: "Common: Server Management"
     url: "/help/common/server-management"
     match_paths:
       - "/help/common/server-management/"
       - "/help/common/server-management.html"
   
-  - title: "Accessibility"
+  - title: "Common: Accessibility"
     url: "/help/common/accessibility"
     match_paths:
       - "/help/common/accessibility/"
       - "/help/common/accessibility.html"
   
-  - title: "Security"
+  - title: "Common: Security"
     url: "/help/common/security"
     match_paths:
       - "/help/common/security/"
       - "/help/common/security.html"
   
-  - title: "SEO Testing"
+  - title: "Common: SEO Testing"
     url: "/help/common/seo-testing"
     match_paths:
       - "/help/common/seo-testing/"
       - "/help/common/seo-testing.html"
   
-  - title: "OSV / Supply Chain"
+  - title: "Common: OSV / Supply Chain"
     url: "/help/common/osv"
     match_paths:
       - "/help/common/osv/"
       - "/help/common/osv.html"
   
-  - title: "Secrets / Gitleaks"
+  - title: "Common: Secrets / Gitleaks"
     url: "/help/common/secrets"
     match_paths:
       - "/help/common/secrets/"
       - "/help/common/secrets.html"
   
-  - title: "Code Analysis"
+  - title: "Common: Code Analysis"
     url: "/help/common/code-analysis"
     match_paths:
       - "/help/common/code-analysis/"
       - "/help/common/code-analysis.html"
   
-  - title: "Mega Report"
+  - title: "Common: Mega Report"
     url: "/help/common/mega-report"
     match_paths:
       - "/help/common/mega-report/"
       - "/help/common/mega-report.html"
   
-  - title: "Launch Checklist"
+  - title: "Common: Launch Checklist"
     url: "/help/common/launch-checklist"
     match_paths:
       - "/help/common/launch-checklist/"
       - "/help/common/launch-checklist.html"
   
-  - title: "GitHub Integration"
+  - title: "Common: GitHub Integration"
     url: "/help/common/github"
     match_paths:
       - "/help/common/github/"
       - "/help/common/github.html"
   
-  - title: "AI: CodeRabbit + Augment"
+  - title: "Common: AI: CodeRabbit + Augment"
     url: "/help/common/ai-coder-coderabbit-augment"
     match_paths:
       - "/help/common/ai-coder-coderabbit-augment/"
       - "/help/common/ai-coder-coderabbit-augment.html"
   
-  - title: "Handling PRs with Many Comments"
+  - title: "Common: Handling PRs with Many Comments"
     url: "/help/common/handling-pr-comments"
     match_paths:
       - "/help/common/handling-pr-comments/"
       - "/help/common/handling-pr-comments.html"
   
-  - title: "AI: Cursor / Other Agents"
+  - title: "Common: AI: Cursor / Other Agents"
     url: "/help/common/ai-coder-cursor"
     match_paths:
       - "/help/common/ai-coder-cursor/"
       - "/help/common/ai-coder-cursor.html"
   
-  - title: "Recommended Tools & Integrations"
+  - title: "Common: Recommended Tools & Integrations"
     url: "/help/common/recommended-tools"
     match_paths:
       - "/help/common/recommended-tools/"
       - "/help/common/recommended-tools.html"
   
-  - title: "Privacy & Connections"
+  - title: "Common: Privacy & Connections"
     url: "/help/common/privacy"
     match_paths:
       - "/help/common/privacy/"

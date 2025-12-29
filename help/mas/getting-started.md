@@ -22,11 +22,11 @@ layout: help
 - macOS users: Follow the [macOS Setup Guide](/help/mas/macos-setup) to enable Remote Login and permissions.
 - Decide your [workflow](/help/common/workflows): Local or Remote.
 - Connect [GitHub](/help/common/github) for PR comments and issues.
-- Review [keyboard shortcuts](/help/mas/shortcuts) for productivity.
+- Review [keyboard shortcuts](/help/common/shortcuts) for productivity.
 
 ## Next Steps
 
 - Try [Remote Development](/help/common/workflows#remote-workflow) for server-based projects.
 - Learn about [Security Scanning](/help/common/security) and [Security Headers](/help/common/security-headers) to secure your applications.
-- See [Troubleshooting](/help/mas/troubleshooting) if you hit issues.
+- See [Troubleshooting](/help/common/troubleshooting) if you hit issues.
 

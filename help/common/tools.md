@@ -184,7 +184,7 @@ All tools are accessible from:
 
 1. **Welcome Screen**: Quick access buttons for main tools
 2. **Navigation Menu**: Full list of all available tools
-3. **Keyboard Shortcuts**: Fast navigation (see [macOS Shortcuts](/help/mas/shortcuts) or [Windows Shortcuts](/help/windows/shortcuts))
+3. **Keyboard Shortcuts**: Fast navigation (see [Keyboard Shortcuts](/help/common/shortcuts))
 
 ## Tool Combinations
 
@@ -215,7 +215,7 @@ All tools are accessible from:
 - **Long Paths**: Enable long path support for deep directory structures
 - **Case Sensitivity**: Windows is case-insensitive (unlike macOS/Linux)
 - **Path Formats**: Standard Windows paths and UNC network paths supported
-- See [Windows Tips](/help/windows/tips) for path handling tips
+- See [Tips for New Users](/help/common/tips) for path handling tips
 
 **macOS:**
 - Standard Unix-style paths

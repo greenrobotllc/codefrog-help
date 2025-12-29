@@ -106,11 +106,11 @@ If you encounter issues after setup:
 - **File access denied**: Check that "Full Disk Access for remote users" is enabled
 - **Terminal not working in CodeFrog**: Ensure Remote Login is enabled and restart CodeFrog
 
-For more detailed troubleshooting, see the [Troubleshooting Guide](/help/mas/troubleshooting).
+For more detailed troubleshooting, see the [Troubleshooting Guide](/help/common/troubleshooting).
 
 ## Next Steps
 
 - [Getting Started Guide](/help/mas/getting-started) - Learn how to create your first project
 - [Project Workflows](/help/common/workflows) - Understand local vs. remote development
-- [Troubleshooting](/help/mas/troubleshooting) - Find solutions to common issues
+- [Troubleshooting](/help/common/troubleshooting) - Find solutions to common issues
 

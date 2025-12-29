@@ -262,5 +262,5 @@ For more troubleshooting help, see platform-specific troubleshooting guides.
 - [CodeRabbit + Augment Workflow](/help/common/ai-coder-coderabbit-augment) - Automated code review workflow
 - [Cursor / Other AI Agents](/help/common/ai-coder-cursor) - Using Cursor and other AI tools
 - [Project Workflows](/help/common/workflows) - Understanding local vs. remote development
-- [Troubleshooting](/help/mas/troubleshooting) - Common issues and solutions
+- [Troubleshooting](/help/common/troubleshooting) - Common issues and solutions
 
