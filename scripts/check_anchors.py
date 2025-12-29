@@ -31,6 +31,11 @@ def find_help_dir() -> Path:
     
     return help_dir
 
+def find_help_docs_dir() -> Path:
+    """Find the help-docs directory relative to this script."""
+    script_dir = Path(__file__).parent.resolve()
+    return script_dir.parent
+
 def generate_kramdown_anchor(text: str) -> str:
     """
     Generate anchor ID using kramdown's auto_id logic.
@@ -138,7 +143,16 @@ def check_anchors(help_dir: Path) -> Tuple[int, int, int, List[str]]:
     # This allows us to check cross-file anchor links
     all_headings: Dict[Path, Dict[str, str]] = {}
     
+    # Get help-docs root directory to check root index.md
+    help_docs_dir = find_help_docs_dir()
+    
+    # Find all markdown files in help/ directory
     md_files = list(help_dir.rglob("*.md"))
+    
+    # Also check root index.md if it exists
+    root_index = help_docs_dir / "index.md"
+    if root_index.exists():
+        md_files.append(root_index)
     
     for md_file in md_files:
         try:
@@ -152,7 +166,12 @@ def check_anchors(help_dir: Path) -> Tuple[int, int, int, List[str]]:
     
     # Second pass: check all anchor links
     for md_file in md_files:
-        rel_path = md_file.relative_to(help_dir)
+        # Get relative path - handle both help/ subdirectory and root files
+        try:
+            rel_path = md_file.relative_to(help_dir)
+        except ValueError:
+            # File is outside help_dir (like root index.md)
+            rel_path = md_file.relative_to(help_docs_dir)
         
         try:
             with open(md_file, 'r', encoding='utf-8') as f:
@@ -201,6 +220,10 @@ def check_anchors(help_dir: Path) -> Tuple[int, int, int, List[str]]:
                     continue
                 
                 # Get headings from target file
+                # For same-page anchors, use the current file
+                if link_url.startswith('#'):
+                    target_file = md_file
+                
                 if target_file not in all_headings:
                     # Try to read it now
                     try:
