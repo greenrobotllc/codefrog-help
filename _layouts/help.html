@@ -68,16 +68,26 @@
   <script src="{{ '/assets/js/lunr.min.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/lunr-search.js' | relative_url }}"></script>
   <script>
-    // Handle anchor scrolling on page load
+    // Handle anchor scrolling on page load with proper header offset
     (function() {
       function scrollToAnchor() {
         if (window.location.hash) {
           const hash = window.location.hash.substring(1);
           const element = document.getElementById(hash);
           if (element) {
+            // Get the sticky header element
+            const header = document.querySelector('.help-header');
+            const headerHeight = header ? header.offsetHeight : 0;
+            
+            // Calculate scroll position: element position - header height - padding
+            const scrollPosition = element.offsetTop - headerHeight - 20;
+            
             // Use setTimeout to ensure layout is complete
             setTimeout(function() {
-              element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              window.scrollTo({
+                top: Math.max(0, scrollPosition),
+                behavior: 'smooth'
+              });
             }, 100);
           }
         }
