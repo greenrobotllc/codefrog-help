@@ -38,22 +38,33 @@ def find_help_docs_dir() -> Path:
 
 def generate_kramdown_anchor(text: str) -> str:
     """
-    Generate anchor ID using kramdown's auto_id logic.
+    Generate anchor ID using kramdown's auto_id logic with Unicode support.
     Kramdown generates IDs by:
-    1. Converting to lowercase
-    2. Replacing spaces with hyphens
-    3. Removing special characters (keeping only alphanumeric, hyphens, underscores)
-    4. Collapsing multiple consecutive hyphens
-    5. Removing leading/trailing hyphens
+    1. Normalizing Unicode characters (NFKC normalization)
+    2. Converting to lowercase
+    3. Replacing spaces with hyphens
+    4. Removing special characters (keeping only Unicode letters, numbers, hyphens, underscores)
+    5. Collapsing multiple consecutive hyphens
+    6. Removing leading/trailing hyphens
     """
+    # Normalize Unicode characters (NFKC: compatibility decomposition + canonical composition)
+    # This handles accented characters, ligatures, etc.
+    anchor = unicodedata.normalize('NFKC', text)
+    
     # Convert to lowercase
-    anchor = text.lower()
+    anchor = anchor.lower()
+    
+    # Filter characters: keep Unicode letters, numbers, hyphens, underscores, and spaces
+    # Using isalnum() which is Unicode-aware and handles all Unicode letter/number categories
+    filtered_chars = []
+    for char in anchor:
+        if char.isalnum() or char in ['-', '_', ' ']:
+            filtered_chars.append(char)
+    
+    anchor = ''.join(filtered_chars)
     
     # Replace spaces with hyphens
     anchor = anchor.replace(' ', '-')
-    
-    # Remove special characters (keep only alphanumeric, hyphens, underscores)
-    anchor = re.sub(r'[^a-z0-9\-_]', '', anchor)
     
     # Collapse multiple consecutive hyphens
     anchor = re.sub(r'-+', '-', anchor)
@@ -67,8 +78,10 @@ def extract_headings(content: str) -> Dict[str, str]:
     """
     Extract all headings from markdown content and generate their anchor IDs.
     Returns a dict mapping anchor_id -> heading_text.
+    Handles duplicate anchors by appending -1, -2, etc. (matching kramdown behavior).
     """
     headings = {}
+    anchor_counts = {}
     
     # Pattern for markdown headings: # Heading, ## Heading, etc.
     # Also handles headings with optional trailing spaces and hashes
@@ -79,7 +92,15 @@ def extract_headings(content: str) -> Dict[str, str]:
         if match:
             heading_text = match.group(2).strip()
             anchor_id = generate_kramdown_anchor(heading_text)
-            headings[anchor_id] = heading_text
+            
+            # Handle duplicate anchors by appending -1, -2, etc.
+            if anchor_id in anchor_counts:
+                anchor_counts[anchor_id] += 1
+                suffixed_anchor = f"{anchor_id}-{anchor_counts[anchor_id]}"
+                headings[suffixed_anchor] = heading_text
+            else:
+                anchor_counts[anchor_id] = 0
+                headings[anchor_id] = heading_text
     
     return headings
 
@@ -89,7 +110,8 @@ def extract_links(content: str) -> List[Tuple[str, str]]:
     Returns list of (link_text, link_url) tuples.
     """
     # Pattern: [text](url) or [text](url "title")
-    pattern = r'\[([^\]]+)\]\(([^)]+)\)'
+    # Captures URL separately from optional title
+    pattern = r'\[([^\]]+)\]\(([^\s)]+)(?:\s+["\'].*?["\'])?\)'
     matches = re.findall(pattern, content)
     return matches
 
@@ -160,7 +182,7 @@ def check_anchors(help_dir: Path) -> Tuple[int, int, int, List[str]]:
                 content = f.read()
             headings = extract_headings(content)
             all_headings[md_file] = headings
-        except Exception as e:
+        except (OSError, UnicodeDecodeError) as e:
             print(f"{YELLOW}Warning: Could not read {md_file}: {e}{NC}", file=sys.stderr)
             continue
     
@@ -176,7 +198,7 @@ def check_anchors(help_dir: Path) -> Tuple[int, int, int, List[str]]:
         try:
             with open(md_file, 'r', encoding='utf-8') as f:
                 lines = f.readlines()
-        except Exception as e:
+        except (OSError, UnicodeDecodeError) as e:
             print(f"{YELLOW}Warning: Could not read {md_file}: {e}{NC}", file=sys.stderr)
             continue
         
@@ -214,16 +236,14 @@ def check_anchors(help_dir: Path) -> Tuple[int, int, int, List[str]]:
                 # Check if target file exists
                 if target_file is None or not target_file.exists():
                     broken_anchors += 1
+                    # Include original link URL when target_file is None for better debugging
+                    target_info = link_url if target_file is None else str(target_file)
                     broken_list.append(
-                        f"{rel_path}:{line_num}: [{link_text}]({link_url}) -> Target file not found: {target_file}"
+                        f"{rel_path}:{line_num}: [{link_text}]({link_url}) -> Target file not found: {target_info}"
                     )
                     continue
                 
                 # Get headings from target file
-                # For same-page anchors, use the current file
-                if link_url.startswith('#'):
-                    target_file = md_file
-                
                 if target_file not in all_headings:
                     # Try to read it now
                     try:
@@ -231,7 +251,7 @@ def check_anchors(help_dir: Path) -> Tuple[int, int, int, List[str]]:
                             content = f.read()
                         headings = extract_headings(content)
                         all_headings[target_file] = headings
-                    except Exception as e:
+                    except (OSError, UnicodeDecodeError) as e:
                         broken_anchors += 1
                         broken_list.append(
                             f"{rel_path}:{line_num}: [{link_text}]({link_url}) -> Could not read target file: {e}"
