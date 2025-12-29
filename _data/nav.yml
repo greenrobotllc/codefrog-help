@@ -36,12 +36,6 @@ items:
       - "/help/mas/shortcuts/"
       - "/help/mas/shortcuts.html"
   
-  - title: "Tools Available"
-    url: "/help/mas/tools"
-    match_paths:
-      - "/help/mas/tools/"
-      - "/help/mas/tools.html"
-  
   - title: "Troubleshooting"
     url: "/help/mas/troubleshooting"
     match_paths:
@@ -68,6 +62,12 @@ items:
       - "/help/windows/windows-troubleshooting.html"
   
   # Common/Cross-platform documentation
+  - title: "Tools Available"
+    url: "/help/common/tools"
+    match_paths:
+      - "/help/common/tools/"
+      - "/help/common/tools.html"
+  
   - title: "Project Workflows"
     url: "/help/common/workflows"
     match_paths:

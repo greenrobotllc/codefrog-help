@@ -17,7 +17,7 @@ Welcome to the CodeFrog help documentation for Mac App Store users.
 - [Tips for New Users](/help/mas/tips) - Platform-specific tips and AI assistant guidance
 - [Project Workflows](/help/common/workflows) - Learn about local and remote development
 - [Keyboard Shortcuts](/help/mas/shortcuts) - Master CodeFrog's keyboard shortcuts
-- [Tools Available](/help/mas/tools) - Overview of all available tools
+- [Tools Available](/help/common/tools) - Overview of all available tools
 
 ## Core Features
 

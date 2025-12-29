@@ -2,8 +2,12 @@
 title: Tools Available
 redirect_from:
   - /help/tools.php
+  - /help/tools.php?flavor=mas
   - /help/tools.php?flavor=windows
+  - /help/mas/tools.php
   - /help/windows/tools.php
+  - /help/mas/tools
+  - /help/windows/tools
 layout: help
 ---
 
@@ -60,7 +64,7 @@ Comprehensive web testing suite for validating websites and web applications:
 - Analyze page performance
 - Verify meta tags
 
-See [Accessibility Testing](/help/windows/accessibility) for detailed accessibility guidance.
+See [Accessibility Testing](/help/common/accessibility) for detailed accessibility guidance.
 
 ## Bulk Security Scanner
 
@@ -119,14 +123,18 @@ Analyze your codebase for quality and security:
 - **Static Analysis**: Integration with code quality tools
 - **Secrets Detection**: Gitleaks integration for secrets scanning
 - **OSV Integration**: Open Source Vulnerability detection
-- **Exclusions**: Automatically exclude build directories, node_modules, etc.
+- **Exclusions**: Automatically exclude build directories, node_modules, Pods, .dart_tool, etc.
 
-### Windows-Specific Notes
+### Platform-Specific Notes
 
-- **OpenGrep Dependencies**: Code analysis uses OpenGrep which requires DLL files (libgmp-10.dll, etc.)
+**Windows:**
+- **OpenGrep Dependencies**: Code analysis uses OpenGrep which requires DLL files (libgmp-10.dll, libstdc++-6.dll, libgcc_s_seh-1.dll)
 - **DLL Management**: DLLs are automatically extracted with the binary
 - **Path Length**: Ensure long path support is enabled for deep directory structures
 - See [Windows Troubleshooting](/help/windows/windows-troubleshooting) if you encounter DLL errors
+
+**macOS:**
+- Exclusions automatically handle macOS-specific build artifacts (Pods, .dart_tool, etc.)
 
 ### Use Cases
 
@@ -151,12 +159,17 @@ GitHub integration for viewing and importing PR comments and issues:
 
 **Note:** CodeFrog does NOT support git operations (commit, push, pull, diff viewing, branch detection). Use [GitHub Desktop](https://desktop.github.com/) or your preferred Git client for version control.
 
-### Windows-Specific Setup
+### Platform-Specific Setup
 
+**Windows:**
 - **SSH Keys**: Store in `C:\Users\YourUsername\.ssh\`
 - **Credential Management**: Windows Credential Manager stores Git credentials
 - **GitHub CLI**: Optional - can be installed separately for advanced workflows
 - See [GitHub Integration](/help/windows/github-integration) for Windows-specific setup
+
+**macOS:**
+- SSH keys stored in `~/.ssh/`
+- See [GitHub Integration](/help/common/github) for general setup
 
 ### Use Cases
 
@@ -171,7 +184,7 @@ All tools are accessible from:
 
 1. **Welcome Screen**: Quick access buttons for main tools
 2. **Navigation Menu**: Full list of all available tools
-3. **Keyboard Shortcuts**: Fast navigation (see [Shortcuts](/help/windows/shortcuts))
+3. **Keyboard Shortcuts**: Fast navigation (see [macOS Shortcuts](/help/mas/shortcuts) or [Windows Shortcuts](/help/windows/shortcuts))
 
 ## Tool Combinations
 
@@ -182,28 +195,37 @@ All tools are accessible from:
 - **Code Review**: Code Analysis + GitHub Integration
 - **Server Monitoring**: Server Management + Terminal Access
 
-## Windows-Specific Considerations
+## Platform-Specific Considerations
 
 ### Terminal Integration
 
+**Windows:**
 - **Windows Terminal**: Recommended for best experience
 - **PowerShell**: Pre-installed, works well
 - **Command Prompt**: Basic support available
 - See [Windows Setup Guide](/help/windows/windows-setup) for terminal configuration
 
+**macOS:**
+- Uses system Terminal with full support
+- See [macOS Setup Guide](/help/mas/macos-setup) for configuration
+
 ### File Path Handling
 
+**Windows:**
 - **Long Paths**: Enable long path support for deep directory structures
 - **Case Sensitivity**: Windows is case-insensitive (unlike macOS/Linux)
 - **Path Formats**: Standard Windows paths and UNC network paths supported
 - See [Windows Tips](/help/windows/tips) for path handling tips
 
+**macOS:**
+- Standard Unix-style paths
+- Case-sensitive file system (depending on APFS configuration)
+
 ## Next Steps
 
-- [Getting Started](/help/windows/getting-started) - Learn the basics
-- [Project Workflows](/help/windows/workflows) - Set up your workflow
+- [Getting Started](/help/mas/getting-started) (macOS) or [Getting Started](/help/windows/getting-started) (Windows) - Learn the basics
+- [Project Workflows](/help/common/workflows) - Set up your workflow
 - [Security Scanning](/help/common/security) - Deep dive into security tools
 - [WCAG Levels Explained](/help/common/wcag-levels) - Understanding WCAG A, AA, and AAA conformance levels
-- [Accessibility Testing](/help/windows/accessibility) - WCAG compliance guide
-- [Windows Setup Guide](/help/windows/windows-setup) - Configure CodeFrog on Windows
+- [Accessibility Testing](/help/common/accessibility) - WCAG compliance guide
 

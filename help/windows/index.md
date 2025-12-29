@@ -17,7 +17,7 @@ Welcome to the CodeFrog help documentation for Windows users.
 - [Tips for New Users](/help/windows/tips) - Windows-specific tips and AI assistant guidance
 - [Project Workflows](/help/windows/workflows) - Learn about local and remote development on Windows
 - [Keyboard Shortcuts](/help/windows/shortcuts) - Master CodeFrog's keyboard shortcuts
-- [Tools Available](/help/windows/tools) - Overview of all available tools
+- [Tools Available](/help/common/tools) - Overview of all available tools
 
 ## Windows-Specific Guides
 
