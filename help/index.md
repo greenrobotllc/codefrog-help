@@ -17,7 +17,7 @@ This is the authoritative, comprehensive list of all CodeFrog features. Use this
 ---
 
 {% for category in site.data.features.categories %}
-## {{ category.name }}
+## {{ category.name }} {#{{ category.name | downcase | replace: ' ', '-' | replace: '/', '' | replace: '&', '' | replace: '---', '-' | replace: '--', '-' }}}
 
 {{ category.description }}
 

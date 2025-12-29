@@ -68,6 +68,32 @@
   <script src="{{ '/assets/js/lunr.min.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/lunr-search.js' | relative_url }}"></script>
   <script>
+    // Handle anchor scrolling on page load
+    (function() {
+      function scrollToAnchor() {
+        if (window.location.hash) {
+          const hash = window.location.hash.substring(1);
+          const element = document.getElementById(hash);
+          if (element) {
+            // Use setTimeout to ensure layout is complete
+            setTimeout(function() {
+              element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 100);
+          }
+        }
+      }
+      
+      // Try scrolling immediately if DOM is ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', scrollToAnchor);
+      } else {
+        scrollToAnchor();
+      }
+      
+      // Also handle hash changes (when clicking anchor links)
+      window.addEventListener('hashchange', scrollToAnchor);
+    })();
+    
     // Make scrollable code blocks keyboard accessible
     (function() {
       document.addEventListener('DOMContentLoaded', function() {
