@@ -11,6 +11,12 @@ items:
       - "/help/mas/"
       - "/help/mas/index.html"
   
+  - title: "Windows Help"
+    url: "/help/windows/"
+    match_paths:
+      - "/help/windows/"
+      - "/help/windows/index.html"
+  
   # Mac-specific documentation
   - title: "Mac: Getting Started"
     url: "/help/mas/getting-started"

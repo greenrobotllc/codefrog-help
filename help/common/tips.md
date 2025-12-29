@@ -94,6 +94,10 @@ Windows OpenSSH stores keys in a specific location:
 
 **Key Management**:
 - Generate new key: `ssh-keygen -t ed25519 -C "your_email@example.com"`
+  - **Note**: This requires OpenSSH to be installed. Windows 10/11 include OpenSSH by default, but if `ssh-keygen` is not available, you can:
+    - Enable OpenSSH via Settings → Apps → Optional Features → OpenSSH Client
+    - Use WSL (Windows Subsystem for Linux) if available
+    - Use an alternative tool like PuTTYgen for SSH key generation
 - Set proper permissions: Right-click private key → Properties → Security → Remove all users except your account
 - Add public key to servers: Copy content of `.pub` file to server's `~/.ssh/authorized_keys`
 
@@ -111,6 +115,7 @@ CodeFrog's code analysis uses OpenGrep, which requires specific DLL files:
 - If you see "missing DLL" errors:
   1. Close CodeFrog completely
   2. Delete the binaries cache folder (typically located at `C:\Users\YourUsername\AppData\Local\CodeFrog\Cache\Binaries`)
+     - **Note**: The cache path may vary depending on your installation method (portable vs. installer) or CodeFrog's configuration. If the standard path doesn't exist, check CodeFrog's settings or logs to locate the cache directory.
   3. Restart CodeFrog - it will re-extract DLLs
 
 ## AI Assistant Guidance

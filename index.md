@@ -34,26 +34,26 @@ This is the authoritative, comprehensive list of all CodeFrog features. Use this
 
 ## Getting Started
 
-- [Getting Started Guide](/help/mas/getting-started) - Quick start guide for new users
-- [Project Workflows](/help/mas/workflows) - Learn about local and remote development
-- [Keyboard Shortcuts](/help/mas/shortcuts) - Master CodeFrog's keyboard shortcuts
+- [Getting Started Guide](/help/mas/getting-started) (macOS) or [Getting Started Guide](/help/windows/getting-started) (Windows) - Quick start guide for new users
+- [Project Workflows](/help/common/workflows) - Learn about local and remote development
+- [Keyboard Shortcuts](/help/common/shortcuts) - Master CodeFrog's keyboard shortcuts
 
 ## Advanced Features
 
-- [Accessibility Testing](/help/mas/accessibility) - WCAG AA compliance testing
-- [Security Scanning](/help/mas/security) - Comprehensive security validation
-- [OSV / Supply Chain](/help/mas/osv) - Open Source Vulnerability detection
-- [Secrets Detection](/help/mas/secrets) - Gitleaks integration for secrets scanning
+- [Accessibility Testing](/help/common/accessibility) - WCAG AA compliance testing
+- [Security Scanning](/help/common/security) - Comprehensive security validation
+- [OSV / Supply Chain](/help/common/osv) - Open Source Vulnerability detection
+- [Secrets Detection](/help/common/secrets) - Gitleaks integration for secrets scanning
 
 ## AI & Automation
 
-- [CodeRabbit + Augment Workflow](/help/mas/ai-coder-coderabbit-augment) - Automated code review workflow
-- [Cursor / Other AI Agents](/help/mas/ai-coder-cursor) - Using Cursor and other AI tools
+- [CodeRabbit + Augment Workflow](/help/common/ai-coder-coderabbit-augment) - Automated code review workflow
+- [Cursor / Other AI Agents](/help/common/ai-coder-cursor) - Using Cursor and other AI tools
 
 ## Launch & Quality
 
-- [Launch Checklist](/help/mas/launch-checklist) - Pre-launch verification steps
-- [Troubleshooting](/help/mas/troubleshooting) - Common issues and solutions
+- [Launch Checklist](/help/common/launch-checklist) - Pre-launch verification steps
+- [Troubleshooting](/help/common/troubleshooting) - Common issues and solutions
 
 ---
 

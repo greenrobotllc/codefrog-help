@@ -80,12 +80,24 @@ def check_links(help_dir: Path) -> Tuple[int, int, int, int, List[str]]:
     external_links = 0
     broken_list = []
     
-    # Find all markdown files
+    # Get help-docs root directory to check root index.md
+    help_docs_dir = help_dir.parent
+    
+    # Find all markdown files in help/ directory
     md_files = list(help_dir.rglob("*.md"))
     
+    # Also check root index.md if it exists
+    root_index = help_docs_dir / "index.md"
+    if root_index.exists():
+        md_files.append(root_index)
+    
     for md_file in md_files:
-        # Get relative path from help directory
-        rel_path = md_file.relative_to(help_dir)
+        # Get relative path - handle both help/ subdirectory and root files
+        try:
+            rel_path = md_file.relative_to(help_dir)
+        except ValueError:
+            # File is outside help_dir (like root index.md)
+            rel_path = md_file.relative_to(help_docs_dir)
         
         # Read file content
         try:

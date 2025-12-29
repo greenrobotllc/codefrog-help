@@ -27,7 +27,7 @@ Get the most out of CodeFrog with these platform-specific tips and AI assistant 
 - **⌘T**: Open terminal
 - **⌘P**: Quick file search
 
-See the [Keyboard Shortcuts](/help/mas/shortcuts) guide for the complete list.
+See the [Keyboard Shortcuts](/help/common/shortcuts) guide for the complete list.
 
 ### Menu Bar Integration
 
@@ -111,6 +111,6 @@ For a complete list of recommended tools and services that work well with CodeFr
 
 - [Getting Started Guide](/help/mas/getting-started) - Learn the basics
 - [Project Workflows](/help/common/workflows) - Choose your workflow
-- [Keyboard Shortcuts](/help/mas/shortcuts) - Boost productivity
-- [Troubleshooting](/help/mas/troubleshooting) - Solve common issues
+- [Keyboard Shortcuts](/help/common/shortcuts) - Boost productivity
+- [Troubleshooting](/help/common/troubleshooting) - Solve common issues
 

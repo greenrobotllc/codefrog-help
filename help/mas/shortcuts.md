@@ -98,5 +98,5 @@ layout: help
 
 ## Next Steps
 
-- [Troubleshooting](/help/mas/troubleshooting) - Find solutions to common issues
+- [Troubleshooting](/help/common/troubleshooting) - Find solutions to common issues
 
