@@ -11,7 +11,7 @@ This is the authoritative, comprehensive list of all CodeFrog features. Use this
 ## Table of Contents
 
 {% for category in site.data.features.categories %}
-- [{{ category.name }}](#{{ category.name | downcase | replace: ' ', '-' | replace: '/', '-' }})
+- [{{ category.name }}](#{{ category.name | downcase | replace: ' ', '-' | replace: '/', '' | replace: '&', '' | replace: '---', '-' | replace: '--', '-' }})
 {% endfor %}
 
 ---

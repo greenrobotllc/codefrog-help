@@ -138,7 +138,9 @@ The site is configured for `help.codefrog.app`:
 
 ### Link Checking
 
-Use the link checker script to validate all internal links in the help documentation:
+Use the link checker scripts to validate all internal links and anchor links in the help documentation:
+
+#### File Link Checking
 
 ```bash
 cd landing-page/help-docs
@@ -156,25 +158,50 @@ The script will:
 - `0` - All internal links are valid
 - `1` - Broken links found (see output for details)
 
+#### Anchor Link Checking
+
+```bash
+cd landing-page/help-docs
+python3 scripts/check_anchors.py
+```
+
+The script will:
+- Scan all `.md` files in the `help/` directory
+- Extract anchor links (both same-page `#anchor` and cross-file `/help/path#anchor`)
+- Extract all headings from markdown files
+- Generate expected anchor IDs using kramdown's auto_id logic
+- Check if anchor links point to valid headings
+- Report broken anchor links with file location and line number
+- Display summary statistics (total, valid, broken anchors)
+
+**Exit codes:**
+- `0` - All anchor links are valid
+- `1` - Broken anchor links found (see output for details)
+
 **Example output:**
 ```
-Checking links in help documentation...
+Checking anchor links in help documentation...
 Help directory: /path/to/help
 
 ========================================
-Link Check Results
+Anchor Link Check Results
 ========================================
-Total links found: 178
-Valid internal links: 135
-Broken internal links: 8
-External/other links: 35
+Total anchor links found: 15
+Valid anchor links: 13
+Broken anchor links: 2
 
-Broken Links:
+Broken Anchor Links:
 ========================================
-✗ mas/getting-started.md:19: [macOS Setup Guide](/help/mas/macos-setup) -> Expected: ...
+✗ index.md:14: [Supply Chain](#supply-chain---osv) -> Anchor '#supply-chain---osv' not found in index.md
 ```
 
-This helps catch broken links before deployment and ensures all documentation links are valid.
+**Note:** Anchor IDs are generated using kramdown's auto_id logic:
+- Convert to lowercase
+- Replace spaces with hyphens
+- Remove special characters (keeping only alphanumeric, hyphens, underscores)
+- Collapse multiple consecutive hyphens
+
+These scripts help catch broken links and anchors before deployment and ensure all documentation links are valid.
 
 ## Resources
 

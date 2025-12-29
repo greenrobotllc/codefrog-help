@@ -26,7 +26,7 @@ layout: help
 
 ## Next Steps
 
-- Try [Remote Development](/help/common/workflows#remote-workflow) for server-based projects.
+- Try [Remote Development](/help/common/workflows#remote-development-workflow) for server-based projects.
 - Learn about [Security Scanning](/help/common/security) and [Security Headers](/help/common/security-headers) to secure your applications.
 - See [Troubleshooting](/help/common/troubleshooting) if you hit issues.
 

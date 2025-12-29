@@ -121,7 +121,7 @@ Install Windows Terminal for the best experience:
 
 ## Next Steps
 
-- Try [Remote Development](/help/windows/workflows#remote-workflow) for server-based projects
+- Try [Remote Development](/help/windows/workflows#remote-development-workflow) for server-based projects
 - Learn about [Security Scanning](/help/common/security) and [Security Headers](/help/common/security-headers) to secure your applications
 - See [Windows Troubleshooting](/help/windows/windows-troubleshooting) if you hit issues
 - Check [Tips for New Users](/help/common/tips) for Windows-specific productivity tips

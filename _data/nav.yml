@@ -25,19 +25,19 @@ items:
       - "/help/mas/macos-setup.html"
   
   # Windows-specific documentation
-  - title: "Windows: Windows Setup"
+  - title: "Windows: Setup"
     url: "/help/windows/windows-setup"
     match_paths:
       - "/help/windows/windows-setup/"
       - "/help/windows/windows-setup.html"
   
-  - title: "Windows: Windows Store Subscriptions"
+  - title: "Windows: Store Subscriptions"
     url: "/help/windows/windows-iap"
     match_paths:
       - "/help/windows/windows-iap/"
       - "/help/windows/windows-iap.html"
   
-  - title: "Windows: Windows Troubleshooting"
+  - title: "Windows: Troubleshooting"
     url: "/help/windows/windows-troubleshooting"
     match_paths:
       - "/help/windows/windows-troubleshooting/"

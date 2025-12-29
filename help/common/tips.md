@@ -124,7 +124,9 @@ For the best development experience, we recommend using CodeFrog alongside dedic
   - CodeFrog complements these tools with testing, security scanning, and project management
 
 - **AI Code Review**: Use [CodeRabbit](https://coderabbit.ai) for automated PR reviews
-  - CodeFrog can import CodeRabbit PR comments as tasks
+  - CodeFrog can import CodeRabbit PR comments as tasks for tracking and management
+  - CodeRabbit handles verification and task resolution; CodeFrog only imports and tracks
+  - CodeFrog does not auto-complete tasks or mark PR comments as resolved
   - See [CodeRabbit + Augment Workflow](/help/common/ai-coder-coderabbit-augment) for integration details
 
 - **CLI Workflows**: Use Terminal (macOS) or PowerShell/Windows Terminal (Windows) for AI CLI tools
