@@ -170,8 +170,10 @@ body {
 
 .help-nav ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding: 0 !important;
+  margin: 0 !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
 }
 
 .help-nav li {
@@ -251,7 +253,8 @@ p {
   font-size: 1rem;
 }
 
-ul, ol {
+.content ul,
+.content ol {
   margin: 1rem 0 1rem 2rem;
   color: #424245;
 }
