@@ -6,7 +6,7 @@ show_version: true
 
 # Complete CodeFrog Feature List
 
-This is the authoritative, comprehensive list of all CodeFrog features. Use this page for SEO and as a reference for all available functionality.
+Browse all CodeFrog features organized by category.
 
 ## Table of Contents
 

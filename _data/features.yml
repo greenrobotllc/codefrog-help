@@ -10,10 +10,13 @@ categories:
       - "Color blindness testing"
   
   - name: Security
-    description: "Comprehensive security scanning and vulnerability detection"
+    description: "Comprehensive security scanning and vulnerability detection for single targets and bulk multi-domain scanning"
     items:
       - "HTTPS-first with HTTP retry fallback"
-      - "Security vulnerability scanning"
+      - "Single-target security vulnerability scanning"
+      - "Bulk security scanner with concurrent target processing"
+      - "DNS preflight checking for domain validation"
+      - "Streaming scan results for real-time monitoring"
       - "Gitleaks integration for secrets detection"
       - "Exclude Pods/3rd-party by default"
       - "Severity-based reporting (including zero-count)"
@@ -31,10 +34,10 @@ categories:
   - name: Code Analysis
     description: "Static code analysis and validation tools"
     items:
-      - "HTML validation"
       - "Code quality checks"
       - "Static analysis integration"
       - "Linting support"
+      - "Line count analysis"
   
   - name: GitHub Integration
     description: "GitHub workflow tools for PR comments and issues"
@@ -45,13 +48,15 @@ categories:
       - "AI-powered comment summaries"
   
   - name: Development Workflows
-    description: "Local and remote development support"
+    description: "Local and remote development support with terminal access and file management"
     items:
       - "Local folder development"
       - "SSH remote server connections"
-      - "File browser with dual-pane view"
+      - "Local terminal access"
+      - "SSH terminal integration"
+      - "File browser with dual-pane view and navigation"
       - "Code editor with syntax highlighting"
-      - "Terminal integration"
+      - "Project import functionality"
   
   - name: AI Integration
     description: "AI-assisted coding and code review"
@@ -62,12 +67,26 @@ categories:
       - "Automated code review"
   
   - name: Testing & Validation
-    description: "Testing and quality assurance tools"
+    description: "Testing and quality assurance tools for web applications"
     items:
       - "Web testing (HTML files)"
+      - "Favicon generator"
+      - "HTML validation"
+      - "Sitemap parsing and URL discovery"
+      - "Resource inventory tracking"
+      - "Timing analysis (DNS, connect, TTFB, download)"
       - "Mega Report - unified web testing and code analysis"
       - "SEO testing and optimization"
       - "Bulk domain security testing via DNS API"
       - "Automated test execution"
       - "Result export and reporting (PDF, Markdown)"
+  
+  - name: Infrastructure & DevOps
+    description: "Server management, build orchestration, and network discovery tools"
+    items:
+      - "Server health monitoring"
+      - "Build orchestration with preset management"
+      - "Network discovery (macOS device scanning)"
+      - "SSH server management"
+      - "Server warmup and connection testing"
 

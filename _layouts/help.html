@@ -52,7 +52,7 @@
   </div>
 
   <footer>
-    <p>&copy; 2025 CodeFrog. All rights reserved.</p>
+    <p>&copy; <span id="copyright-year">2025</span> CodeFrog. All rights reserved.</p>
     <p class="build-info">
       <small>
         Built: {{ site.time | date: "%B %d, %Y at %H:%M UTC" }}
@@ -70,6 +70,9 @@
   <script>
     // Handle anchor scrolling on page load with proper header offset
     (function() {
+      const SCROLL_DELAY_MS = 100;
+      const SCROLL_MARGIN_PX = 20;
+      
       function scrollToAnchor() {
         if (window.location.hash) {
           const hash = window.location.hash.substring(1);
@@ -81,7 +84,7 @@
             
             // Calculate scroll position using viewport-relative position
             const elementRect = element.getBoundingClientRect();
-            const scrollPosition = elementRect.top + window.scrollY - headerHeight - 20;
+            const scrollPosition = elementRect.top + window.scrollY - headerHeight - SCROLL_MARGIN_PX;
             
             // Use setTimeout to ensure layout is complete
             setTimeout(function() {
@@ -89,7 +92,7 @@
                 top: Math.max(0, scrollPosition),
                 behavior: 'smooth'
               });
-            }, 100);
+            }, SCROLL_DELAY_MS);
           }
         }
       }
@@ -144,6 +147,20 @@
           }
         });
       });
+    })();
+    
+    // Update copyright year dynamically
+    (function() {
+      const currentYear = new Date().getFullYear();
+      const startYear = 2025;
+      const copyrightElement = document.getElementById('copyright-year');
+      if (copyrightElement) {
+        if (currentYear === startYear) {
+          copyrightElement.textContent = startYear.toString();
+        } else {
+          copyrightElement.textContent = startYear + '-' + currentYear;
+        }
+      }
     })();
   </script>
 </body>
