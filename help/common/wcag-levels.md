@@ -102,16 +102,18 @@ When you run an accessibility scan, CodeFrog tests for violations across:
 
 ### Understanding WCAG Ratings in Results
 
-After running an accessibility scan, CodeFrog displays a **WCAG Rating** that shows which level your page passes:
+After running an accessibility scan, CodeFrog displays a **WCAG Rating** that shows which level your page passes based on automated testing:
 
 - **WCAG A**: No Level A violations found
 - **WCAG AA**: No Level A or AA violations found
-- **WCAG AAA**: No violations found at any level (A, AA, or AAA)
+- Automated testing never returns **WCAG AAA**—AAA always requires manual testing
 
 **Example:**
 - If your page has no Level A or AA violations but has some AAA violations, your rating would be **"WCAG AA"**
-- If your page has no violations at all, your rating would be **"WCAG AAA"**
+- If your page has no violations at all, your rating would still be **"WCAG AA"** (automated testing never returns AAA)
 - If your page has Level A violations, it does not pass any level
+
+**Important Note:** Automated testing can return A or AA ratings (never AAA), but **full WCAG A, AA, or AAA conformance cannot be achieved with automated testing alone**. Manual testing with assistive technologies (screen readers, keyboard navigation, etc.) is required for full conformance at any level. According to [Deque (makers of axe-core)](https://www.deque.com/automated-accessibility-coverage-report/), automated tests find less than 60% of accessibility issues on average. CodeFrog's automated testing helps identify many issues, but should be combined with manual testing for complete WCAG compliance.
 
 ### What CodeFrog Checks
 
@@ -152,12 +154,20 @@ CodeFrog's accessibility testing checks for:
 
 ### WCAG Rating
 
-The WCAG rating indicates the **highest level your page passes**. This is calculated by:
+The WCAG rating indicates the **highest level your page passes** based on automated testing. This is calculated by:
 
 1. Checking if there are any Level A violations
 2. If no Level A violations, checking for Level AA violations
-3. If no Level AA violations, checking for Level AAA violations
-4. The rating is the highest level with no violations
+3. If no Level AA violations, the rating is **"AA"** (automated testing never returns AAA)
+4. The rating is the highest automated level (A or AA) with no violations
+
+**Limitation of Automated Testing:** It's important to understand that automated testing can return A or AA ratings (never AAA), but **full WCAG A, AA, or AAA conformance cannot be achieved with automated testing alone**. Manual testing with assistive technologies is required to achieve full compliance at any level. Automated tools like CodeFrog can identify many issues, but they cannot catch all accessibility problems. For example, automated tests may miss issues related to:
+- Screen reader compatibility and user experience
+- Keyboard navigation flow and logical order
+- Content understandability and clarity
+- Context-dependent accessibility requirements
+
+For more information about the limitations of automated accessibility testing, see the [Deque automated accessibility coverage report](https://www.deque.com/automated-accessibility-coverage-report/).
 
 ### Health Score
 
@@ -215,24 +225,35 @@ When fixing issues:
 3. **Level AA** violations before Level AAA
 4. Focus on issues that affect the most users
 
-### 5. Understand AAA Limitations
+### 5. Understand Automated Testing Limitations
 
 Remember that:
-- Full AAA conformance requires manual testing
-- Some AAA requirements may not be practical for all content
-- Automated tools can only test a portion of AAA criteria
-- Focus on AAA for critical user flows, not necessarily entire sites
+- **Full WCAG conformance at any level (A, AA, or AAA) requires manual testing**
+- Automated tools can only test a portion of accessibility criteria
+- According to Deque research, automated tests find less than 60% of accessibility issues on average
+- Manual testing with assistive technologies is essential for complete compliance
+- Some requirements may not be practical for all content types
+- Focus on critical user flows for comprehensive testing
 
 ## Common Questions
 
-### Can I achieve AAA with CodeFrog alone?
+### Can I achieve WCAG A, AA, or AAA with CodeFrog alone?
 
-No. While CodeFrog can test for many AAA rules, full AAA conformance requires:
-- Manual testing with assistive technologies
+No. While CodeFrog can test for many WCAG rules at all levels (A, AA, and AAA), **full conformance at any level requires manual testing**. Automated testing alone cannot fully verify WCAG compliance because:
+
+- Automated tests find less than 60% of accessibility issues on average ([Deque research](https://www.deque.com/automated-accessibility-coverage-report/))
+- Many accessibility requirements need human judgment and real-world testing
+- Screen reader compatibility must be tested with actual assistive technologies
+- Keyboard navigation flow requires manual verification
+- Content understandability and context-dependent issues need human evaluation
+
+Full WCAG conformance requires:
+- Manual testing with assistive technologies (screen readers, voice control, etc.)
 - Human judgment for some criteria
 - Testing with actual users who have disabilities
+- Combining automated and manual testing approaches
 
-CodeFrog helps you get close, but manual testing is required for full AAA compliance.
+CodeFrog helps you identify and fix many issues automatically, but manual testing is essential for full compliance at any WCAG level.
 
 ### What if I have AAA violations but pass AA?
 

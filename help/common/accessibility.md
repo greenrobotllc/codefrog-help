@@ -44,6 +44,8 @@ The accessibility scanner will check:
 
 ## Interpreting Results
 
+**Important:** WCAG A, AA, and AAA ratings cannot be fully achieved with automated testing alone. Manual testing with assistive technologies is required for full conformance. According to [Deque (makers of axe-core)](https://www.deque.com/automated-accessibility-coverage-report/), automated tests find less than 60% of accessibility issues on average. CodeFrog's automated testing helps identify many issues, but should be combined with manual testing for complete WCAG compliance.
+
 ### Color Contrast
 
 The scanner reports contrast ratios for all text elements:
@@ -56,7 +58,7 @@ Results show:
 - ⚠️ Warning: Close to threshold, consider improving
 - ❌ Fail: Below WCAG AA standards, must be fixed
 
-CodeFrog tests for both AA and AAA contrast requirements. The WCAG rating in your results shows which level your page passes.
+CodeFrog tests for both AA and AAA contrast requirements. The WCAG rating in your results shows which level your page passes based on automated testing, but full conformance requires manual testing.
 
 ### Keyboard Navigation
 
@@ -144,10 +146,12 @@ Some automated checks may flag issues that aren't actual problems:
 ## Best Practices
 
 1. **Test Early and Often:** Run accessibility scans during development, not just before launch
-2. **Combine Automated and Manual Testing:** Automated tools catch many issues, but manual testing is essential
+2. **Combine Automated and Manual Testing:** Automated tools catch many issues, but manual testing is essential for full WCAG conformance at any level (A, AA, or AAA). According to research, automated tests find less than 60% of accessibility issues on average. Therefore, manual testing with assistive technologies is required for complete compliance.
 3. **Test with Real Screen Readers:** Use VoiceOver (macOS), NVDA (Windows), or JAWS
-4. **Involve Users with Disabilities:** Get feedback from actual users when possible
-5. **Follow WCAG Guidelines:** Use the official WCAG 2.1 guidelines as your reference
+4. **Test Keyboard Navigation:** Verify all functionality is accessible via keyboard only
+5. **Involve Users with Disabilities:** Get feedback from actual users when possible
+6. **Follow WCAG Guidelines:** Use the official WCAG 2.1 guidelines as your reference
+7. **Understand Limitations:** Remember that automated testing alone cannot fully verify WCAG compliance. For more information, see the [Deque automated accessibility coverage report](https://www.deque.com/automated-accessibility-coverage-report/).
 
 ## Related Topics
 
